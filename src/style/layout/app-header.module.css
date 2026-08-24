@@ -1,0 +1,170 @@
+.header {
+  position: absolute;
+  z-index: 20;
+  top: 0;
+  width: 100%;
+  border-bottom: 1px solid rgba(188, 211, 220, 0.15);
+  background: linear-gradient(180deg, rgba(4, 12, 18, 0.88), rgba(4, 12, 18, 0.48));
+  backdrop-filter: blur(8px);
+}
+
+.inner {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  min-height: 74px;
+  gap: 28px;
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  min-width: max-content;
+  font-family: var(--font-display);
+  letter-spacing: 0.04em;
+}
+
+.logo {
+  width: 164px;
+  height: auto;
+  object-fit: contain;
+}
+
+.wiki {
+  margin-left: 8px;
+  padding: 1px 0 2px 8px;
+  border-left: 1px solid rgba(241, 245, 247, 0.58);
+  border-bottom: 1px solid rgba(241, 245, 247, 0.46);
+  font-size: 14px;
+  letter-spacing: 0.11em;
+}
+
+.desktopNav {
+  display: flex;
+  justify-content: flex-end;
+  gap: clamp(18px, 2vw, 34px);
+  color: #d8e0e4;
+  font-size: 14px;
+}
+
+.desktopNav a {
+  position: relative;
+  padding-block: 26px;
+}
+
+.desktopNav a::after {
+  position: absolute;
+  right: 0;
+  bottom: 16px;
+  left: 0;
+  height: 1px;
+  background: var(--gold);
+  content: "";
+  transform: scaleX(0);
+  transition: transform 160ms ease;
+}
+
+.desktopNav a:hover::after,
+.desktopNav a:focus-visible::after {
+  transform: scaleX(1);
+}
+
+.cta {
+  min-width: max-content;
+  padding: 10px 18px;
+  border: 1px solid rgba(201, 146, 69, 0.86);
+  color: var(--gold-light);
+  background: rgba(8, 18, 25, 0.58);
+  font-family: var(--font-display);
+  font-size: 14px;
+  letter-spacing: 0.04em;
+  box-shadow: inset 0 0 14px rgba(201, 146, 69, 0.08), 0 0 18px rgba(0,0,0,.28);
+  transition: color 160ms ease, background 160ms ease;
+}
+
+.cta:hover,
+.cta:focus-visible {
+  color: #07131c;
+  background: var(--gold-light);
+}
+
+.cta span {
+  margin-left: 8px;
+  font-size: 20px;
+  line-height: 0;
+}
+
+.mobileMenu {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .inner {
+    grid-template-columns: auto 1fr auto;
+  }
+
+  .desktopNav,
+  .cta {
+    display: none;
+  }
+
+  .mobileMenu {
+    position: relative;
+    display: block;
+    grid-column: 3;
+  }
+
+  .mobileMenu summary {
+    display: grid;
+    width: 44px;
+    height: 44px;
+    cursor: pointer;
+    list-style: none;
+    place-content: center;
+    gap: 5px;
+    border: 1px solid var(--line);
+    background: rgba(8, 18, 25, 0.72);
+  }
+
+  .mobileMenu summary::-webkit-details-marker {
+    display: none;
+  }
+
+  .mobileMenu summary span {
+    width: 20px;
+    height: 1px;
+    background: var(--paper);
+  }
+
+  .mobileMenu nav {
+    position: absolute;
+    top: 52px;
+    right: 0;
+    display: grid;
+    width: min(78vw, 300px);
+    border: 1px solid var(--line);
+    background: rgba(7, 19, 28, 0.98);
+    box-shadow: 0 18px 50px rgba(0,0,0,.52);
+  }
+
+  .mobileMenu nav a {
+    padding: 13px 18px;
+    border-bottom: 1px solid var(--line);
+  }
+}
+
+@media (max-width: 540px) {
+  .inner {
+    min-height: 66px;
+  }
+
+  .logo {
+    width: 132px;
+  }
+
+  .wiki {
+    margin-left: 7px;
+    padding-left: 7px;
+    font-size: 12px;
+  }
+}

@@ -1,0 +1,798 @@
+.hero {
+  position: relative;
+  isolation: isolate;
+  height: 650px;
+  overflow: hidden;
+  border-bottom: 1px solid rgba(139, 174, 190, .23);
+  background: #06121a;
+}
+
+.hero::before {
+  position: absolute;
+  z-index: 1;
+  inset: 0;
+  background:
+    linear-gradient(90deg, rgba(4, 12, 18, .9) 0%, rgba(4, 12, 18, .66) 33%, rgba(4, 12, 18, .04) 64%),
+    linear-gradient(0deg, rgba(5, 16, 23, .95) 0%, transparent 38%);
+  content: "";
+}
+
+.heroImage {
+  object-fit: cover;
+  object-position: center 55%;
+  filter: contrast(1.07) saturate(.84);
+}
+
+.heroContent {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  height: 515px;
+  align-items: center;
+  padding-top: 74px;
+}
+
+.heroCopy {
+  width: min(820px, 64vw);
+  padding-top: 10px;
+}
+
+.hero h1 {
+  margin: 0;
+  color: #eef3f5;
+  font-family: var(--font-display);
+  font-size: clamp(72px, 7vw, 108px);
+  font-weight: 600;
+  line-height: .94;
+  white-space: nowrap;
+  letter-spacing: -.025em;
+  text-transform: uppercase;
+  text-shadow: 0 3px 0 rgba(0,0,0,.42), 0 10px 28px rgba(0,0,0,.38);
+}
+
+.heroCopy > p {
+  margin: 17px 0 0;
+  color: #e1e7ea;
+  font-size: clamp(18px, 1.35vw, 22px);
+  font-weight: 500;
+  line-height: 1.42;
+  text-shadow: 0 2px 12px rgba(0,0,0,.85);
+}
+
+.heroActions {
+  display: flex;
+  gap: 13px;
+  margin-top: 21px;
+}
+
+.goldButton,
+.darkButton {
+  display: inline-flex;
+  min-height: 43px;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 21px;
+  border: 1px solid;
+  font-family: var(--font-display);
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: .075em;
+  text-transform: uppercase;
+}
+
+.goldButton {
+  border-color: #c58c3d;
+  color: #f0c579;
+  background: rgba(14, 25, 31, .78);
+  box-shadow: inset 0 0 14px rgba(197, 140, 61, .12), 0 0 16px rgba(0,0,0,.4);
+}
+
+.darkButton {
+  border-color: rgba(193, 211, 219, .43);
+  color: #e6ecef;
+  background: rgba(9, 22, 30, .72);
+}
+
+.goldButton:hover,
+.goldButton:focus-visible {
+  color: #07131c;
+  background: #d4a257;
+}
+
+.darkButton:hover,
+.darkButton:focus-visible {
+  border-color: var(--gold-light);
+  color: var(--gold-light);
+}
+
+.goldButton span,
+.darkButton span {
+  margin-left: 12px;
+  font-size: 21px;
+  line-height: 0;
+}
+
+.factRail {
+  position: absolute;
+  z-index: 3;
+  right: 0;
+  bottom: 24px;
+  left: 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  min-height: 112px;
+  padding: 10px 22px;
+  border: 1px solid rgba(149, 170, 180, .35);
+  background: linear-gradient(180deg, rgba(21, 36, 45, .96), rgba(9, 20, 27, .98));
+  box-shadow: 0 13px 32px rgba(0,0,0,.48), inset 0 1px rgba(255,255,255,.035);
+}
+
+.factRail::before,
+.factRail::after,
+.trainPanel::before,
+.trainPanel::after {
+  position: absolute;
+  z-index: 4;
+  width: 22px;
+  height: 22px;
+  border-color: rgba(201, 146, 69, .55);
+  content: "";
+  pointer-events: none;
+}
+
+.factRail::before,
+.trainPanel::before {
+  top: 6px;
+  left: 6px;
+  border-top: 1px solid;
+  border-left: 1px solid;
+}
+
+.factRail::after,
+.trainPanel::after {
+  right: 6px;
+  bottom: 6px;
+  border-right: 1px solid;
+  border-bottom: 1px solid;
+}
+
+.fact {
+  display: flex;
+  min-width: 0;
+  align-items: center;
+  justify-content: center;
+  gap: 13px;
+  border-right: 1px solid rgba(154, 179, 190, .18);
+}
+
+.fact:last-child {
+  border-right: 0;
+}
+
+.factGlyph {
+  display: grid;
+  width: 52px;
+  height: 52px;
+  place-items: center;
+  color: #d7ae6b;
+  font-family: Georgia, serif;
+  font-size: 34px;
+}
+
+.fact strong,
+.fact small,
+.fact em {
+  display: block;
+}
+
+.fact strong {
+  font-family: var(--font-display);
+  font-size: 21px;
+  font-weight: 500;
+  line-height: 1.05;
+  letter-spacing: .035em;
+  text-transform: uppercase;
+}
+
+.fact em {
+  color: #e9eef0;
+  font-size: 14px;
+  font-style: normal;
+  line-height: 1.25;
+}
+
+.fact small {
+  margin-top: 3px;
+  color: #8ea0a9;
+  font-size: 13px;
+}
+
+.content {
+  padding: 26px 0 48px;
+  background:
+    linear-gradient(90deg, rgba(9, 29, 40, .5), transparent 19%, transparent 81%, rgba(9, 29, 40, .5)),
+    repeating-linear-gradient(0deg, transparent 0 47px, rgba(140, 199, 232, .016) 48px 49px),
+    #07151e;
+}
+
+.section {
+  padding-block: 16px;
+}
+
+.sectionTitle {
+  display: flex;
+  min-height: 39px;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 12px;
+  border-bottom: 1px solid rgba(139, 170, 184, .18);
+}
+
+.sectionTitle h2 {
+  position: relative;
+  margin: 0;
+  padding: 0 0 7px;
+  font-family: var(--font-display);
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: .055em;
+  text-transform: uppercase;
+}
+
+.sectionTitle h2::after {
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 35px;
+  height: 2px;
+  background: var(--gold);
+  content: "";
+}
+
+.sectionTitle a {
+  padding-top: 3px;
+  color: var(--gold-light);
+  font-family: var(--font-display);
+  font-size: 11px;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+
+.sectionTitle a span {
+  margin-left: 5px;
+  font-size: 17px;
+}
+
+.updatesGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.updateCard,
+.startCard,
+.wikiCard,
+.portraitCard,
+.guideCard {
+  min-width: 0;
+  border: 1px solid rgba(148, 171, 181, .3);
+  background: linear-gradient(145deg, rgba(17, 35, 46, .96), rgba(7, 21, 29, .99));
+  box-shadow: 0 7px 16px rgba(0,0,0,.2), inset 0 1px rgba(255,255,255,.025);
+}
+
+.updateCard {
+  position: relative;
+  display: grid;
+  grid-template-rows: 124px 1fr;
+  min-height: 238px;
+  overflow: hidden;
+}
+
+.updateMedia {
+  position: relative;
+  overflow: hidden;
+  border-bottom: 1px solid rgba(201, 146, 69, .28);
+  filter: contrast(1.06) saturate(.75);
+}
+
+.updateMedia img,
+.guideImage img {
+  object-fit: cover;
+}
+
+.updateBody {
+  position: relative;
+  padding: 12px 16px 14px;
+}
+
+.updateBody > span,
+.guideCard > div > span {
+  display: block;
+  margin-bottom: 1px;
+  color: var(--gold-light);
+  font-family: var(--font-display);
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+
+.updateBody h3,
+.guideCard h3 {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: 19px;
+  font-weight: 500;
+  line-height: 1.15;
+  letter-spacing: .035em;
+  text-transform: uppercase;
+}
+
+.updateBody h3 a:hover,
+.guideCard h3 a:hover {
+  color: var(--gold-light);
+}
+
+.updateBody p {
+  margin: 5px 0 4px;
+  color: #b6c3c9;
+  font-size: 14px;
+  line-height: 1.28;
+}
+
+.updateBody time {
+  color: #7e929d;
+  font-size: 10px;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+}
+
+.startGrid,
+.wikiGrid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 12px;
+}
+
+.startCard {
+  display: flex;
+  min-height: 142px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 8px;
+  text-align: center;
+  transition: border-color 150ms ease, background 150ms ease;
+}
+
+.startCard:hover {
+  border-color: rgba(201, 146, 69, .7);
+  background: linear-gradient(145deg, rgba(24, 48, 61, .98), rgba(8, 24, 33, .99));
+}
+
+.startCard > span {
+  min-height: 46px;
+  color: #d7b273;
+  font-family: Georgia, serif;
+  font-size: 38px;
+  line-height: 1;
+}
+
+.startCard strong,
+.startCard small {
+  display: block;
+}
+
+.startCard strong {
+  margin-top: 5px;
+  font-family: var(--font-display);
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+}
+
+.startCard small {
+  max-width: 15ch;
+  margin-top: 2px;
+  color: #94a6af;
+  font-size: 12px;
+  line-height: 1.2;
+}
+
+.wikiCard {
+  position: relative;
+  min-height: 192px;
+  overflow: hidden;
+}
+
+.cardImage {
+  object-fit: cover;
+  filter: contrast(1.07) saturate(.72);
+  transition: transform 280ms ease, filter 280ms ease;
+}
+
+.wikiCard::after,
+.portraitCard::after {
+  position: absolute;
+  z-index: 1;
+  inset: 0;
+  background: linear-gradient(180deg, transparent 20%, rgba(4, 13, 19, .28) 48%, rgba(4, 13, 19, .98) 89%);
+  content: "";
+}
+
+.wikiCard:hover .cardImage,
+.portraitCard:hover .cardImage {
+  filter: contrast(1.08) saturate(.9);
+  transform: scale(1.035);
+}
+
+.wikiCaption,
+.portraitCard > span:last-child {
+  position: absolute;
+  z-index: 2;
+  right: 12px;
+  bottom: 11px;
+  left: 12px;
+}
+
+.wikiCaption strong,
+.wikiCaption small,
+.portraitCard strong,
+.portraitCard small {
+  display: block;
+}
+
+.wikiCaption strong,
+.portraitCard strong {
+  font-family: var(--font-display);
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: .045em;
+  text-transform: uppercase;
+}
+
+.wikiCaption small,
+.portraitCard small {
+  margin-top: 2px;
+  color: #aab8bf;
+  font-size: 11px;
+  line-height: 1.18;
+}
+
+.trainPanel {
+  position: relative;
+  display: grid;
+  grid-template-columns: .98fr 1.12fr;
+  min-height: 260px;
+  margin-block: 26px 14px;
+  padding: 18px 20px;
+  border: 1px solid rgba(151, 174, 184, .35);
+  background:
+    linear-gradient(90deg, rgba(5, 15, 22, .97) 0%, rgba(5, 15, 22, .83) 37%, rgba(5, 15, 22, .2) 70%),
+    url("/images/train/eden-engine-cab.jpg") center/cover no-repeat;
+  box-shadow: 0 11px 26px rgba(0,0,0,.32);
+}
+
+.trainCopy {
+  position: relative;
+  z-index: 2;
+  align-self: center;
+  max-width: 420px;
+  padding: 11px 24px 11px 16px;
+}
+
+.trainCopy h2 {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: 34px;
+  font-weight: 500;
+  letter-spacing: .05em;
+  text-transform: uppercase;
+}
+
+.trainCopy p {
+  margin: 7px 0 14px;
+  color: #c5d0d5;
+  font-size: 15px;
+  line-height: 1.38;
+}
+
+.trainCopy .goldButton {
+  min-height: 35px;
+  padding: 7px 14px;
+  font-size: 11px;
+}
+
+.trainGrid {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-self: center;
+  background: rgba(7, 19, 27, .87);
+}
+
+.trainGrid a {
+  display: grid;
+  grid-template-columns: 27px 1fr;
+  min-height: 100px;
+  align-content: center;
+  padding: 13px;
+  border-right: 1px solid rgba(151, 174, 184, .2);
+  border-bottom: 1px solid rgba(151, 174, 184, .2);
+}
+
+.trainGrid a:hover {
+  background: rgba(33, 57, 68, .66);
+}
+
+.trainGrid span {
+  grid-row: 1 / 3;
+  color: var(--gold);
+  font-family: var(--font-display);
+  font-size: 10px;
+}
+
+.trainGrid strong,
+.trainGrid small {
+  display: block;
+}
+
+.trainGrid strong {
+  font-family: var(--font-display);
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: .035em;
+  text-transform: uppercase;
+}
+
+.trainGrid small {
+  color: #97a8b0;
+  font-size: 11px;
+  line-height: 1.2;
+}
+
+.splitRow {
+  display: grid;
+  grid-template-columns: 1.08fr .92fr;
+  gap: 18px;
+}
+
+.locationGrid,
+.enemyGrid {
+  display: grid;
+  gap: 6px;
+}
+
+.locationGrid {
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.enemyGrid {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.portraitCard {
+  position: relative;
+  min-height: 218px;
+  overflow: hidden;
+}
+
+.guidesGrid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 9px;
+}
+
+.guideCard {
+  min-height: 220px;
+  overflow: hidden;
+}
+
+.guideImage {
+  position: relative;
+  height: 108px;
+  overflow: hidden;
+  border-bottom: 1px solid rgba(201, 146, 69, .25);
+  filter: contrast(1.06) saturate(.72);
+}
+
+.guideCard > div:last-child {
+  padding: 10px 12px 12px;
+}
+
+.guideCard h3 {
+  font-size: 15px;
+}
+
+.guideCard p {
+  margin: 4px 0 0;
+  color: #95a7b0;
+  font-size: 12px;
+  line-height: 1.2;
+}
+
+@media (max-width: 1023px) {
+  .hero {
+    height: 535px;
+  }
+
+  .heroContent {
+    height: 425px;
+  }
+
+  .fact strong {
+    font-size: 16px;
+  }
+
+  .factGlyph {
+    width: 33px;
+    font-size: 23px;
+  }
+
+  .startGrid,
+  .wikiGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .trainPanel {
+    grid-template-columns: .76fr 1.24fr;
+  }
+
+  .splitRow {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 767px) {
+  .hero {
+    height: 690px;
+  }
+
+  .hero::before {
+    background: linear-gradient(180deg, rgba(4, 12, 18, .12), rgba(4, 12, 18, .73) 45%, rgba(4, 12, 18, .98) 72%);
+  }
+
+  .heroImage {
+    object-position: 63% 42%;
+  }
+
+  .heroContent {
+    height: 440px;
+    align-items: flex-end;
+    padding: 80px 0 25px;
+  }
+
+  .heroCopy {
+    width: 100%;
+  }
+
+  .hero h1 {
+    font-size: clamp(58px, 19vw, 86px);
+    white-space: normal;
+  }
+
+  .heroCopy > p {
+    font-size: 16px;
+  }
+
+  .factRail {
+    grid-template-columns: repeat(2, 1fr);
+    bottom: 14px;
+    min-height: 215px;
+  }
+
+  .fact {
+    justify-content: flex-start;
+    padding-left: 12px;
+  }
+
+  .fact:nth-child(2) {
+    border-right: 0;
+  }
+
+  .fact:nth-child(-n + 2) {
+    border-bottom: 1px solid rgba(154, 179, 190, .18);
+  }
+
+  .updatesGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .updateCard {
+    grid-template-columns: 40% 1fr;
+    grid-template-rows: 1fr;
+    min-height: 140px;
+  }
+
+  .updateMedia {
+    border-right: 1px solid rgba(201, 146, 69, .28);
+    border-bottom: 0;
+  }
+
+  .trainPanel {
+    grid-template-columns: 1fr;
+    padding-top: 120px;
+    background-position: 64% top;
+  }
+
+  .trainCopy {
+    padding: 10px;
+  }
+
+  .guidesGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 540px) {
+  .heroActions {
+    gap: 8px;
+  }
+
+  .goldButton,
+  .darkButton {
+    min-width: 0;
+    flex: 1;
+    padding-inline: 11px;
+    font-size: 12px;
+  }
+
+  .desktopBreak {
+    display: none;
+  }
+
+  .factRail {
+    padding-inline: 9px;
+  }
+
+  .fact {
+    gap: 5px;
+    padding-left: 3px;
+  }
+
+  .factGlyph {
+    width: 27px;
+  }
+
+  .fact strong {
+    font-size: 14px;
+  }
+
+  .fact em,
+  .fact small {
+    font-size: 10px;
+  }
+
+  .sectionTitle h2 {
+    font-size: 18px;
+  }
+
+  .startGrid,
+  .wikiGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .trainGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .locationGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .locationGrid .portraitCard:last-child {
+    display: none;
+  }
+
+  .enemyGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .portraitCard {
+    min-height: 185px;
+  }
+}

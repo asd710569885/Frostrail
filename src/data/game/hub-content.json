@@ -1,0 +1,231 @@
+{
+  "guides": {
+    "breadcrumb": "Guides",
+    "eyebrow": "Field manuals",
+    "title": "Frostrail Guides",
+    "introduction": "Practical guides built around the systems FakeFish has publicly confirmed: cold and heat, food and clothing, firearms, modular crafting, train operation, expeditions, and online co-op for crews of one to four.",
+    "heroImage": "/images/guides/frozen-expedition.jpg",
+    "heroImageAlt": "Frostrail players on an expedition across a frozen level",
+    "status": "Official facts + developer interviews",
+    "verifiedAt": "August 24, 2026",
+    "topics": [
+      {
+        "id": "getting-started",
+        "title": "Getting started",
+        "label": "Core loop",
+        "description": "Frostrail alternates between preparing aboard the train and exploring frozen levels for materials, equipment, relics, and a route onward.",
+        "details": ["The train is the crew's mobile base and a fail state if destroyed", "Levels can contain multiple exits leading to the next destination", "Progression now carries between levels in the current development build"],
+        "href": "/guides/beginner-guide",
+        "source": { "label": "Official Spring Development Update", "href": "https://store.steampowered.com/news/app/3517740/view/664987745725186081", "tier": "Official" }
+      },
+      {
+        "id": "survival",
+        "title": "Cold, heat, food & clothing",
+        "label": "Survival",
+        "description": "Cold is the central environmental pressure. Blizzards can blind, slow, and eventually suffocate players; warmer clothing and some foods help mitigate exposure.",
+        "details": ["Heat is a survival requirement around the Eden Engine", "Food grants buffs rather than serving as a mandatory hunger meter", "Multiple new clothing sets were reported in the May 2026 update"],
+        "href": "/wiki/clothing",
+        "source": { "label": "Official Steam store description", "href": "https://store.steampowered.com/app/3517740/Frostrail/?l=english", "tier": "Official" }
+      },
+      {
+        "id": "combat",
+        "title": "Combat & weapons",
+        "label": "Firearms first",
+        "description": "The developers describe a guns-first combat model with WWI-influenced pistols, shotguns, rifles, machine guns, and basic melee options.",
+        "details": ["All guns are planned to be craftable and modular", "Ranged weapons have a secondary melee attack", "Exact damage, ammunition, rarity, and balance values have not been officially published"],
+        "href": "/wiki/weapons",
+        "source": { "label": "GamingBolt interview with lead designer Ez Jämsen", "href": "https://gamingbolt.com/frostrail-interview-the-train-enemy-factions-horror-vibes-and-more", "tier": "Developer interview" }
+      },
+      {
+        "id": "train",
+        "title": "Operate the train",
+        "label": "Mobile base",
+        "description": "Crews must fuel, power, drive, maintain, expand, and defend the Eden Engine while using it for warmth, storage, crafting, and travel.",
+        "details": ["Logs, branches, and charcoal have been discussed as fuel inputs", "Walls, hatches, doors, stations, storage, and carriages are planned upgrades", "A broken or destroyed Eden Engine ends the run"],
+        "href": "/train",
+        "source": { "label": "FakeFish founder interview", "href": "https://www.indie-games.eu/frostrail-in-depth-overview-with-fakefish-founder/", "tier": "Developer interview" }
+      },
+      {
+        "id": "crafting",
+        "title": "Crafting & repair",
+        "label": "Production",
+        "description": "Crafting ties recovered materials to weapons, train improvements, equipment, and dedicated onboard workstations.",
+        "details": ["Metal scraps can be refined into slag metal and then pure metal", "Wood and plastic use similar refinement chains", "Weapon modification and repair use dedicated onboard workstations"],
+        "href": "/wiki/crafting",
+        "source": { "label": "PC Gamer developer interview", "href": "https://www.pcgamer.com/games/survival-crafting/barotrauma-developer-unveils-its-next-co-op-survival-game-a-dieselpunk-fps-where-your-mobile-fortress-is-a-train/", "tier": "Developer interview" }
+      },
+      {
+        "id": "co-op",
+        "title": "Co-op crew planning",
+        "label": "1–4 players",
+        "description": "Frostrail supports single-player and online co-op for one to four players. No fixed character classes have been announced.",
+        "details": ["Steam lists both single-player and online co-op", "The official FAQ confirms crews of one to four", "Controller support is planned, but may not be ready at Early Access launch"],
+        "href": "/frostrail-multiplayer",
+        "source": { "label": "Official Frostrail FAQ", "href": "https://store.steampowered.com/news/app/3517740", "tier": "Official" }
+      }
+    ]
+  },
+  "wiki": {
+    "breadcrumb": "Wiki",
+    "eyebrow": "Verified game database",
+    "title": "Explore the Wiki",
+    "introduction": "This database separates announced features from unreleased numbers. Every record below links to its evidence; fields such as damage, recipe cost, rarity, drop rate, capacity, and map coordinates remain TBA until FakeFish publishes them or a reproducible build can verify them.",
+    "heroImage": "/images/wiki/weapons-crafting.jpg",
+    "heroImageAlt": "Frostrail weapon assembly and modular parts interface",
+    "status": "Source-linked records online",
+    "verifiedAt": "August 24, 2026",
+    "topics": [
+      {
+        "id": "weapons",
+        "title": "Weapons",
+        "label": "2 named weapons + 5 archetypes",
+        "description": "Pipe Rifle and Bolt-Action Rifle are the two publicly named weapons found in developer interviews. Pistols, shotguns, rifles, machine guns, and basic melee are confirmed archetypes.",
+        "details": ["Pipe Rifle: described as an early-game weapon", "Bolt-Action Rifle: shown as a modular firearm example", "Damage, ammo type, rarity, magazine size, range, and weight: TBA"],
+        "href": "/wiki/weapons",
+        "source": { "label": "FakeFish founder interview", "href": "https://www.indie-games.eu/frostrail-in-depth-overview-with-fakefish-founder/", "tier": "Developer interview" }
+      },
+      {
+        "id": "items",
+        "title": "Items & equipment",
+        "label": "Confirmed categories",
+        "description": "Official material confirms scavenged supplies, weapons, equipment, food, clothing, and train-related components, but it does not yet publish a complete item list.",
+        "details": ["Scavenge, hunt, and craft equipment", "Ammo is intentionally valuable and combat is serious", "Individual item names, stacks, weights, and rarities: TBA"],
+        "href": "/wiki/items",
+        "source": { "label": "Official Frostrail Steam page", "href": "https://store.steampowered.com/app/3517740/Frostrail/?l=english", "tier": "Official" }
+      },
+      {
+        "id": "resources",
+        "title": "Resources",
+        "label": "6 named materials + fuel",
+        "description": "Branches, logs, charcoal, metal, cloth, and plastic are named resources. Developer interviews also describe a metal-scrap refinement chain and the broader fuel system.",
+        "details": ["Branches / logs / charcoal: discussed as Eden Engine fuel", "Metal scraps → slag metal → pure metal", "Wood and plastic have similar refining steps; exact yields remain TBA"],
+        "href": "/wiki/resources",
+        "source": { "label": "PC Gamer developer interview", "href": "https://www.pcgamer.com/games/survival-crafting/barotrauma-developer-unveils-its-next-co-op-survival-game-a-dieselpunk-fps-where-your-mobile-fortress-is-a-train/", "tier": "Developer interview" }
+      },
+      {
+        "id": "crafting",
+        "title": "Crafting",
+        "label": "Weapons, train & stations",
+        "description": "Crafting supports weapons and equipment, train reinforcement and expansion, cooking, repair, storage, and modular weapon modification.",
+        "details": ["Crafting benches and refineries can be added to the train", "Metal scraps → slag metal → pure metal is a developer-described chain", "Recipe counts, processing times, and final balance remain TBA"],
+        "href": "/wiki/crafting",
+        "source": { "label": "Official Spring Development Update", "href": "https://store.steampowered.com/news/app/3517740/view/664987745725186081", "tier": "Official" }
+      },
+      {
+        "id": "relics",
+        "title": "Relics",
+        "label": "Dungeon rewards",
+        "description": "Relics are found in dungeons and activated aboard the train to grant temporary buffs. Individual names and effect values remain unpublished.",
+        "details": ["Found in dungeons", "Activated on the train", "Temporary buffs", "Names, rarity tiers, duration, and exact effects: TBA"],
+        "href": "/wiki/relics",
+        "source": { "label": "Official Spring Development Update", "href": "https://store.steampowered.com/news/app/3517740/view/664987745725186081", "tier": "Official" }
+      },
+      {
+        "id": "clothing",
+        "title": "Clothing",
+        "label": "Cold mitigation",
+        "description": "Warmer clothing mitigates cold exposure. The developers reported multiple new clothing sets in May 2026, but have not published their names or statistics.",
+        "details": ["Primary confirmed role: cold mitigation", "Multiple clothing sets exist in development", "Slots, durability, warmth values, set bonuses, and recipes: TBA"],
+        "href": "/wiki/clothing",
+        "source": { "label": "GamingBolt interview", "href": "https://gamingbolt.com/frostrail-interview-the-train-enemy-factions-horror-vibes-and-more", "tier": "Developer interview" }
+      },
+      {
+        "id": "food",
+        "title": "Food",
+        "label": "Buffs, not hunger",
+        "description": "Food is crafted at a cooking station and grants meaningful buffs, including health-related benefits. Frostrail is not planned around a mandatory hunger meter.",
+        "details": ["Cooking station confirmed", "Food can improve health and other statistics", "Certain foods may help against cold", "Recipes, durations, and values: TBA"],
+        "href": "/wiki/food",
+        "source": { "label": "GamingBolt interview", "href": "https://gamingbolt.com/frostrail-interview-the-train-enemy-factions-horror-vibes-and-more", "tier": "Developer interview" }
+      },
+      {
+        "id": "stations",
+        "title": "Train stations",
+        "label": "Onboard work areas",
+        "description": "Confirmed onboard facilities include crafting benches, refineries, cooking, weapon modification, repair, and storage-related systems.",
+        "details": ["Facilities can be added as the train is expanded", "They convert recovered resources into survival capacity", "Official station names, costs, sizes, and upgrade trees: TBA"],
+        "href": "/wiki/stations",
+        "source": { "label": "PC Gamer developer interview", "href": "https://www.pcgamer.com/games/survival-crafting/barotrauma-developer-unveils-its-next-co-op-survival-game-a-dieselpunk-fps-where-your-mobile-fortress-is-a-train/", "tier": "Developer interview" }
+      },
+      {
+        "id": "verification",
+        "title": "Verification policy",
+        "label": "Editorial standard",
+        "description": "Official store pages and development posts are first-party sources. Named developer interviews are used for design details, while unreleased numerical values are never inferred from concept art or mockups.",
+        "details": ["Official: currently published or announced by FakeFish / Shiro", "Developer interview: direct statement, subject to development change", "TBA: not officially confirmed", "Reference artwork: visual direction only, not gameplay evidence"]
+      }
+    ]
+  },
+  "train": {
+    "breadcrumb": "Train",
+    "eyebrow": "The Eden Engine",
+    "title": "Frostrail Train Systems",
+    "introduction": "The armored steam train is the party's transport, warmth, power network, workshop, storage space, and shared fail state. The pages below distinguish shipped-development facts from longer-term plans.",
+    "heroImage": "/images/train/eden-engine-cab.jpg",
+    "heroImageAlt": "Inside the Eden Engine locomotive cab in Frostrail",
+    "status": "6 train-system pages indexed",
+    "verifiedAt": "August 24, 2026",
+    "topics": [
+      { "id": "eden-engine", "title": "Eden Engine", "label": "Core locomotive", "description": "The Eden Engine is the crew's mobile fortress and the heart of the run. It must be fueled, powered, driven, maintained, and defended.", "details": ["Provides travel, heat, power, crafting space, and storage", "Engine upgrades affect speed and pulling weight", "Its destruction is a developer-stated game-over condition; exact stats remain TBA"], "href": "/train/eden-engine", "source": { "label": "Official Steam description", "href": "https://store.steampowered.com/app/3517740/Frostrail/?l=english", "tier": "Official" } },
+      { "id": "upgrades", "title": "Upgrades", "label": "Reinforcement", "description": "The train can be reinforced and customized with walls, hatches, doors, weapon stations, crafting facilities, and engine improvements.", "details": ["Engine upgrades affect speed and pulling weight", "More carriages require more power", "Upgrade costs, names, and unlock order remain TBA"], "href": "/train/upgrades", "source": { "label": "PC Gamer developer interview", "href": "https://www.pcgamer.com/games/survival-crafting/barotrauma-developer-unveils-its-next-co-op-survival-game-a-dieselpunk-fps-where-your-mobile-fortress-is-a-train/", "tier": "Developer interview" } },
+      { "id": "carriages", "title": "Carriages", "label": "Expansion", "description": "Additional carriages expand the mobile base and create room for crafting stations, storage, protection, and crew functions.", "details": ["More carriages increase the Eden Engine's pulling-weight and power demands", "Walls use grid-snapped construction", "Named carriage types, capacity, and exact limits remain TBA"], "href": "/train/carriages", "source": { "label": "PC Gamer developer interview", "href": "https://www.pcgamer.com/games/survival-crafting/barotrauma-developer-unveils-its-next-co-op-survival-game-a-dieselpunk-fps-where-your-mobile-fortress-is-a-train/", "tier": "Developer interview" } },
+      { "id": "fuel", "title": "Fuel", "label": "Branches, logs & charcoal", "description": "Fuel keeps the Eden Engine moving and warm. Branches, logs, and charcoal have been named by the developer as fuel sources.", "details": ["Fuel and power are connected but distinct operating concerns", "Fuel consumption and burn times: TBA", "Resource processing ratios: TBA"], "href": "/train/fuel", "source": { "label": "FakeFish founder interview", "href": "https://www.indie-games.eu/frostrail-in-depth-overview-with-fakefish-founder/", "tier": "Developer interview" } },
+      { "id": "power", "title": "Power", "label": "Onboard systems", "description": "The Eden Engine generates the power needed by the train and its facilities while also serving as the crew's major heat source.", "details": ["Power management is a confirmed train responsibility", "Consumers, grid limits, and generation values: TBA", "Loss-of-power consequences beyond broad survival pressure: TBA"], "href": "/train/power", "source": { "label": "Official Steam description", "href": "https://store.steampowered.com/app/3517740/Frostrail/?l=english", "tier": "Official" } },
+      { "id": "defense", "title": "Train defense", "label": "Revenant attacks", "description": "Train-defense encounters are being integrated with obstacle-clearing gameplay. Developers have also discussed Revenant waves and mounted weapons such as machine guns or cannons.", "details": ["Train defense was listed in the May 2026 development update", "Mounted weapons are a developer-described plan, not final balance data", "Encounter schedules and damage values: TBA"], "href": "/train/defense", "source": { "label": "Official Spring Development Update", "href": "https://store.steampowered.com/news/app/3517740/view/664987745725186081", "tier": "Official" } }
+    ]
+  },
+  "locations": {
+    "breadcrumb": "Locations",
+    "eyebrow": "Frozen world index",
+    "title": "Frostrail Locations",
+    "introduction": "Frostrail is structured around large frozen levels connected by the train. Official descriptions confirm tundra, abandoned settlements, wreckage, frozen ruins, derelict bunkers, ruined strongholds, modular dungeons, and multiple exits—but not a final named world map.",
+    "heroImage": "/images/locations/frozen-rail-route.jpg",
+    "heroImageAlt": "Frostrail train travelling through a frozen rail route",
+    "status": "Confirmed location types",
+    "verifiedAt": "August 24, 2026",
+    "topics": [
+      { "id": "tundra", "title": "Tundra", "label": "Expanded biome", "description": "The tundra is the game's principal open frozen biome. The May 2026 update reported that it had been expanded for further exploration.", "details": ["Blizzards reduce visibility and movement", "New points of interest are being artist-built rather than purely procedural", "Named regions and map coordinates: TBA"], "source": { "label": "Official Spring Development Update", "href": "https://store.steampowered.com/news/app/3517740/view/664987745725186081", "tier": "Official" } },
+      { "id": "dungeons", "title": "Modular dungeons", "label": "Relic expeditions", "description": "Dungeons use modular construction and were overhauled with updated lighting. They are a confirmed source of Relics.", "details": ["Layouts can vary and remain under development", "Relics found inside can be activated aboard the train", "Dungeon names, maps, loot tables, and enemy rosters: TBA"], "source": { "label": "Official Spring Development Update", "href": "https://store.steampowered.com/news/app/3517740/view/664987745725186081", "tier": "Official" } },
+      { "id": "settlements", "title": "Abandoned settlements & wreckage", "label": "Scavenging sites", "description": "The official store description identifies abandoned settlements and wreckage as exploration and scavenging spaces.", "details": ["Used to recover supplies and equipment", "Environmental storytelling is part of the frozen empire premise", "Individual settlement names and guaranteed loot: TBA"], "source": { "label": "Official Steam description", "href": "https://store.steampowered.com/app/3517740/Frostrail/?l=english", "tier": "Official" } },
+      { "id": "bunkers", "title": "Derelict bunkers", "label": "Enclosed location", "description": "Derelict bunkers are one of the confirmed location types encountered beyond the rails.", "details": ["Exact access requirements: TBA", "Enemy and loot tables: TBA", "No official bunker names have been published"], "source": { "label": "Official Steam description", "href": "https://store.steampowered.com/app/3517740/Frostrail/?l=english", "tier": "Official" } },
+      { "id": "strongholds", "title": "Ruined strongholds", "label": "High-risk ruins", "description": "Ruined strongholds and frozen ruins are named world features, but the developers have not yet disclosed their final map placement or reward structure.", "details": ["Part of the former empire's frozen landscape", "Specific threats, relics, and resources: TBA", "Names and routes: TBA"], "source": { "label": "Official Steam description", "href": "https://store.steampowered.com/app/3517740/Frostrail/?l=english", "tier": "Official" } },
+      { "id": "level-routes", "title": "Levels & exits", "label": "Branching journey north", "description": "The journey advances north through connected levels. Crews can switch tracks, clear obstacles, and choose among exits or tunnels leading onward.", "details": ["Terrain is mixed: hand-authored foundations with procedural natural assets, POIs, loot, and enemy placement", "Current development builds carry progression between levels and support multiple exits", "A developer interview says thorough exploration can exceed two hours, but final level duration is not fixed"], "source": { "label": "Official update + developer interviews", "href": "https://www.indie-games.eu/frostrail-in-depth-overview-with-fakefish-founder/", "tier": "Developer interview" } }
+    ]
+  },
+  "enemies": {
+    "breadcrumb": "Enemies",
+    "eyebrow": "Threat index",
+    "title": "Frostrail Enemies",
+    "introduction": "The former empire is populated by Revenants, planned Corrupted Soldier squads, wolves, and other eldritch horrors. Public sources describe broad combat roles, while health, damage, variants, drops, and final encounter balance remain TBA.",
+    "heroImage": "/images/enemies/revenant-close-combat.jpg",
+    "heroImageAlt": "Close combat against a hostile Revenant in Frostrail",
+    "status": "Confirmed categories, stats TBA",
+    "verifiedAt": "August 24, 2026",
+    "topics": [
+      { "id": "revenants", "title": "Revenants", "label": "Zombified melee faction", "description": "Lead designer Ez Jämsen describes Revenants as zombified enemies that mostly fight in melee and tend to attack in larger groups.", "details": ["Encountered during exploration and discussed for planned train-defense waves", "New enemy variations were reported in May 2026", "Health, damage, named variants, resistances, and drops: TBA"], "source": { "label": "GamingBolt interview with lead designer", "href": "https://gamingbolt.com/frostrail-interview-the-train-enemy-factions-horror-vibes-and-more", "tier": "Developer interview" } },
+      { "id": "wolves", "title": "Wolves", "label": "Confirmed creature", "description": "The official mature-content disclosure explicitly names wolves among the enemy creatures players fight.", "details": ["Combat can include blood effects", "Specific wolf variants and behavior: TBA", "Drops and spawn locations: TBA"], "source": { "label": "Official Steam store disclosure", "href": "https://store.steampowered.com/app/3517740/Frostrail/?l=english", "tier": "Official" } },
+      { "id": "corrupted-soldiers", "title": "Corrupted Soldiers", "label": "Planned ranged faction", "description": "The lead designer identifies Corrupted Soldiers as a planned enemy faction that uses ranged weapons, appears in smaller groups, and is intended to behave more intelligently than Revenants.", "details": ["Ranged combat role", "Smaller groups and smarter behavior discussed", "Weapon loadouts, armor, named classes, stats, and drops: TBA"], "source": { "label": "GamingBolt interview with lead designer", "href": "https://gamingbolt.com/frostrail-interview-the-train-enemy-factions-horror-vibes-and-more", "tier": "Developer interview" } },
+      { "id": "eldritch-horrors", "title": "Eldritch horrors", "label": "Beyond Revenants", "description": "Official copy promises eldritch horrors beyond the more common Revenants, but does not identify them individually.", "details": ["Part of the Void-linked horror premise", "Boss or elite labels are not yet confirmed", "Names, tactics, locations, and rewards: TBA"], "source": { "label": "Official Steam description", "href": "https://store.steampowered.com/app/3517740/Frostrail/?l=english", "tier": "Official" } },
+      { "id": "enemy-development", "title": "AI & enemy variations", "label": "Work in progress", "description": "Enemy AI, variation, usability, accessibility, and performance have all been cited as active development areas following playtests.", "details": ["New variations reported in Spring 2026", "AI improvement called out after the November 2025 test", "Strategies may change significantly before Early Access"], "source": { "label": "Official development announcements", "href": "https://store.steampowered.com/news/app/3517740", "tier": "Official" } }
+    ]
+  },
+  "updates": {
+    "breadcrumb": "Updates",
+    "eyebrow": "Official development archive",
+    "title": "Frostrail Updates",
+    "introduction": "A chronological record of first-party milestones, test windows, and development disclosures. Dates refer to public announcements; planned features are labeled as plans rather than completed release content.",
+    "heroImage": "/images/official/trailers/gameplay-trailer.jpg",
+    "heroImageAlt": "Official Frostrail gameplay trailer frame",
+    "status": "Updated August 24, 2026",
+    "verifiedAt": "August 24, 2026",
+    "topics": [
+      { "id": "closed-beta", "title": "Closed Beta begins August 31", "label": "July 20, 2026", "description": "FakeFish announced that the first Frostrail closed beta will begin on August 31, 2026. Registration is open and previously registered players do not need to register again.", "details": ["Start: August 31, 2026", "Previous registrations remain valid", "Selection and invitation timing are not guaranteed"], "href": "/frostrail-closed-beta", "source": { "label": "Official Closed Beta announcement", "href": "https://store.steampowered.com/news/app/3517740/view/671748851902711378?l=english", "tier": "Official" } },
+      { "id": "spring-development-update", "title": "Spring Development Update", "label": "May 13, 2026", "description": "The team reported more than 100,000 playtest applications and detailed a new tutorial, cross-level progression, multiple exits, dungeon and tundra improvements, train defense, Relics, enemy variations, clothing, and repair workstations.", "details": ["More than 100,000 playtest applications", "Relics grant temporary buffs after activation aboard the train", "Train defense and a reworked repair system were under active development"], "source": { "label": "Official Spring Development Update", "href": "https://store.steampowered.com/news/app/3517740/view/664987745725186081", "tier": "Official" } },
+      { "id": "400k-wishlists", "title": "400,000 Steam wishlists", "label": "April 28, 2026", "description": "The team announced that Frostrail had passed 400,000 Steam wishlists. This is a wishlist milestone, not an active-player or sales count.", "details": ["Announcement date: April 28, 2026", "300,000 wishlists had been announced March 12", "200,000 had been announced June 17, 2025"], "source": { "label": "Official Steam announcement feed", "href": "https://store.steampowered.com/news/app/3517740", "tier": "Official" } },
+      { "id": "first-closed-playtest", "title": "First closed playtest", "label": "April 16–May 4, 2026", "description": "The first closed playtest began April 16, was originally scheduled through April 27, and was later extended to May 4. The test focused on the early gameplay loop and included a friend-invite chain.", "details": ["Closed test; not an open beta", "Focused on early-loop feedback", "Progress and balance should not be assumed to carry forward"], "source": { "label": "Official Steam announcement feed", "href": "https://store.steampowered.com/news/app/3517740", "tier": "Official" } },
+      { "id": "gameplay-trailer", "title": "Official gameplay trailer", "label": "February 27, 2026", "description": "Shiro Games published the official gameplay trailer showing the train, frozen exploration, crafting, and combat direction.", "details": ["Gameplay trailer, not a complete feature catalog", "Visual values and UI may change before release", "Reveal trailer was published April 10, 2025"], "source": { "label": "Official Frostrail gameplay trailer", "href": "https://www.youtube.com/watch?v=puxIrsBxYV0", "tier": "Official" } },
+      { "id": "winter-update", "title": "Winter development update", "label": "December 8, 2025", "description": "Following a limited November playtest, the team said the core train-driving, exploration, and crafting loop worked while tutorials, AI, usability, accessibility, and performance still needed improvement.", "details": ["Limited playtest in November 2025", "Core loop was functional, not finished", "Feedback informed continuing development"], "source": { "label": "Official Steam announcement feed", "href": "https://store.steampowered.com/news/app/3517740", "tier": "Official" } },
+      { "id": "early-access", "title": "Early Access window", "label": "Q4 2026", "description": "The official Steam store currently lists a Q4 2026 Early Access window. No exact public release date or price has been announced.", "details": ["PC / Steam first", "Planned Early Access duration: approximately one year", "Price may increase at version 1.0", "Exact release day and price: TBA"], "href": "/frostrail-release-date", "source": { "label": "Official Steam store", "href": "https://store.steampowered.com/app/3517740/Frostrail/?l=english", "tier": "Official" } }
+    ]
+  }
+}

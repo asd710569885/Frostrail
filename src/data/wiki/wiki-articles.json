@@ -1,0 +1,246 @@
+{
+  "sections": {
+    "weapons": {
+      "slug": "weapons",
+      "parent": { "label": "Wiki", "href": "/wiki" },
+      "eyebrow": "Verified equipment database",
+      "title": "Frostrail Weapons",
+      "lede": "A source-linked weapons index covering the two publicly named firearms and the broader weapon families confirmed by FakeFish. Numerical combat values remain TBA because no authoritative stat table has been released.",
+      "image": "/images/weapons/weapon-assembly-station.jpg",
+      "imageAlt": "Official Frostrail weapon assembly station showing modular rifle parts",
+      "date": "Verified August 24, 2026",
+      "status": "2 named weapons / pre-release data",
+      "summary": [["Named weapons", "2"], ["Confirmed families", "5"], ["Craftable guns", "Yes — planned"], ["Numeric stats", "TBA"]],
+      "records": [
+        { "title": "Pipe Rifle", "label": "Named firearm", "description": "Described by FakeFish founder Aku Jauhiainen as an early-game weapon.", "href": "/wiki/weapons/pipe-rifle", "facts": [["Type", "Rifle"], ["Progression", "Early game"], ["Craftable", "Yes — developer stated"], ["Damage / ammo / rarity", "TBA"]] },
+        { "title": "Bolt-Action Rifle", "label": "Named firearm", "description": "Used by the developer as an example of a modular weapon whose parts can be changed at weapon stations.", "href": "/wiki/weapons/bolt-action-rifle", "facts": [["Type", "Rifle"], ["Modification", "Modular parts"], ["Craftable", "Yes — guns planned craftable"], ["Damage / ammo / rarity", "TBA"]] },
+        { "title": "Pistols", "label": "Confirmed archetype", "description": "WWI-influenced pistol weapons are part of the announced firearm roster.", "facts": [["Named model", "TBA"], ["Ammo", "TBA"], ["Stats", "TBA"]] },
+        { "title": "Shotguns", "label": "Confirmed archetype", "description": "Shotguns are confirmed, but no individual model or final stat line has been published.", "facts": [["Named model", "TBA"], ["Ammo", "TBA"], ["Stats", "TBA"]] },
+        { "title": "Machine Guns", "label": "Confirmed archetype", "description": "Machine guns are included in the announced weapon families; mounted versions have also been discussed for train defense.", "facts": [["Named model", "TBA"], ["Mounted use", "Discussed / not final"], ["Stats", "TBA"]] },
+        { "title": "Basic Melee", "label": "Confirmed archetype", "description": "Early progression includes basic melee, while ranged weapons also have a secondary melee attack.", "facts": [["Named weapon", "TBA"], ["Role", "Early / backup"], ["Stats", "TBA"]] }
+      ],
+      "sections": [
+        { "id": "how-weapons-work", "title": "How weapons work", "paragraphs": ["Lead designer Ez Jämsen describes Frostrail as guns-first rather than melee-first. Pistols, shotguns, rifles, and machine guns form the announced firearm families, with basic melee available earlier and a secondary melee action on ranged weapons.", "Ammunition is framed as a valuable resource, so the official design messaging treats combat as a serious cost rather than an unlimited shooting gallery."], "bullets": ["WWI-influenced firearm direction", "Crafting is planned for all guns", "Modular parts and weapon-modifying stations", "No reliable public damage comparison yet"] },
+        { "id": "crafting-and-mods", "title": "Crafting & modifications", "paragraphs": ["The developers say firearms are craftable and modular. The Bolt-Action Rifle has specifically been used to demonstrate changing weapon parts at a modifying station. Recipes, part names, quality tiers, slot counts, and stat modifiers are not public."], "facts": [["Weapon crafting", "Confirmed design feature"], ["Modular gun parts", "Confirmed design feature"], ["Repair workstation", "Confirmed in May 2026 update"], ["Exact recipes", "TBA"]] },
+        { "id": "faq", "title": "Weapon data FAQ", "paragraphs": ["Why are there no damage rankings? Because the available reference mockup contains invented presentation data and FakeFish has not published a comparable, final stat set. This wiki will add build-numbered values when a public or permitted test can verify them."], "bullets": ["Mockup weapon names are not treated as game content", "Trailer frames identify visual direction, not numeric stats", "Beta values will be labeled by build and verification date"] }
+      ],
+      "sources": [
+        { "label": "GamingBolt interview with lead designer Ez Jämsen", "href": "https://gamingbolt.com/frostrail-interview-the-train-enemy-factions-horror-vibes-and-more", "tier": "Developer interview" },
+        { "label": "IndieGames interview with FakeFish founder Aku Jauhiainen", "href": "https://www.indie-games.eu/frostrail-in-depth-overview-with-fakefish-founder/", "tier": "Developer interview" },
+        { "label": "Official Steam page", "href": "https://store.steampowered.com/app/3517740/Frostrail/?l=english", "tier": "Official" }
+      ],
+      "related": [{ "label": "Crafting database", "href": "/wiki/crafting" }, { "label": "Train defense", "href": "/train/defense" }, { "label": "Enemy index", "href": "/enemies" }],
+      "seo": { "title": "Frostrail Weapons List, Crafting & Confirmed Gun Types", "description": "Verified Frostrail weapons data for the Pipe Rifle, Bolt-Action Rifle, pistols, shotguns, machine guns, melee, crafting, and modular parts." }
+    },
+    "items": {
+      "slug": "items",
+      "parent": { "label": "Wiki", "href": "/wiki" },
+      "eyebrow": "Inventory database",
+      "title": "Frostrail Items & Equipment",
+      "lede": "The announced inventory spans weapons, equipment, ammunition, food, clothing, materials, train fuel, Relics, and repair or crafting components. A complete item-by-item catalog is not yet public.",
+      "image": "/images/items/fuel-and-train.jpg",
+      "imageAlt": "Official Frostrail screenshot showing fuel logs beside the locomotive",
+      "date": "Verified August 24, 2026",
+      "status": "Category data only",
+      "summary": [["Complete item list", "Not published"], ["Inventory management", "Confirmed"], ["Resource management", "Confirmed"], ["Weights / stacks", "TBA"]],
+      "records": [
+        { "title": "Ammunition", "label": "Combat supply", "description": "Official messaging calls ammunition a luxury, but named calibers and stack sizes have not been published.", "facts": [["Calibers", "TBA"], ["Crafting", "TBA"], ["Stack size", "TBA"]] },
+        { "title": "Equipment", "label": "Crafted & scavenged", "description": "Players scavenge, hunt, and craft equipment for expeditions and survival.", "facts": [["Item names", "TBA"], ["Slots", "TBA"], ["Rarity", "TBA"]] },
+        { "title": "Repair components", "label": "Workstation input", "description": "A reworked item-repair system uses dedicated repair workstations; component details are not public.", "facts": [["Station", "Repair workstation"], ["Materials", "TBA"], ["Repair values", "TBA"]] }
+      ],
+      "sections": [
+        { "id": "inventory", "title": "Inventory & resource management", "paragraphs": ["Steam categorizes Frostrail around inventory and resource management. Recovered supplies must support both away-team equipment and the train's continuing operation.", "The database does not assign weights, stack limits, rarity colors, vendor prices, or slot rules without direct evidence."], "bullets": ["Confirmed categories are listed now", "Individual records will require exact in-game naming", "Mutable values will include build context"] },
+        { "id": "verification", "title": "Current data limits", "paragraphs": ["No official master item table exists as of this verification date. Images in the design references are visual mockups and are not evidence for item names or values."], "facts": [["Official item list", "Not published"], ["Public Early Access build", "Not yet released"], ["Next major verification point", "Closed Beta / official updates"]] }
+      ],
+      "sources": [{ "label": "Official Steam page", "href": "https://store.steampowered.com/app/3517740/Frostrail/?l=english", "tier": "Official" }, { "label": "Official Spring Development Update", "href": "https://store.steampowered.com/news/app/3517740/view/664987745725186081", "tier": "Official" }],
+      "related": [{ "label": "Resources", "href": "/wiki/resources" }, { "label": "Food", "href": "/wiki/food" }, { "label": "Clothing", "href": "/wiki/clothing" }],
+      "seo": { "title": "Frostrail Items & Equipment Database", "description": "Verified Frostrail item categories covering ammunition, equipment, food, clothing, Relics, repair, inventory, and current TBA fields." }
+    },
+    "resources": {
+      "slug": "resources",
+      "parent": { "label": "Wiki", "href": "/wiki" },
+      "eyebrow": "Materials database",
+      "title": "Frostrail Resources",
+      "lede": "Public developer statements name branches, logs, charcoal, metal, cloth, and plastic, while also describing fuel and material-refining systems. Exact yields and most recipes remain TBA.",
+      "image": "/images/train/logs-and-locomotive.jpg",
+      "imageAlt": "Logs gathered beside the Frostrail locomotive",
+      "date": "Verified August 24, 2026",
+      "status": "6 named materials + refining",
+      "summary": [["Named materials", "6"], ["Metal chain", "Scraps → slag → pure"], ["Drop rates", "TBA"], ["Stack / weight", "TBA"]],
+      "records": [
+        { "title": "Branches", "label": "Eden Engine fuel", "description": "Named by FakeFish founder Aku Jauhiainen as a fuel input for the train.", "facts": [["Type", "Fuel resource"], ["Where found", "TBA"], ["Processing", "TBA"], ["Stack / weight", "TBA"]] },
+        { "title": "Logs", "label": "Eden Engine fuel", "description": "Named as fuel for operating the Eden Engine.", "facts": [["Type", "Fuel resource"], ["Where found", "TBA"], ["Burn time", "TBA"], ["Stack / weight", "TBA"]] },
+        { "title": "Charcoal", "label": "Processed fuel", "description": "Discussed as an Eden Engine fuel, but its production recipe and efficiency are not public.", "facts": [["Type", "Fuel resource"], ["Produced from", "TBA"], ["Efficiency", "TBA"], ["Stack / weight", "TBA"]] },
+        { "title": "Metal scraps", "label": "Recovered material", "description": "Metal scraps begin the developer-described metal refining chain.", "facts": [["Refines into", "Slag metal"], ["Used in", "Refining / crafting"], ["Sources", "Scavenging — exact sites TBA"], ["Yield / stack / weight", "TBA"]] },
+        { "title": "Slag metal", "label": "Intermediate material", "description": "Slag metal is the intermediate step between metal scraps and pure metal.", "facts": [["Input", "Metal scraps"], ["Refines into", "Pure metal"], ["Station / ratio / time", "TBA"]] },
+        { "title": "Pure metal", "label": "Refined material", "description": "Pure metal is the refined output named for weapon and train-related production.", "facts": [["Input", "Slag metal"], ["Used in", "Weapons / train — exact recipes TBA"], ["Yield / stack / weight", "TBA"]] },
+        { "title": "Cloth", "label": "Crafting material", "description": "Cloth is a named scavenged resource used in the wider crafting loop.", "facts": [["Type", "Material"], ["Used in", "TBA"], ["Sources", "Scavenging — exact sites TBA"], ["Stack / weight", "TBA"]] },
+        { "title": "Plastic", "label": "Crafting material", "description": "Plastic is a named resource recovered for weapons and train-related construction.", "facts": [["Type", "Material"], ["Used in", "Weapons / train"], ["Sources", "Scavenging — exact sites TBA"], ["Stack / weight", "TBA"]] }
+      ],
+      "sections": [
+        { "id": "resource-loop", "title": "Resource loop", "paragraphs": ["The crew leaves the train to scavenge settlements, wreckage, ruins, bunkers, strongholds, and dungeons, then brings recovered materials back to onboard stations. Resources support weapons, equipment, repair, expansion, storage, heat, and motion.", "Aku Jauhiainen gives one concrete production example: metal scraps are processed into slag metal and then pure metal. He says wood and plastic follow similar refinement logic, but does not publish every intermediate name or ratio."], "bullets": ["Scavenge the frozen levels", "Return materials to the train", "Refine metal scraps → slag metal → pure metal", "Use comparable refining systems for wood and plastic"] },
+        { "id": "missing-fields", "title": "Fields awaiting verification", "paragraphs": ["The development team has not published stack sizes, weights, node locations, processing ratios, yields, rarity, or complete recipe relationships for these resources."], "facts": [["Stack size", "TBA"], ["Weight", "TBA"], ["Where to find", "General scavenging confirmed; exact locations TBA"], ["Metal processing chain", "Confirmed"], ["Refining ratios / time", "TBA"], ["Recipe quantities", "TBA"]] }
+      ],
+      "sources": [{ "label": "PC Gamer interview with FakeFish", "href": "https://www.pcgamer.com/games/survival-crafting/barotrauma-developer-unveils-its-next-co-op-survival-game-a-dieselpunk-fps-where-your-mobile-fortress-is-a-train/", "tier": "Developer interview" }, { "label": "IndieGames interview with FakeFish founder", "href": "https://www.indie-games.eu/frostrail-in-depth-overview-with-fakefish-founder/", "tier": "Developer interview" }],
+      "related": [{ "label": "Crafting", "href": "/wiki/crafting" }, { "label": "Train fuel", "href": "/train/fuel" }, { "label": "Train upgrades", "href": "/train/upgrades" }],
+      "seo": { "title": "Frostrail Resources: Metal, Cloth, Plastic, Logs & Fuel", "description": "Verified Frostrail resource list covering branches, logs, charcoal, metal, cloth, plastic, fuel uses, crafting links, and unconfirmed values." }
+    },
+    "crafting": {
+      "slug": "crafting",
+      "parent": { "label": "Wiki", "href": "/wiki" },
+      "eyebrow": "Production systems",
+      "title": "Frostrail Crafting",
+      "lede": "Crafting turns scavenged resources into weapons, equipment, train improvements, food, repairs, and modular firearm parts through onboard benches and specialized workstations.",
+      "image": "/images/wiki/weapons-crafting.jpg",
+      "imageAlt": "Frostrail modular weapon crafting interface",
+      "date": "Verified August 24, 2026",
+      "status": "Systems confirmed / recipes TBA",
+      "summary": [["Gun crafting", "Confirmed"], ["Modular weapons", "Confirmed"], ["Repair station", "Confirmed"], ["Recipe costs", "TBA"]],
+      "records": [
+        { "title": "Crafting benches", "label": "Train facility", "description": "Onboard benches support crafting as the train is expanded.", "facts": [["Recipes", "TBA"], ["Upgrade tiers", "TBA"], ["Power use", "TBA"]] },
+        { "title": "Refineries", "label": "Train facility", "description": "Refineries process recovered materials. Metal scraps → slag metal → pure metal is the one public chain; wood and plastic use similar steps.", "facts": [["Metal input", "Metal scraps"], ["Intermediate", "Slag metal"], ["Output", "Pure metal"], ["Ratios / processing time", "TBA"]] },
+        { "title": "Weapon-modifying station", "label": "Train facility", "description": "Used to alter modular weapon parts, with the Bolt-Action Rifle given as a developer example.", "facts": [["Supported weapons", "TBA"], ["Part slots", "TBA"], ["Modifiers", "TBA"]] },
+        { "title": "Repair workstation", "label": "Reworked in Spring 2026", "description": "A dedicated repair workstation is part of the reworked item-repair system.", "facts": [["Materials", "TBA"], ["Durability restored", "TBA"], ["Time", "TBA"]] },
+        { "title": "Cooking station", "label": "Food production", "description": "The cooking station produces foods that grant health and other buffs.", "facts": [["Recipes", "TBA"], ["Buff duration", "TBA"], ["Cold mitigation", "Certain food confirmed; values TBA"]] }
+      ],
+      "sections": [
+        { "id": "confirmed-loop", "title": "Confirmed crafting loop", "paragraphs": ["Players scavenge materials in the frozen world, return to the train, and use onboard production facilities to strengthen both crew and locomotive. Weapons are planned to be craftable and modular rather than purely random drops.", "The clearest published refinement example converts metal scraps into slag metal and then pure metal. The founder says wood and plastic are refined in similar ways, connecting raw salvage to higher-grade production inputs."], "bullets": ["Recover metal, cloth, plastic, fuel, and other supplies", "Refine metal scraps → slag metal → pure metal", "Use train-mounted benches, repair, cooking, and weapon stations", "Expand the train with more facilities and storage"] },
+        { "id": "recipe-policy", "title": "Recipe data policy", "paragraphs": ["No exact recipe table is published because ingredient counts, crafting times, unlocks, station tiers, and output quality have not been officially released. Reference-image recipes are not game facts."], "facts": [["Named complete recipes", "None publicly confirmed"], ["Ingredient counts", "TBA"], ["Craft time", "TBA"], ["Blueprint / unlock system", "TBA"]] }
+      ],
+      "sources": [{ "label": "PC Gamer developer interview", "href": "https://www.pcgamer.com/games/survival-crafting/barotrauma-developer-unveils-its-next-co-op-survival-game-a-dieselpunk-fps-where-your-mobile-fortress-is-a-train/", "tier": "Developer interview" }, { "label": "Official Spring Development Update", "href": "https://store.steampowered.com/news/app/3517740/view/664987745725186081", "tier": "Official" }, { "label": "GamingBolt lead-designer interview", "href": "https://gamingbolt.com/frostrail-interview-the-train-enemy-factions-horror-vibes-and-more", "tier": "Developer interview" }],
+      "related": [{ "label": "Resources", "href": "/wiki/resources" }, { "label": "Weapons", "href": "/wiki/weapons" }, { "label": "Train stations", "href": "/wiki/stations" }],
+      "seo": { "title": "Frostrail Crafting, Workstations, Repair & Weapon Mods", "description": "Verified Frostrail crafting systems covering benches, refineries, cooking, repair workstations, modular weapon stations, resources, and current TBA recipes." }
+    },
+    "relics": {
+      "slug": "relics",
+      "parent": { "label": "Wiki", "href": "/wiki" },
+      "eyebrow": "Dungeon artifacts",
+      "title": "Frostrail Relics",
+      "lede": "Relics are dungeon finds that can be activated aboard the train for temporary buffs. No individual Relic name or effect value has yet been officially published.",
+      "image": "/images/wiki/relic-activation.jpg",
+      "imageAlt": "A powered Relic device aboard the Frostrail train",
+      "date": "Verified August 24, 2026",
+      "status": "Mechanic confirmed / entries TBA",
+      "summary": [["Found in", "Dungeons"], ["Activated at", "The train"], ["Effect", "Temporary buffs"], ["Named Relics", "TBA"]],
+      "records": [{ "title": "Relic — unnamed", "label": "Confirmed system placeholder", "description": "The system is official; the developers have not disclosed a canonical item name, rarity, icon, or exact buff.", "facts": [["Type", "Relic"], ["Acquisition", "Dungeons"], ["Use", "Activate aboard train"], ["Duration / effect / rarity", "TBA"]] }],
+      "sections": [
+        { "id": "how-relics-work", "title": "How Relics work", "paragraphs": ["The May 2026 development update states that Relics are found in dungeons and activated aboard the train, where they provide temporary buffs. This connects dungeon expeditions to short-term advantages during the wider journey."], "bullets": ["Explore dungeons", "Recover a Relic", "Activate it on the train", "Receive a temporary buff"] },
+        { "id": "unknowns", "title": "Unconfirmed fields", "paragraphs": ["The public update does not disclose Relic names, rarity tiers, activation station, duration, stacking rules, exact effects, drop rates, or whether a Relic persists between levels."], "facts": [["Names", "TBA"], ["Rarity", "TBA"], ["Buff values", "TBA"], ["Duration", "TBA"], ["Persistence", "TBA"]] }
+      ],
+      "sources": [{ "label": "Official Spring Development Update", "href": "https://store.steampowered.com/news/app/3517740/view/664987745725186081", "tier": "Official" }],
+      "related": [{ "label": "Locations", "href": "/locations#dungeons" }, { "label": "Train systems", "href": "/train" }],
+      "seo": { "title": "Frostrail Relics: Dungeons, Activation & Buffs", "description": "What is officially known about Frostrail Relics, including dungeon acquisition, train activation, temporary buffs, and all currently unconfirmed fields." }
+    },
+    "clothing": {
+      "slug": "clothing",
+      "parent": { "label": "Wiki", "href": "/wiki" },
+      "eyebrow": "Survival equipment",
+      "title": "Frostrail Clothing",
+      "lede": "Warmer clothing mitigates the game's central cold hazard. Multiple clothing sets are in development, but item names, slots, crafting recipes, and warmth values remain unpublished.",
+      "image": "/images/guides/frozen-expedition.jpg",
+      "imageAlt": "Frostrail crew members crossing the frozen wasteland in winter clothing",
+      "date": "Verified August 24, 2026",
+      "status": "System confirmed / item list TBA",
+      "summary": [["Role", "Cold mitigation"], ["Sets", "Multiple — unnamed"], ["Crafting", "TBA"], ["Warmth values", "TBA"]],
+      "records": [{ "title": "Warm clothing set — unnamed", "label": "Confirmed category", "description": "Represents the announced role of warmer clothing without inventing a canonical set name.", "facts": [["Type", "Clothing"], ["Effect", "Mitigates cold"], ["Slots", "TBA"], ["Warmth / durability / weight", "TBA"]] }],
+      "sections": [
+        { "id": "cold-protection", "title": "Cold protection", "paragraphs": ["Cold and blizzards can impair visibility and movement and eventually become lethal. Lead designer Ez Jämsen says warmer clothing is one of the ways players mitigate that pressure."], "bullets": ["Prepare clothing before extended exploration", "Combine clothing with heat and certain food effects", "Do not infer exact protection from appearance"] },
+        { "id": "spring-update", "title": "Development status", "paragraphs": ["The Spring 2026 update reported multiple new clothing sets. It did not list their names, visuals, recipes, stat blocks, slots, or set bonuses."], "facts": [["New sets", "Multiple"], ["Canonical names", "TBA"], ["Recipes", "TBA"], ["Set bonuses", "Not confirmed"]] }
+      ],
+      "sources": [{ "label": "GamingBolt lead-designer interview", "href": "https://gamingbolt.com/frostrail-interview-the-train-enemy-factions-horror-vibes-and-more", "tier": "Developer interview" }, { "label": "Official Spring Development Update", "href": "https://store.steampowered.com/news/app/3517740/view/664987745725186081", "tier": "Official" }],
+      "related": [{ "label": "Food", "href": "/wiki/food" }, { "label": "Beginner guide", "href": "/guides/beginner-guide" }],
+      "seo": { "title": "Frostrail Clothing, Warmth & Cold Protection", "description": "Verified Frostrail clothing information covering cold mitigation, announced clothing sets, survival links, and currently unconfirmed stats and recipes." }
+    },
+    "food": {
+      "slug": "food",
+      "parent": { "label": "Wiki", "href": "/wiki" },
+      "eyebrow": "Survival consumables",
+      "title": "Frostrail Food & Cooking",
+      "lede": "Food is cooked aboard the train and grants meaningful buffs rather than satisfying a mandatory hunger meter. Some food effects can help players withstand the cold.",
+      "image": "/images/train/onboard-workstation.jpg",
+      "imageAlt": "Interior workstation aboard the Frostrail train",
+      "date": "Verified August 24, 2026",
+      "status": "Mechanic confirmed / recipes TBA",
+      "summary": [["Hunger meter", "Not planned as mandatory"], ["Station", "Cooking station"], ["Effects", "Health / stats / cold mitigation"], ["Recipes", "TBA"]],
+      "records": [{ "title": "Cooked food — unnamed", "label": "Confirmed category", "description": "Food can grant health and other stat buffs; individual recipes and items have not been named.", "facts": [["Produced at", "Cooking station"], ["Health effect", "Confirmed broadly"], ["Cold effect", "Certain foods"], ["Duration / values / ingredients", "TBA"]] }],
+      "sections": [
+        { "id": "food-system", "title": "Food system", "paragraphs": ["FakeFish has described food as a source of significant health and other stat boosts. The lead designer separately clarified that Frostrail does not use food as a mandatory hunger tax; it is a preparation and buff system."], "bullets": ["Cook aboard the train", "Use food to prepare for expeditions", "Certain foods mitigate cold", "Exact effects remain build-dependent"] },
+        { "id": "unknowns", "title": "Unconfirmed recipe data", "paragraphs": ["No canonical recipe names, ingredients, cooking times, station power costs, buff values, durations, stacking rules, spoilage system, or inventory sizes have been published."], "facts": [["Food names", "TBA"], ["Ingredients", "TBA"], ["Buff values", "TBA"], ["Spoilage", "Not confirmed"]] }
+      ],
+      "sources": [{ "label": "IndieGames interview with FakeFish founder", "href": "https://www.indie-games.eu/frostrail-in-depth-overview-with-fakefish-founder/", "tier": "Developer interview" }, { "label": "GamingBolt lead-designer interview", "href": "https://gamingbolt.com/frostrail-interview-the-train-enemy-factions-horror-vibes-and-more", "tier": "Developer interview" }],
+      "related": [{ "label": "Clothing", "href": "/wiki/clothing" }, { "label": "Crafting", "href": "/wiki/crafting" }],
+      "seo": { "title": "Frostrail Food, Cooking & Survival Buffs", "description": "Verified Frostrail food and cooking information: cooking stations, health and cold buffs, no mandatory hunger meter, and TBA recipe data." }
+    },
+    "stations": {
+      "slug": "stations",
+      "parent": { "label": "Wiki", "href": "/wiki" },
+      "eyebrow": "Onboard facilities",
+      "title": "Frostrail Train Stations",
+      "lede": "The train can be expanded with specialized facilities for crafting, refining, weapon modification, repair, cooking, and storage. Final station names and upgrade trees are not public.",
+      "image": "/images/train/onboard-workstation.jpg",
+      "imageAlt": "Workbench and onboard facilities inside the Frostrail train",
+      "date": "Verified August 24, 2026",
+      "status": "6 facility types indexed",
+      "summary": [["Crafting", "Confirmed"], ["Refining", "Confirmed"], ["Repair / cooking", "Confirmed"], ["Costs / tiers", "TBA"]],
+      "records": [
+        { "title": "Crafting bench", "label": "Production", "description": "General onboard crafting facility.", "facts": [["Recipes", "TBA"], ["Power", "TBA"], ["Upgrade tiers", "TBA"]] },
+        { "title": "Refinery", "label": "Processing", "description": "Processes recovered resources aboard the train; metal scraps → slag metal → pure metal is the publicly described example.", "facts": [["Confirmed chain", "Metal scraps → slag metal → pure metal"], ["Wood / plastic", "Similar refining logic"], ["Ratios / time / power", "TBA"]] },
+        { "title": "Weapon-modifying station", "label": "Firearm parts", "description": "Supports modular weapon changes such as those discussed for the Bolt-Action Rifle.", "facts": [["Parts", "TBA"], ["Slots", "TBA"], ["Costs", "TBA"]] },
+        { "title": "Repair workstation", "label": "Durability", "description": "Dedicated station in the reworked item-repair system.", "facts": [["Materials", "TBA"], ["Repair amount", "TBA"], ["Time", "TBA"]] },
+        { "title": "Cooking station", "label": "Food", "description": "Produces foods with health, stat, and some cold-related benefits.", "facts": [["Recipes", "TBA"], ["Buffs", "Confirmed broadly"], ["Power", "TBA"]] },
+        { "title": "Storage", "label": "Logistics", "description": "Additional train storage is officially planned as part of base expansion.", "facts": [["Capacity", "TBA"], ["Stacking", "TBA"], ["Access rules", "TBA"]] }
+      ],
+      "sections": [
+        { "id": "expansion", "title": "Expanding the workshop", "paragraphs": ["The Eden Engine begins as transport and shelter, then grows into a moving production base. More carriages and facilities increase what the crew can process, craft, repair, cook, modify, and store between expeditions."], "bullets": ["Add facilities as the train expands", "Support crew equipment and train survival", "Balance space, materials, power, and defense"] },
+        { "id": "data-limits", "title": "Station data limits", "paragraphs": ["The public material describes station functions but not a final canonical UI taxonomy. This wiki uses descriptive labels until exact in-game station names can be verified."], "facts": [["Canonical names", "Partly descriptive / TBA"], ["Build costs", "TBA"], ["Footprint", "TBA"], ["Power draw", "TBA"], ["Upgrade tree", "TBA"]] }
+      ],
+      "sources": [{ "label": "PC Gamer developer interview", "href": "https://www.pcgamer.com/games/survival-crafting/barotrauma-developer-unveils-its-next-co-op-survival-game-a-dieselpunk-fps-where-your-mobile-fortress-is-a-train/", "tier": "Developer interview" }, { "label": "Official Spring Development Update", "href": "https://store.steampowered.com/news/app/3517740/view/664987745725186081", "tier": "Official" }, { "label": "IndieGames founder interview", "href": "https://www.indie-games.eu/frostrail-in-depth-overview-with-fakefish-founder/", "tier": "Developer interview" }],
+      "related": [{ "label": "Crafting", "href": "/wiki/crafting" }, { "label": "Train carriages", "href": "/train/carriages" }, { "label": "Train power", "href": "/train/power" }],
+      "seo": { "title": "Frostrail Train Stations, Benches, Repair & Storage", "description": "Verified Frostrail onboard facilities covering crafting benches, refineries, weapon modification, repair, cooking, and storage." }
+    }
+  },
+  "weapons": {
+    "pipe-rifle": {
+      "slug": "pipe-rifle",
+      "parent": { "label": "Weapons", "href": "/wiki/weapons" },
+      "eyebrow": "Verified weapon entry",
+      "title": "Pipe Rifle",
+      "lede": "The Pipe Rifle is a publicly named early-game Frostrail weapon. Its exact damage, ammunition, magazine, rarity, range, durability, weight, recipe, and modification set are not yet published.",
+      "image": "/images/weapons/weapon-assembly-station.jpg",
+      "imageAlt": "Official Frostrail weapon assembly interface with a modular rifle",
+      "date": "Verified August 24, 2026",
+      "status": "Developer-confirmed / stats TBA",
+      "summary": [["Type", "Rifle"], ["Progression", "Early game"], ["Craftable", "Yes — planned"], ["Rarity", "TBA"]],
+      "sections": [
+        { "id": "overview", "title": "Overview", "paragraphs": ["FakeFish founder Aku Jauhiainen identified the Pipe Rifle as an early-game weapon while discussing Frostrail's weapon progression and modular crafting. No official item card or complete stat line accompanied the statement."], "facts": [["Name", "Pipe Rifle"], ["Type", "Rifle"], ["Progression", "Early game"], ["Craftable", "Yes — all guns planned craftable"], ["Modular", "Guns broadly modular; Pipe Rifle specifics TBA"]] },
+        { "id": "stats", "title": "Detailed stats", "paragraphs": ["The following fields are intentionally left unfilled because the design-reference numbers are illustrative rather than confirmed game data."], "facts": [["Damage", "TBA"], ["Fire rate", "TBA"], ["Reload speed", "TBA"], ["Range", "TBA"], ["Durability", "TBA"], ["Ammo type", "TBA"], ["Magazine size", "TBA"], ["Weight", "TBA"], ["Rarity", "TBA"]] },
+        { "id": "acquisition", "title": "How to get & crafting", "paragraphs": ["The Pipe Rifle is described as an early-game option and the developers say all guns are planned to be craftable. Its workbench, recipe, unlock condition, world sources, enemy drops, merchant availability, repair inputs, and mods are not public."], "bullets": ["Acquisition: early game — exact method TBA", "Crafting recipe: TBA", "Locations and enemy drops: TBA", "Mods and compatible parts: TBA"] },
+        { "id": "tips", "title": "Tips & best uses", "paragraphs": ["No performance recommendation is offered before recoil, accuracy, ammunition economy, damage, and durability can be tested in a documented build. Treat its early-game label as progression context, not proof that it is weak or disposable."] }
+      ],
+      "sources": [{ "label": "IndieGames interview with FakeFish founder Aku Jauhiainen", "href": "https://www.indie-games.eu/frostrail-in-depth-overview-with-fakefish-founder/", "tier": "Developer interview" }, { "label": "GamingBolt lead-designer interview", "href": "https://gamingbolt.com/frostrail-interview-the-train-enemy-factions-horror-vibes-and-more", "tier": "Developer interview" }],
+      "related": [{ "label": "Bolt-Action Rifle", "href": "/wiki/weapons/bolt-action-rifle" }, { "label": "All weapons", "href": "/wiki/weapons" }, { "label": "Crafting", "href": "/wiki/crafting" }],
+      "seo": { "title": "Frostrail Pipe Rifle: Confirmed Info, Stats & Crafting", "description": "Verified Frostrail Pipe Rifle entry covering its early-game role, craftable weapon context, and every stat or recipe field still TBA." }
+    },
+    "bolt-action-rifle": {
+      "slug": "bolt-action-rifle",
+      "parent": { "label": "Weapons", "href": "/wiki/weapons" },
+      "eyebrow": "Verified weapon entry",
+      "title": "Bolt-Action Rifle",
+      "lede": "The Bolt-Action Rifle is a publicly named example of Frostrail's modular gun system. Weapon parts can be changed at modifying stations, while its exact combat statistics remain TBA.",
+      "image": "/images/weapons/weapon-assembly-station.jpg",
+      "imageAlt": "Official Frostrail modular bolt-action rifle interface",
+      "date": "Verified August 24, 2026",
+      "status": "Developer-confirmed / stats TBA",
+      "summary": [["Type", "Rifle"], ["Modification", "Modular parts"], ["Craftable", "Yes — planned"], ["Rarity", "TBA"]],
+      "sections": [
+        { "id": "overview", "title": "Overview", "paragraphs": ["Aku Jauhiainen used the Bolt-Action Rifle to explain Frostrail's weapon-modifying stations and the ability to change firearm parts. The name and modular role are supported; the visual mockup's damage and rarity are not."], "facts": [["Name", "Bolt-Action Rifle"], ["Type", "Rifle"], ["Craftable", "Yes — all guns planned craftable"], ["Modular", "Yes"], ["Modification location", "Weapon-modifying station"]] },
+        { "id": "stats", "title": "Detailed stats", "paragraphs": ["FakeFish has not published a canonical stat card for this weapon."], "facts": [["Damage", "TBA"], ["Fire rate", "TBA"], ["Reload speed", "TBA"], ["Range", "TBA"], ["Durability", "TBA"], ["Ammo type", "TBA"], ["Magazine size", "TBA"], ["Weight", "TBA"], ["Rarity", "TBA"]] },
+        { "id": "crafting", "title": "Crafting & mods", "paragraphs": ["Guns are planned to be craftable and modular. The Bolt-Action Rifle is directly connected to the weapon-parts example, but no barrel, stock, scope, receiver, recipe, or stat-modifier names have been officially disclosed."], "bullets": ["Base crafting recipe: TBA", "Compatible components: TBA", "Modification costs: TBA", "Repair materials: TBA"] },
+        { "id": "acquisition", "title": "How to get & best uses", "paragraphs": ["No spawn location, merchant, enemy drop, unlock condition, progression tier, or tactical performance data is publicly confirmed. Recommendations will follow reproducible build testing rather than the reference design."], "facts": [["Locations", "TBA"], ["Enemy drops", "TBA"], ["Unlock", "TBA"], ["Best use", "TBA pending verified stats"]] }
+      ],
+      "sources": [{ "label": "IndieGames interview with FakeFish founder Aku Jauhiainen", "href": "https://www.indie-games.eu/frostrail-in-depth-overview-with-fakefish-founder/", "tier": "Developer interview" }, { "label": "GamingBolt lead-designer interview", "href": "https://gamingbolt.com/frostrail-interview-the-train-enemy-factions-horror-vibes-and-more", "tier": "Developer interview" }],
+      "related": [{ "label": "Pipe Rifle", "href": "/wiki/weapons/pipe-rifle" }, { "label": "All weapons", "href": "/wiki/weapons" }, { "label": "Train stations", "href": "/wiki/stations" }],
+      "seo": { "title": "Frostrail Bolt-Action Rifle: Mods, Stats & Crafting", "description": "Verified Frostrail Bolt-Action Rifle entry covering modular weapon parts, modifying stations, craftable guns, and all currently TBA stats." }
+    }
+  }
+}

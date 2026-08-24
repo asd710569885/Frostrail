@@ -1,0 +1,52 @@
+.main {
+  display: grid;
+  min-height: 75vh;
+  padding: 130px 24px 70px;
+  place-items: center;
+  background: linear-gradient(rgba(5,16,23,.77), rgba(5,16,23,.98)), url("/images/home/frostrail-official-hero.jpg") center/cover;
+}
+
+.panel {
+  max-width: 680px;
+  padding: 42px;
+  border: 1px solid rgba(201,146,69,.42);
+  background: rgba(7,19,28,.9);
+  text-align: center;
+}
+
+.panel > p {
+  margin: 0;
+  color: var(--gold-light);
+  font-family: var(--font-display);
+  letter-spacing: .12em;
+  text-transform: uppercase;
+}
+
+.panel h1 {
+  margin: 9px 0 14px;
+  font-family: var(--font-display);
+  font-size: clamp(48px, 7vw, 82px);
+  font-weight: 600;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.panel > span {
+  color: var(--muted);
+}
+
+.panel div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 27px;
+}
+
+.panel a {
+  padding: 11px 17px;
+  border: 1px solid var(--gold);
+  color: var(--gold-light);
+  font-family: var(--font-display);
+  text-transform: uppercase;
+}

@@ -1,0 +1,98 @@
+{
+  "frostrail-release-date": {
+    "parent": { "label": "Updates", "href": "/updates" },
+    "eyebrow": "Release information",
+    "title": "Frostrail Release Date",
+    "lede": "Frostrail is planned to enter Steam Early Access in Q4 2026. FakeFish and Shiro Unlimited have not announced an exact release day or price.",
+    "image": "/images/home/frostrail-official-hero.jpg",
+    "imageAlt": "Official Frostrail key art with survivors and the armored steam train",
+    "date": "Verified August 24, 2026",
+    "status": "Q4 2026 window / exact date TBA",
+    "summary": [["Early Access", "Q4 2026"], ["Exact date", "TBA"], ["Platform", "Windows PC / Steam first"], ["Price", "TBA"]],
+    "sections": [
+      { "id": "release-window", "title": "Current release window", "paragraphs": ["The official Steam store lists a Q4 2026 Early Access window. A specific day has not been announced, so dates shown by databases that use December 31 as a placeholder should not be treated as confirmation."], "facts": [["Early Access window", "October–December 2026"], ["Exact release day", "Not officially confirmed"], ["Store", "Steam"], ["Developer", "FakeFish"], ["Publisher", "Shiro Unlimited"]] },
+      { "id": "early-access", "title": "Early Access plans", "paragraphs": ["FakeFish expects Early Access to last approximately one year. The starting version is planned around the core gameplay loop, while the full version is expected to add more biomes, locations, dungeons, loot, weapons, train upgrades, and co-op situations."], "bullets": ["Core loop first", "More content and systems planned through Early Access", "Timing and scope can change during development"] },
+      { "id": "price", "title": "Price and version 1.0", "paragraphs": ["No price is public. The official Early Access statement says the price may increase when Frostrail reaches version 1.0."], "facts": [["Early Access price", "TBA"], ["Version 1.0 price", "TBA"], ["Possible increase at 1.0", "Yes — officially stated"]] }
+    ],
+    "sources": [{ "label": "Official Frostrail Steam page and Early Access statement", "href": "https://store.steampowered.com/app/3517740/Frostrail/?l=english", "tier": "Official" }],
+    "related": [{ "label": "Closed Beta", "href": "/frostrail-closed-beta" }, { "label": "System requirements", "href": "/frostrail-system-requirements" }, { "label": "Development updates", "href": "/updates" }],
+    "seo": { "title": "Frostrail Release Date: Early Access Window & Price", "description": "Frostrail is planned for Steam Early Access in Q4 2026. See the verified release window, platform, Early Access duration, price status, and TBA exact date." }
+  },
+  "frostrail-system-requirements": {
+    "parent": { "label": "Wiki", "href": "/wiki" },
+    "eyebrow": "PC specifications",
+    "title": "Frostrail System Requirements",
+    "lede": "Frostrail requires a 64-bit Windows PC, but FakeFish has not yet published minimum or recommended CPU, GPU, memory, storage, or sound specifications.",
+    "image": "/images/train/eden-engine-cab.jpg",
+    "imageAlt": "Official Frostrail gameplay screenshot from inside the train cab",
+    "date": "Verified August 24, 2026",
+    "status": "Official requirements mostly TBA",
+    "summary": [["OS", "64-bit Windows required"], ["CPU / GPU / RAM", "TBA"], ["Storage", "TBA"], ["Engine", "Unreal Engine 5"]],
+    "sections": [
+      { "id": "minimum", "title": "Minimum requirements", "paragraphs": ["The Steam store currently lists a 64-bit processor and operating system as required. Every component line beyond that is marked TBA."], "facts": [["OS", "64-bit Windows — exact version TBA"], ["Processor", "TBA"], ["Memory", "TBA"], ["Graphics", "TBA"], ["DirectX", "TBA"], ["Storage", "TBA"], ["Sound card", "TBA"]] },
+      { "id": "recommended", "title": "Recommended requirements", "paragraphs": ["The recommended specification is also unpublished. Do not use estimates from unrelated Unreal Engine 5 games as Frostrail requirements."], "facts": [["OS", "64-bit Windows — exact version TBA"], ["Processor", "TBA"], ["Memory", "TBA"], ["Graphics", "TBA"], ["Storage", "TBA"]] },
+      { "id": "engine-performance", "title": "Engine & performance status", "paragraphs": ["The official FAQ identifies Unreal Engine 5. Following the November 2025 playtest, the team described performance, AI, usability, accessibility, and tutorials as areas still being improved."], "bullets": ["Engine: Unreal Engine 5", "PC and Steam are the launch priority", "Final optimization targets and graphics options: TBA"] }
+    ],
+    "sources": [{ "label": "Official Frostrail Steam system requirements", "href": "https://store.steampowered.com/app/3517740/Frostrail/?l=english", "tier": "Official" }, { "label": "Official Frostrail FAQ and development posts", "href": "https://store.steampowered.com/news/app/3517740", "tier": "Official" }],
+    "related": [{ "label": "Release date", "href": "/frostrail-release-date" }, { "label": "Console status", "href": "/frostrail-console" }],
+    "seo": { "title": "Frostrail System Requirements: Minimum & Recommended PC Specs", "description": "Official Frostrail system requirements status: 64-bit Windows required, Unreal Engine 5, and minimum or recommended CPU, GPU, RAM, and storage currently TBA." }
+  },
+  "frostrail-multiplayer": {
+    "parent": { "label": "Guides", "href": "/guides" },
+    "eyebrow": "Co-op information",
+    "title": "Frostrail Multiplayer & Co-op",
+    "lede": "Frostrail supports single-player and online co-op for crews of one to four. Players share responsibility for expeditions and the Eden Engine rather than selecting announced fixed classes.",
+    "image": "/images/guides/coop-train-defense.jpg",
+    "imageAlt": "Two Frostrail players defending a train carriage in online co-op",
+    "date": "Verified August 24, 2026",
+    "status": "1–4 players officially confirmed",
+    "summary": [["Players", "1–4"], ["Modes", "Single-player / online co-op"], ["Platform", "Steam first"], ["Cross-play", "TBA"]],
+    "sections": [
+      { "id": "player-count", "title": "Player count & modes", "paragraphs": ["Steam lists both single-player and online co-op, while the official FAQ states that crews contain one to four players. The game is designed so the train and expedition loop can be played solo or shared."], "facts": [["Minimum crew", "1"], ["Maximum crew", "4"], ["Online co-op", "Yes"], ["Local / split-screen", "Not confirmed"], ["Dedicated servers", "Not confirmed"]] },
+      { "id": "crew-loop", "title": "Co-op gameplay", "paragraphs": ["Crews operate, maintain, expand, and defend the Eden Engine, then explore frozen levels for materials, equipment, and Relics. Public information does not announce class locks, so crew roles should be treated as situational responsibilities."], "bullets": ["Coordinate fuel, power, driving, repair, and train defense", "Split or regroup during expeditions", "Share scarce ammunition and crafting resources", "Choose between multiple level exits"] },
+      { "id": "network-features", "title": "Unconfirmed network features", "paragraphs": ["Cross-play, cross-progression, local co-op, split-screen, matchmaking details, server hosting, latency options, save ownership, drop-in/drop-out behavior, and voice chat have not been officially specified."], "facts": [["Cross-play", "TBA"], ["Cross-save", "TBA"], ["Matchmaking", "TBA"], ["Voice chat", "TBA"], ["Controller support", "Planned; timing uncertain"]] }
+    ],
+    "sources": [{ "label": "Official Steam store", "href": "https://store.steampowered.com/app/3517740/Frostrail/?l=english", "tier": "Official" }, { "label": "Official Frostrail FAQ", "href": "https://store.steampowered.com/news/app/3517740", "tier": "Official" }],
+    "related": [{ "label": "Beginner guide", "href": "/guides/beginner-guide" }, { "label": "Train systems", "href": "/train" }, { "label": "Console status", "href": "/frostrail-console" }],
+    "seo": { "title": "Frostrail Multiplayer: Co-op Player Count & Online Features", "description": "Frostrail supports 1–4 players in single-player and online co-op. See the verified crew loop and current status of cross-play, matchmaking, local co-op, and servers." }
+  },
+  "frostrail-console": {
+    "parent": { "label": "Wiki", "href": "/wiki" },
+    "eyebrow": "Platform status",
+    "title": "Is Frostrail Coming to Console?",
+    "lede": "No PlayStation, Xbox, or Nintendo version is confirmed. FakeFish is prioritizing Windows PC and Steam, with console ports to be evaluated for version 1.0 and beyond.",
+    "image": "/images/official/trailers/gameplay-trailer.jpg",
+    "imageAlt": "Official Frostrail gameplay trailer artwork",
+    "date": "Verified August 24, 2026",
+    "status": "Console release not confirmed",
+    "summary": [["PC / Steam", "Confirmed priority"], ["PlayStation", "Not confirmed"], ["Xbox", "Not confirmed"], ["Nintendo", "Not confirmed"]],
+    "sections": [
+      { "id": "official-status", "title": "Official console status", "paragraphs": ["The April 2025 FAQ says PC and Steam are the current focus. The team plans to evaluate console ports for version 1.0 and beyond, which is not the same as announcing a console release."], "facts": [["Windows PC / Steam", "Planned first"], ["PlayStation 5", "Not announced"], ["Xbox Series", "Not announced"], ["Nintendo platforms", "Not announced"], ["Evaluation timing", "Version 1.0 and beyond"]] },
+      { "id": "controller", "title": "Controller support", "paragraphs": ["Controller support is planned, but the FAQ warned it may not be available at the initial Early Access launch. Controller support on PC does not confirm a console port."], "facts": [["Controller support", "Planned"], ["At Early Access launch", "Not guaranteed"], ["Final layouts", "TBA"]] },
+      { "id": "linux-mac", "title": "Linux & macOS", "paragraphs": ["Linux support has been described as tentative. Neither Linux nor macOS is confirmed; Windows PC remains the priority."], "facts": [["Linux", "Tentative / not confirmed"], ["macOS", "Not confirmed"], ["Steam Deck", "Not confirmed"]] }
+    ],
+    "sources": [{ "label": "Official Frostrail FAQ", "href": "https://store.steampowered.com/news/app/3517740", "tier": "Official" }, { "label": "GamingBolt lead-designer interview", "href": "https://gamingbolt.com/frostrail-interview-the-train-enemy-factions-horror-vibes-and-more", "tier": "Developer interview" }],
+    "related": [{ "label": "System requirements", "href": "/frostrail-system-requirements" }, { "label": "Multiplayer", "href": "/frostrail-multiplayer" }, { "label": "Release date", "href": "/frostrail-release-date" }],
+    "seo": { "title": "Is Frostrail Coming to PS5, Xbox or Console?", "description": "Frostrail is PC and Steam first. Console ports are only being evaluated for version 1.0 and beyond; PlayStation, Xbox, Nintendo, Linux, and macOS are not confirmed." }
+  },
+  "about-frostrail": {
+    "parent": { "label": "Home", "href": "/" },
+    "eyebrow": "Game overview",
+    "title": "About Frostrail",
+    "lede": "Frostrail is a dieselpunk open-world survival-crafting FPS for one to four players, developed by FakeFish and published by Shiro Unlimited in Unreal Engine 5.",
+    "image": "/images/home/frostrail-official-hero.jpg",
+    "imageAlt": "Official Frostrail key art showing the train and Penitent Gardeners",
+    "date": "Verified August 24, 2026",
+    "status": "Early Access planned Q4 2026",
+    "summary": [["Developer", "FakeFish"], ["Publisher", "Shiro Unlimited"], ["Engine", "Unreal Engine 5"], ["Players", "1–4"]],
+    "sections": [
+      { "id": "game", "title": "What kind of game is Frostrail?", "paragraphs": ["Frostrail combines first-person combat, open-world survival crafting, exploration, base building, horror, inventory management, and resource management. Its defining base is an armored train called the Eden Engine."], "bullets": ["Single-player and online co-op", "Frozen level exploration", "Craftable and modular firearms", "Train operation, expansion, and defense", "Cold, heat, food, clothing, Relics, and dungeons"] },
+      { "id": "story", "title": "Setting & story premise", "paragraphs": ["The former empire was frozen after its Emperor made a pact with the Void. Players are Penitent Gardeners traveling north aboard the Eden Engine, scavenging abandoned settlements, wreckage, ruins, bunkers, strongholds, and dungeons while fighting Revenants and eldritch horrors."], "facts": [["Player group", "Penitent Gardeners"], ["Destination", "North / salvation"], ["Primary common enemy", "Revenants"], ["World state", "Empire frozen by a Void-linked pact"]] },
+      { "id": "studio", "title": "Developer & publisher", "paragraphs": ["FakeFish is the Finnish studio behind Frostrail; many team members previously worked on Barotrauma. Shiro Unlimited is the publisher. The official FAQ identifies Unreal Engine 5 as the game's engine."], "facts": [["Developer", "FakeFish"], ["Publisher", "Shiro Unlimited"], ["Engine", "Unreal Engine 5"], ["Platform priority", "Windows PC / Steam"]] },
+      { "id": "languages", "title": "Languages & Steam features", "paragraphs": ["Steam currently lists interface and subtitles in seven languages and no full-audio localization. The store also lists Steam Achievements and Family Sharing."], "facts": [["Languages", "English, French, German, Spanish (Spain), Portuguese (Brazil), Russian, Simplified Chinese"], ["Full audio", "No language listed"], ["Steam Achievements", "Yes"], ["Family Sharing", "Yes"]] }
+    ],
+    "sources": [{ "label": "Official Frostrail Steam page", "href": "https://store.steampowered.com/app/3517740/Frostrail/?l=english", "tier": "Official" }, { "label": "Official Frostrail FAQ", "href": "https://store.steampowered.com/news/app/3517740", "tier": "Official" }],
+    "related": [{ "label": "Beginner guide", "href": "/guides/beginner-guide" }, { "label": "Release date", "href": "/frostrail-release-date" }, { "label": "Explore the Wiki", "href": "/wiki" }],
+    "seo": { "title": "About Frostrail: Gameplay, Story, Developer & Features", "description": "Frostrail is a 1–4 player dieselpunk survival-crafting FPS by FakeFish. Learn about the Eden Engine, frozen empire, Revenants, Unreal Engine 5, and release plan." }
+  }
+}
