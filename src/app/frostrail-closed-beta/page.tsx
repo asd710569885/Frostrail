@@ -39,6 +39,14 @@ const data = {
       bullets: ["No guaranteed invitation date", "No assumed carry-over of progress", "No final balance values", "No promise that beta content reaches Early Access unchanged"],
     },
     {
+      id: "previous-playtest",
+      title: "How this differs from the April playtest",
+      paragraphs: [
+        "The April 16–May 4 event was described as the first closed playtest and focused on the early gameplay loop. Its official content brief included the tutorial plus two exploration areas, train fueling and operation, scavenging, recycling, early equipment crafting, Revenant combat, and early-game dungeon raids. The August 31 event is announced as a Closed Beta; its exact content list has not been published in the July announcement.",
+      ],
+      facts: [["Earlier event", "Closed playtest"], ["Earlier dates", "April 16–May 4, 2026"], ["New event", "Closed Beta"], ["Closed Beta content list", "Not yet published"]],
+    },
+    {
       id: "prepare",
       title: "How to prepare",
       paragraphs: [
@@ -55,11 +63,16 @@ const data = {
       bullets: ["Build-specific stats will be labeled", "Repeatable observations take priority", "Outdated details will be corrected as the game changes"],
     },
   ] as const,
-  sources: [{
-    label: "Official Closed Beta registration announcement",
-    href: "https://store.steampowered.com/news/app/3517740/view/671748851902711378?l=english",
-    tier: "Official",
-  }],
+  gallery: [
+    { src: "/images/official/news/closed-beta-august-31.jpg", alt: "Official Frostrail Closed Beta announcement trailer image", caption: "Official announcement media for the Closed Beta beginning August 31, 2026." },
+    { src: "/images/official/news/april-playtest-content.webp", alt: "Official Frostrail April playtest content graphic", caption: "The earlier closed playtest brief; this should not be treated as the August beta content list." },
+    { src: "/images/official/news/spring-update-03.webp", alt: "Official Frostrail Spring Development Update rail landscape", caption: "Official development media released after the April test and before the August Closed Beta." },
+  ] as const,
+  sources: [
+    { label: "Official Closed Beta registration announcement", href: "https://store.steampowered.com/news/app/3517740/view/671748851902711378?l=english", tier: "Official" },
+    { label: "Official April playtest announcement archive", href: "https://steamcommunity.com/app/3517740/allnews/", tier: "Official" },
+    { label: "Official Spring Development Update", href: "https://store.steampowered.com/news/app/3517740/view/664987745725186081?l=english", tier: "Official" },
+  ] as const,
 };
 
 export default function ClosedBetaPage() {

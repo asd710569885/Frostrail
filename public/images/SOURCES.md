@@ -1,6 +1,6 @@
 # Frostrail image sources
 
-Last verified: 2026-08-24
+Last verified: 2026-08-25
 
 All game screenshots, key art, trailer thumbnails, and the Frostrail logo in this directory are official promotional assets owned by FakeFish and/or Shiro Unlimited. They are used by this independent wiki for identification, reporting, and commentary. They must not be presented as original wiki artwork.
 
@@ -55,6 +55,16 @@ Primary sources:
 | `official/news/winter-update-02.png` | `https://clan.akamai.steamstatic.com/images/45577624/84773984c9753544086fea8fde51f3831a4c3ddc.png` | Winter 2025 pre-alpha screenshot: blizzard and industrial location |
 | `official/trailers/playtest-trailer.jpg` | `https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/257316267/e6c7097567bcf20d5ce11973ac0bec3c032af8fa/movie_600x337.jpg?t=1775750226` | Current official Steam playtest-trailer thumbnail |
 | `official/trailers/gameplay-trailer.jpg` | `https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/257294906/2d71eb4438c5bc6695330962fc67b6d038f78316/movie_600x337.jpg?t=1772116835` | Current official Steam gameplay-trailer thumbnail |
+
+## Verifiable UI data in official screenshots
+
+- `official/steam-current/screenshot-05.jpg` names the **Assembly Station** and shows a pre-release Bolt-Action Rifle stat panel: durability 200, weight 5.0 kg, clip size 5, fire rate 1.0/s, melee damage 7.5, melee stagger 25.0, melee stamina cost 30.0, noise 1.0, projectile damage 27.0, projectile stagger 60.0, one projectile, recoil −160.0%, reload speed −85.0%, spread 0.28°, and stability −60.0%.
+- The same screenshot shows an assembly requirement of slag metal ×5, wood ×3, and cloth ×2, plus Wooden, Padded, and Bare Bolt-Action Rifle Stock choices. The selected Padded stock weighs 0.3 kg and displays +0.0% recoil and +0.0% stability.
+- `official/steam-current/screenshot-09.jpg` visibly names the equipped **Metal Hammer**.
+- `official/steam-current/screenshot-10.jpg` visibly names the equipped **Metal Wrench**.
+- `official/steam-current/screenshot-07.jpg` visibly names the equipped **Torch** and shows the objective **The Trial Below — Search the unknown for a hidden shrine**.
+
+These are official pre-release screenshot values, not guaranteed Q4 2026 Early Access balance. Pages must retain their build-status caveat when using them.
 
 The `.webp` files beside the eight PNG news images are local 1600px, quality-82 derivatives used for faster page delivery. The untouched source PNGs remain in the same directory for provenance and future recrops.
 

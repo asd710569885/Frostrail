@@ -59,6 +59,20 @@ export function ArticlePage({ data }: { data: ArticleData }) {
                 {section.facts ? <dl className={styles.factTable}>{section.facts.map(([term, value]) => <div key={term}><dt>{term}</dt><dd>{value}</dd></div>)}</dl> : null}
               </section>
             ))}
+            {data.gallery?.length ? (
+              <section id="official-gallery">
+                <h2>Official media evidence</h2>
+                <p>These locally stored images come from the official Steam gallery or developer announcements. They document a pre-release build and may change before Early Access.</p>
+                <div className={styles.gallery}>
+                  {data.gallery.map((item) => (
+                    <figure key={item.src}>
+                      <div><Image src={item.src} alt={item.alt} fill sizes="(max-width: 767px) 100vw, 40vw" /></div>
+                      <figcaption>{item.caption}</figcaption>
+                    </figure>
+                  ))}
+                </div>
+              </section>
+            ) : null}
             <div className={styles.sourceBox}>
               <span>Sources used</span>
               <div>
@@ -82,6 +96,7 @@ export function ArticlePage({ data }: { data: ArticleData }) {
               <strong>On this page</strong>
               {data.records?.length ? <a href="#records">Verified records</a> : null}
               {data.sections.map((section) => <a href={`#${section.id}`} key={section.id}>{section.title}</a>)}
+              {data.gallery?.length ? <a href="#official-gallery">Official media evidence</a> : null}
             </nav>
           </aside>
         </div>

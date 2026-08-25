@@ -85,6 +85,12 @@
 .sources strong { font-size: 12px; font-weight: 400; }
 .sources b { color: var(--gold-light); }
 
+.weaponGallery { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 10px; margin-bottom: 15px; }
+.weaponGallery figure { margin: 0; overflow: hidden; border: 1px solid rgba(150,178,191,.24); background: rgba(5,17,25,.48); }
+.weaponGallery figure > div { position: relative; aspect-ratio: 16/9; overflow: hidden; }
+.weaponGallery img { object-fit: cover; filter: contrast(1.06) saturate(.75); }
+.weaponGallery figcaption { padding: 9px 11px; color: #93a4ad; font-size: 10px; line-height: 1.4; }
+
 .sidebar { display: grid; gap: 14px; }
 .summary,.sidePanel { padding: 17px; border: 1px solid rgba(150,178,191,.3); background: linear-gradient(145deg, rgba(18,38,49,.98), rgba(7,21,29,.99)); }
 .summaryImage { position: relative; height: 142px; overflow: hidden; margin-bottom: 10px; border: 1px solid rgba(150,178,191,.24); }
@@ -117,4 +123,4 @@
 
 @media (max-width: 1050px) { .layout { grid-template-columns: minmax(0,1fr) 300px; } .overview { grid-template-columns: 1fr; } .overviewImage { min-height: 230px; } }
 @media (max-width: 850px) { .layout { grid-template-columns: 1fr; } .sidebar { grid-template-columns: repeat(2,1fr); } .summary { grid-row: span 2; } .heroStats { grid-template-columns: repeat(2,1fr); } .hero { height: 470px; } }
-@media (max-width: 620px) { .main { padding-top: 66px; } .hero { height: 550px; } .hero h1 { font-size: 53px; } .heroCopy > p:last-child { font-size: 15px; } .heroStats { width: 100%; } .heroStats > div { min-width: 0; padding: 7px 9px; } .tabs { grid-template-columns: repeat(3,1fr); } .tabs a:nth-child(-n+3) { border-bottom: 1px solid rgba(150,178,191,.16); } .statGrid,.acquireGrid,.modGrid,.evidenceGrid { grid-template-columns: 1fr; } .statGrid > div { border-bottom: 0 !important; } .statGrid > div:last-child { border-bottom: 1px solid rgba(150,178,191,.18) !important; } .recipeRail { grid-template-columns: 1fr; } .recipeRail > b { transform: rotate(90deg); text-align: center; } .sidebar { grid-template-columns: 1fr; } .moreWeapons > div { grid-template-columns: repeat(2,1fr); } .sources a { grid-template-columns: 1fr auto; } .sources span { grid-column: 1/-1; } }
+@media (max-width: 620px) { .main { padding-top: 66px; } .hero { height: 550px; } .hero h1 { font-size: 53px; } .heroCopy > p:last-child { font-size: 15px; } .heroStats { width: 100%; } .heroStats > div { min-width: 0; padding: 7px 9px; } .tabs { grid-template-columns: repeat(3,1fr); } .tabs a:nth-child(-n+3) { border-bottom: 1px solid rgba(150,178,191,.16); } .statGrid,.acquireGrid,.modGrid,.evidenceGrid,.weaponGallery { grid-template-columns: 1fr; } .statGrid > div { border-bottom: 0 !important; } .statGrid > div:last-child { border-bottom: 1px solid rgba(150,178,191,.18) !important; } .recipeRail { grid-template-columns: 1fr; } .recipeRail > b { transform: rotate(90deg); text-align: center; } .sidebar { grid-template-columns: 1fr; } .moreWeapons > div { grid-template-columns: repeat(2,1fr); } .sources a { grid-template-columns: 1fr auto; } .sources span { grid-column: 1/-1; } }

@@ -12,7 +12,7 @@
   display: grid;
   grid-template-columns: auto 1fr auto;
   align-items: center;
-  min-height: 74px;
+  min-height: 80px;
   gap: 28px;
 }
 
@@ -24,8 +24,24 @@
   letter-spacing: 0.04em;
 }
 
+.crest {
+  display: grid;
+  width: 42px;
+  height: 42px;
+  flex: 0 0 42px;
+  margin-right: 7px;
+  place-items: center;
+  color: #e6ecef;
+  filter: drop-shadow(0 2px 5px rgba(0,0,0,.5));
+}
+
+.crest svg {
+  width: 42px;
+  height: 42px;
+}
+
 .logo {
-  width: 164px;
+  width: 145px;
   height: auto;
   object-fit: contain;
 }
@@ -44,12 +60,12 @@
   justify-content: flex-end;
   gap: clamp(18px, 2vw, 34px);
   color: #d8e0e4;
-  font-size: 14px;
+  font-size: 13px;
 }
 
 .desktopNav a {
   position: relative;
-  padding-block: 26px;
+  padding-block: 29px;
 }
 
 .desktopNav a::after {
@@ -76,7 +92,7 @@
   color: var(--gold-light);
   background: rgba(8, 18, 25, 0.58);
   font-family: var(--font-display);
-  font-size: 14px;
+  font-size: 13px;
   letter-spacing: 0.04em;
   box-shadow: inset 0 0 14px rgba(201, 146, 69, 0.08), 0 0 18px rgba(0,0,0,.28);
   transition: color 160ms ease, background 160ms ease;
@@ -159,7 +175,19 @@
   }
 
   .logo {
-    width: 132px;
+    width: 122px;
+  }
+
+  .crest {
+    width: 34px;
+    height: 34px;
+    flex-basis: 34px;
+    margin-right: 4px;
+  }
+
+  .crest svg {
+    width: 34px;
+    height: 34px;
   }
 
   .wiki {

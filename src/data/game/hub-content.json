@@ -7,7 +7,7 @@
     "heroImage": "/images/guides/frozen-expedition.jpg",
     "heroImageAlt": "Frostrail players on an expedition across a frozen level",
     "status": "Official facts + developer interviews",
-    "verifiedAt": "August 24, 2026",
+    "verifiedAt": "August 25, 2026",
     "topics": [
       {
         "id": "getting-started",
@@ -73,7 +73,7 @@
     "heroImage": "/images/wiki/weapons-crafting.jpg",
     "heroImageAlt": "Frostrail weapon assembly and modular parts interface",
     "status": "Source-linked records online",
-    "verifiedAt": "August 24, 2026",
+    "verifiedAt": "August 25, 2026",
     "topics": [
       {
         "id": "weapons",
@@ -164,7 +164,7 @@
     "heroImage": "/images/train/eden-engine-cab.jpg",
     "heroImageAlt": "Inside the Eden Engine locomotive cab in Frostrail",
     "status": "6 train-system pages indexed",
-    "verifiedAt": "August 24, 2026",
+    "verifiedAt": "August 25, 2026",
     "topics": [
       { "id": "eden-engine", "title": "Eden Engine", "label": "Core locomotive", "description": "The Eden Engine is the crew's mobile fortress and the heart of the run. It must be fueled, powered, driven, maintained, and defended.", "details": ["Provides travel, heat, power, crafting space, and storage", "Engine upgrades affect speed and pulling weight", "Its destruction is a developer-stated game-over condition; exact stats remain TBA"], "href": "/train/eden-engine", "source": { "label": "Official Steam description", "href": "https://store.steampowered.com/app/3517740/Frostrail/?l=english", "tier": "Official" } },
       { "id": "upgrades", "title": "Upgrades", "label": "Reinforcement", "description": "The train can be reinforced and customized with walls, hatches, doors, weapon stations, crafting facilities, and engine improvements.", "details": ["Engine upgrades affect speed and pulling weight", "More carriages require more power", "Upgrade costs, names, and unlock order remain TBA"], "href": "/train/upgrades", "source": { "label": "PC Gamer developer interview", "href": "https://www.pcgamer.com/games/survival-crafting/barotrauma-developer-unveils-its-next-co-op-survival-game-a-dieselpunk-fps-where-your-mobile-fortress-is-a-train/", "tier": "Developer interview" } },
@@ -182,14 +182,15 @@
     "heroImage": "/images/locations/frozen-rail-route.jpg",
     "heroImageAlt": "Frostrail train travelling through a frozen rail route",
     "status": "Confirmed location types",
-    "verifiedAt": "August 24, 2026",
+    "verifiedAt": "August 25, 2026",
     "topics": [
       { "id": "tundra", "title": "Tundra", "label": "Expanded biome", "description": "The tundra is the game's principal open frozen biome. The May 2026 update reported that it had been expanded for further exploration.", "details": ["Blizzards reduce visibility and movement", "New points of interest are being artist-built rather than purely procedural", "Named regions and map coordinates: TBA"], "source": { "label": "Official Spring Development Update", "href": "https://store.steampowered.com/news/app/3517740/view/664987745725186081", "tier": "Official" } },
-      { "id": "dungeons", "title": "Modular dungeons", "label": "Relic expeditions", "description": "Dungeons use modular construction and were overhauled with updated lighting. They are a confirmed source of Relics.", "details": ["Layouts can vary and remain under development", "Relics found inside can be activated aboard the train", "Dungeon names, maps, loot tables, and enemy rosters: TBA"], "source": { "label": "Official Spring Development Update", "href": "https://store.steampowered.com/news/app/3517740/view/664987745725186081", "tier": "Official" } },
+      { "id": "dungeons", "title": "Modular dungeons", "label": "Relic expeditions", "description": "Dungeons use modular construction and were overhauled with updated lighting. They are a confirmed source of Relics, and the April test brief explicitly included early-game dungeon raids.", "details": ["Layouts can vary and remain under development", "Relics found inside can be activated aboard the train", "An official screenshot shows the objective “The Trial Below — Search the unknown for a hidden shrine”", "The screenshot proves an objective title, not a final dungeon or shrine name", "Maps, loot tables, and complete enemy rosters: TBA"], "source": { "label": "Official Steam media and Spring Development Update", "href": "https://store.steampowered.com/app/3517740/Frostrail/?l=english", "tier": "Official" } },
       { "id": "settlements", "title": "Abandoned settlements & wreckage", "label": "Scavenging sites", "description": "The official store description identifies abandoned settlements and wreckage as exploration and scavenging spaces.", "details": ["Used to recover supplies and equipment", "Environmental storytelling is part of the frozen empire premise", "Individual settlement names and guaranteed loot: TBA"], "source": { "label": "Official Steam description", "href": "https://store.steampowered.com/app/3517740/Frostrail/?l=english", "tier": "Official" } },
       { "id": "bunkers", "title": "Derelict bunkers", "label": "Enclosed location", "description": "Derelict bunkers are one of the confirmed location types encountered beyond the rails.", "details": ["Exact access requirements: TBA", "Enemy and loot tables: TBA", "No official bunker names have been published"], "source": { "label": "Official Steam description", "href": "https://store.steampowered.com/app/3517740/Frostrail/?l=english", "tier": "Official" } },
       { "id": "strongholds", "title": "Ruined strongholds", "label": "High-risk ruins", "description": "Ruined strongholds and frozen ruins are named world features, but the developers have not yet disclosed their final map placement or reward structure.", "details": ["Part of the former empire's frozen landscape", "Specific threats, relics, and resources: TBA", "Names and routes: TBA"], "source": { "label": "Official Steam description", "href": "https://store.steampowered.com/app/3517740/Frostrail/?l=english", "tier": "Official" } },
-      { "id": "level-routes", "title": "Levels & exits", "label": "Branching journey north", "description": "The journey advances north through connected levels. Crews can switch tracks, clear obstacles, and choose among exits or tunnels leading onward.", "details": ["Terrain is mixed: hand-authored foundations with procedural natural assets, POIs, loot, and enemy placement", "Current development builds carry progression between levels and support multiple exits", "A developer interview says thorough exploration can exceed two hours, but final level duration is not fixed"], "source": { "label": "Official update + developer interviews", "href": "https://www.indie-games.eu/frostrail-in-depth-overview-with-fakefish-founder/", "tier": "Developer interview" } }
+      { "id": "level-routes", "title": "Levels & exits", "label": "Branching journey north", "description": "The journey advances north through connected levels. Crews can switch tracks, clear obstacles, and choose among exits or tunnels leading onward.", "details": ["Terrain is mixed: hand-authored foundations with procedural natural assets, POIs, loot, and enemy placement", "Current development builds carry progression between levels and support multiple exits", "A developer interview says thorough exploration can exceed two hours, but final level duration is not fixed"], "source": { "label": "Official update + developer interviews", "href": "https://www.indie-games.eu/frostrail-in-depth-overview-with-fakefish-founder/", "tier": "Developer interview" } },
+      { "id": "playtest-areas", "title": "April playtest scope", "label": "Tutorial + 2 areas", "description": "The April 2026 test brief included the tutorial and two more game areas, giving the public a bounded sample rather than the final world map.", "details": ["Tutorial plus two exploration areas", "Early-game dungeons included", "Scavenging, recycling, crafting, and train operation included", "Area names and final map boundaries were not published"], "source": { "label": "Official April playtest content graphic", "href": "https://steamcommunity.com/app/3517740/allnews/", "tier": "Official" } }
     ]
   },
   "enemies": {
@@ -200,12 +201,12 @@
     "heroImage": "/images/enemies/revenant-close-combat.jpg",
     "heroImageAlt": "Close combat against a hostile Revenant in Frostrail",
     "status": "Confirmed categories, stats TBA",
-    "verifiedAt": "August 24, 2026",
+    "verifiedAt": "August 25, 2026",
     "topics": [
       { "id": "revenants", "title": "Revenants", "label": "Zombified melee faction", "description": "Lead designer Ez Jämsen describes Revenants as zombified enemies that mostly fight in melee and tend to attack in larger groups.", "details": ["Encountered during exploration and discussed for planned train-defense waves", "New enemy variations were reported in May 2026", "Health, damage, named variants, resistances, and drops: TBA"], "source": { "label": "GamingBolt interview with lead designer", "href": "https://gamingbolt.com/frostrail-interview-the-train-enemy-factions-horror-vibes-and-more", "tier": "Developer interview" } },
       { "id": "wolves", "title": "Wolves", "label": "Confirmed creature", "description": "The official mature-content disclosure explicitly names wolves among the enemy creatures players fight.", "details": ["Combat can include blood effects", "Specific wolf variants and behavior: TBA", "Drops and spawn locations: TBA"], "source": { "label": "Official Steam store disclosure", "href": "https://store.steampowered.com/app/3517740/Frostrail/?l=english", "tier": "Official" } },
       { "id": "corrupted-soldiers", "title": "Corrupted Soldiers", "label": "Planned ranged faction", "description": "The lead designer identifies Corrupted Soldiers as a planned enemy faction that uses ranged weapons, appears in smaller groups, and is intended to behave more intelligently than Revenants.", "details": ["Ranged combat role", "Smaller groups and smarter behavior discussed", "Weapon loadouts, armor, named classes, stats, and drops: TBA"], "source": { "label": "GamingBolt interview with lead designer", "href": "https://gamingbolt.com/frostrail-interview-the-train-enemy-factions-horror-vibes-and-more", "tier": "Developer interview" } },
-      { "id": "eldritch-horrors", "title": "Eldritch horrors", "label": "Beyond Revenants", "description": "Official copy promises eldritch horrors beyond the more common Revenants, but does not identify them individually.", "details": ["Part of the Void-linked horror premise", "Boss or elite labels are not yet confirmed", "Names, tactics, locations, and rewards: TBA"], "source": { "label": "Official Steam description", "href": "https://store.steampowered.com/app/3517740/Frostrail/?l=english", "tier": "Official" } },
+      { "id": "eldritch-horrors", "title": "Eldritch horrors", "label": "Beyond Revenants", "description": "Official copy promises eldritch horrors beyond the more common Revenants, but does not identify them individually.", "details": ["Part of the Void-linked horror premise", "An official train-defense screenshot shows a large spiked quadrupedal threat, but provides no name or faction", "Boss or elite labels are not yet confirmed", "Names, tactics, locations, and rewards: TBA"], "source": { "label": "Official Steam description and screenshot gallery", "href": "https://store.steampowered.com/app/3517740/Frostrail/?l=english", "tier": "Official" } },
       { "id": "enemy-development", "title": "AI & enemy variations", "label": "Work in progress", "description": "Enemy AI, variation, usability, accessibility, and performance have all been cited as active development areas following playtests.", "details": ["New variations reported in Spring 2026", "AI improvement called out after the November 2025 test", "Strategies may change significantly before Early Access"], "source": { "label": "Official development announcements", "href": "https://store.steampowered.com/news/app/3517740", "tier": "Official" } }
     ]
   },
@@ -216,8 +217,8 @@
     "introduction": "A chronological record of first-party milestones, test windows, and development disclosures. Dates refer to public announcements; planned features are labeled as plans rather than completed release content.",
     "heroImage": "/images/official/trailers/gameplay-trailer.jpg",
     "heroImageAlt": "Official Frostrail gameplay trailer frame",
-    "status": "Updated August 24, 2026",
-    "verifiedAt": "August 24, 2026",
+    "status": "Updated August 25, 2026",
+    "verifiedAt": "August 25, 2026",
     "topics": [
       { "id": "closed-beta", "title": "Closed Beta begins August 31", "label": "July 20, 2026", "description": "FakeFish announced that the first Frostrail closed beta will begin on August 31, 2026. Registration is open and previously registered players do not need to register again.", "details": ["Start: August 31, 2026", "Previous registrations remain valid", "Selection and invitation timing are not guaranteed"], "href": "/frostrail-closed-beta", "source": { "label": "Official Closed Beta announcement", "href": "https://store.steampowered.com/news/app/3517740/view/671748851902711378?l=english", "tier": "Official" } },
       { "id": "spring-development-update", "title": "Spring Development Update", "label": "May 13, 2026", "description": "The team reported more than 100,000 playtest applications and detailed a new tutorial, cross-level progression, multiple exits, dungeon and tundra improvements, train defense, Relics, enemy variations, clothing, and repair workstations.", "details": ["More than 100,000 playtest applications", "Relics grant temporary buffs after activation aboard the train", "Train defense and a reworked repair system were under active development"], "source": { "label": "Official Spring Development Update", "href": "https://store.steampowered.com/news/app/3517740/view/664987745725186081", "tier": "Official" } },

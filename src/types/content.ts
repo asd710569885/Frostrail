@@ -42,6 +42,12 @@ export type ArticleRecord = {
   facts: readonly (readonly [string, string])[];
 };
 
+export type ArticleImage = {
+  src: string;
+  alt: string;
+  caption: string;
+};
+
 export type ArticleData = {
   slug?: string;
   parent: { label: string; href: string };
@@ -55,6 +61,7 @@ export type ArticleData = {
   summary: readonly (readonly [string, string])[];
   records?: readonly ArticleRecord[];
   sections: readonly ArticleSection[];
+  gallery?: readonly ArticleImage[];
   sources: readonly ContentSource[];
   related?: readonly { label: string; href: string }[];
   seo?: { title: string; description: string };

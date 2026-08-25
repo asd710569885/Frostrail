@@ -1,8 +1,10 @@
 import Image from "next/image";
 import Link from "next/link";
+import { HomeIcon } from "@/components/icon/HomeIcon";
 import styles from "@/style/layout/app-header.module.css";
 
 const navigation = [
+  ["Home", "/"],
   ["Guides", "/guides"],
   ["Wiki", "/wiki"],
   ["Train", "/train"],
@@ -14,6 +16,7 @@ const navigation = [
 function Brand() {
   return (
     <Link className={styles.brand} href="/" aria-label="Frostrail Wiki home">
+      <span className={styles.crest}><HomeIcon name="brand" /></span>
       <Image className={styles.logo} src="/images/brand/frostrail-logo.png" alt="" width={150} height={67} priority />
       <span className={styles.wiki}>WIKI</span>
     </Link>

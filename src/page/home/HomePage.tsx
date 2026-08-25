@@ -1,15 +1,16 @@
 import Image from "next/image";
 import Link from "next/link";
+import { HomeIcon, type HomeIconName } from "@/components/icon/HomeIcon";
 import { AppFooter } from "@/components/layout/AppFooter";
 import { AppHeader } from "@/components/layout/AppHeader";
 import styles from "@/style/page/home/home.module.css";
 
 const facts = [
-  ["1–4", "Players", "Solo & online co-op"],
-  ["400K", "Wishlists", "Official April milestone"],
-  ["AUG 31", "Closed Beta", "First beta begins"],
-  ["Q4 2026", "Early Access", "Official Steam window"],
-] as const;
+  ["gauge", "1–4", "Players", "Solo & online co-op"],
+  ["relic", "400K+", "Wishlists", "Announced April milestone"],
+  ["crew", "AUG 31", "Closed Beta", "First beta begins"],
+  ["snowflake", "Q4 2026", "Early Access", "Official Steam window"],
+] as const satisfies ReadonlyArray<readonly [HomeIconName, string, string, string]>;
 
 const updates = [
   {
@@ -39,31 +40,31 @@ const updates = [
 ] as const;
 
 const guideStarts = [
-  ["▣", "Beginner Guide", "Get started on your journey", "/guides/beginner-guide"],
-  ["♨", "Survival Guide", "Stay alive in the frozen world", "/guides#survival"],
-  ["▰", "Train Guide", "Understand your mobile base", "/train"],
-  ["⚒", "Crafting Guide", "Prepare tools and essentials", "/guides#crafting"],
-  ["◎", "Combat Guide", "Weapons, tactics, and threats", "/guides#combat"],
-  ["◆", "Co-op Guide", "Plan a crew of up to four", "/guides#co-op"],
-] as const;
+  ["book", "Beginner Guide", "Get started on your journey", "/guides/beginner-guide"],
+  ["campfire", "Survival Guide", "Stay alive in the frozen world", "/guides#survival"],
+  ["train", "Train Guide", "Understand your mobile base", "/train"],
+  ["tools", "Crafting Guide", "Prepare tools and essentials", "/guides#crafting"],
+  ["target", "Combat Guide", "Weapons, tactics, and threats", "/guides#combat"],
+  ["crew", "Co-op Guide", "Plan a crew of up to four", "/guides#co-op"],
+] as const satisfies ReadonlyArray<readonly [HomeIconName, string, string, string]>;
 
 const wikiCards = [
-  ["Weapons", "2 named guns and 5 confirmed families", "/wiki/weapons", "/images/weapons/weapon-assembly-station.jpg"],
-  ["Items", "Equipment, ammo, repair, and supplies", "/wiki/items", "/images/items/fuel-and-train.jpg"],
-  ["Resources", "Metal, cloth, plastic, logs, and fuel", "/wiki/resources", "/images/train/logs-and-locomotive.jpg"],
-  ["Relics", "Dungeon finds with temporary buffs", "/wiki/relics", "/images/wiki/relic-activation.jpg"],
-  ["Clothing", "Warmth and cold-mitigation equipment", "/wiki/clothing", "/images/guides/frozen-expedition.jpg"],
-  ["Stations", "Crafting, refining, repair, and cooking", "/wiki/stations", "/images/train/onboard-workstation.jpg"],
-] as const;
+  ["weapons", "Weapons", "2 named guns and 1 official stat set", "/wiki/weapons", "/images/weapons/weapon-assembly-station.jpg"],
+  ["items", "Items", "Hammer, wrench, torch, crowbar, and supplies", "/wiki/items", "/images/items/fuel-and-train.jpg"],
+  ["resources", "Resources", "9 named materials and a verified screenshot recipe", "/wiki/resources", "/images/train/logs-and-locomotive.jpg"],
+  ["medallion", "Relics", "Dungeon finds with temporary buffs", "/wiki/relics", "/images/wiki/relic-activation.jpg"],
+  ["clothing", "Clothing", "Warmth and cold-mitigation equipment", "/wiki/clothing", "/images/guides/frozen-expedition.jpg"],
+  ["station", "Stations", "Crafting, refining, repair, and cooking", "/wiki/stations", "/images/train/onboard-workstation.jpg"],
+] as const satisfies ReadonlyArray<readonly [HomeIconName, string, string, string, string]>;
 
 const trainSystems = [
-  ["Eden Engine", "Heat, movement, power, and survival", "/train/eden-engine"],
-  ["Upgrades", "Walls, hatches, doors, and facilities", "/train/upgrades"],
-  ["Fuel", "Branches, logs, and charcoal", "/train/fuel"],
-  ["Carriages", "Expand your moving base", "/train/carriages"],
-  ["Train Defense", "Revenant attacks and mounted weapons", "/train/defense"],
-  ["Power", "Supply onboard systems", "/train/power"],
-] as const;
+  ["engine", "Eden Engine", "Heat, movement, power, and survival", "/train/eden-engine"],
+  ["upgrade", "Upgrades", "Walls, hatches, doors, and facilities", "/train/upgrades"],
+  ["fuel", "Fuel & Power", "Branches, logs, charcoal, and onboard power", "/train/fuel"],
+  ["carriage", "Carriages", "Expand your moving base", "/train/carriages"],
+  ["defense", "Train Defense", "Revenant attacks and mounted weapons", "/train/defense"],
+  ["storage", "Storage", "Organize recovered supplies", "/wiki/stations"],
+] as const satisfies ReadonlyArray<readonly [HomeIconName, string, string, string]>;
 
 const locations = [
   ["Tundra", "Frozen terrain beyond the rails", "/locations#tundra", "/images/locations/frozen-rail-route.jpg"],
@@ -124,9 +125,9 @@ export default function HomePage() {
             </div>
           </div>
           <div className={`container ${styles.factRail}`}>
-            {facts.map(([value, title, description], index) => (
+            {facts.map(([icon, value, title, description]) => (
               <div className={styles.fact} key={title}>
-                <span className={styles.factGlyph} aria-hidden="true">{index === 0 ? "◔" : index === 1 ? "♙" : index === 2 ? "❄" : "✦"}</span>
+                <span className={styles.factGlyph}><HomeIcon name={icon} /></span>
                 <div><strong>{value} <em>{title}</em></strong><small>{description}</small></div>
               </div>
             ))}
@@ -158,7 +159,7 @@ export default function HomePage() {
             <div className={styles.startGrid}>
               {guideStarts.map(([icon, title, description, href]) => (
                 <Link className={styles.startCard} href={href} key={title}>
-                  <span aria-hidden="true">{icon}</span><strong>{title}</strong><small>{description}</small>
+                  <span className={styles.startIcon}><HomeIcon name={icon} /></span><strong>{title}</strong><small>{description}</small>
                 </Link>
               ))}
             </div>
@@ -167,26 +168,29 @@ export default function HomePage() {
           <section className={`container ${styles.section}`} aria-labelledby="explore-wiki">
             <SectionTitle id="explore-wiki" title="Explore the Wiki" href="/wiki" link="Browse all" />
             <div className={styles.wikiGrid}>
-              {wikiCards.map(([title, description, href, image]) => (
+              {wikiCards.map(([icon, title, description, href, image]) => (
                 <Link className={styles.wikiCard} href={href} key={title}>
                   <Image className={styles.cardImage} src={image} alt="" fill sizes="(max-width: 767px) 50vw, 17vw" />
-                  <span className={styles.wikiCaption}><strong>{title}</strong><small>{description}</small></span>
+                  <span className={styles.wikiCaption}><HomeIcon name={icon} /><span><strong>{title}</strong><small>{description}</small></span></span>
                 </Link>
               ))}
             </div>
           </section>
 
           <section className={`container ${styles.trainPanel}`} aria-labelledby="master-your-train">
-            <div className={styles.trainCopy}>
-              <h2 id="master-your-train">Master Your Train</h2>
-              <p>Your train is your lifeline. Upgrade, defend, and organize your moving base to survive the endless cold.</p>
-              <Link className={styles.goldButton} href="/train">View Train Wiki <span>›</span></Link>
+            <div className={styles.trainVisual}>
+              <Image src="/images/train/eden-engine-cab.jpg" alt="" fill sizes="(max-width: 767px) 100vw, 48vw" />
+              <div className={styles.trainCopy}>
+                <h2 id="master-your-train">Master Your Train</h2>
+                <p>Your train is your lifeline. Upgrade, defend, and organize your moving base to survive the endless cold.</p>
+                <Link className={styles.goldButton} href="/train">View Train Wiki <span>›</span></Link>
+              </div>
             </div>
             <div className={styles.trainGrid}>
-              {trainSystems.map(([title, description, href], index) => (
+              {trainSystems.map(([icon, title, description, href]) => (
                 <Link href={href} key={title}>
-                  <span aria-hidden="true">0{index + 1}</span>
-                  <strong>{title}</strong><small>{description}</small>
+                  <HomeIcon name={icon} />
+                  <span><strong>{title}</strong><small>{description}</small></span>
                 </Link>
               ))}
             </div>
