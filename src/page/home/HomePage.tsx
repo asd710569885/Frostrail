@@ -1,13 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
 import { HomeIcon, type HomeIconName } from "@/components/icon/HomeIcon";
-import { AppFooter } from "@/components/layout/AppFooter";
-import { AppHeader } from "@/components/layout/AppHeader";
 import styles from "@/style/page/home/home.module.css";
 
 const facts = [
   ["gauge", "1–4", "Players", "Solo & online co-op"],
-  ["relic", "400K+", "Wishlists", "Announced April milestone"],
+  ["relic", "~500K", "Wishlists", "July 2026 press kit"],
   ["crew", "AUG 31", "Closed Beta", "First beta begins"],
   ["snowflake", "Q4 2026", "Early Access", "Official Steam window"],
 ] as const satisfies ReadonlyArray<readonly [HomeIconName, string, string, string]>;
@@ -31,62 +29,62 @@ const updates = [
   },
   {
     tag: "Milestone",
-    title: "400,000 Steam Wishlists",
-    text: "The official milestone is a wishlist count—not sales or active players.",
-    date: "Apr 28, 2026",
-    href: "/updates#400k-wishlists",
-    image: "/images/official/news/wishlist-400k.webp",
+    title: "Almost 500,000 Steam Wishlists",
+    text: "Lead designer Ez Jämsen cited almost 500,000 wishlists in the Closed Beta press kit—not sales or active players.",
+    date: "Jul 22, 2026",
+    href: "/updates#500k-wishlists",
+    image: "/images/official/news/closed-beta-august-31.jpg",
   },
 ] as const;
 
 const guideStarts = [
-  ["book", "Beginner Guide", "Get started on your journey", "/guides/beginner-guide"],
-  ["campfire", "Survival Guide", "Stay alive in the frozen world", "/guides#survival"],
-  ["train", "Train Guide", "Understand your mobile base", "/train"],
-  ["tools", "Crafting Guide", "Prepare tools and essentials", "/guides#crafting"],
-  ["target", "Combat Guide", "Weapons, tactics, and threats", "/guides#combat"],
-  ["crew", "Co-op Guide", "Plan a crew of up to four", "/guides#co-op"],
-] as const satisfies ReadonlyArray<readonly [HomeIconName, string, string, string]>;
+  ["book", "Beginner Guide", "Get started on your journey", "/guides/beginner-guide", "/images/guides/frozen-expedition.jpg"],
+  ["campfire", "Survival Guide", "Stay alive in the frozen world", "/guides#survival", "/images/guides/frozen-expedition.jpg"],
+  ["train", "Train Guide", "Understand your mobile base", "/train", "/images/train/eden-engine-cab.jpg"],
+  ["tools", "Crafting Guide", "Prepare tools and essentials", "/guides#crafting", "/images/wiki/weapons-crafting.jpg"],
+  ["target", "Combat Guide", "Weapons, tactics, and threats", "/guides#combat", "/images/enemies/revenant-close-combat.jpg"],
+  ["crew", "Co-op Guide", "Plan a crew of up to four", "/guides#co-op", "/images/guides/coop-train-defense.jpg"],
+] as const satisfies ReadonlyArray<readonly [HomeIconName, string, string, string, string]>;
 
 const wikiCards = [
   ["weapons", "Weapons", "2 named guns and 1 official stat set", "/wiki/weapons", "/images/weapons/weapon-assembly-station.jpg"],
-  ["items", "Items", "Hammer, wrench, torch, crowbar, and supplies", "/wiki/items", "/images/items/fuel-and-train.jpg"],
-  ["resources", "Resources", "9 named materials and a verified screenshot recipe", "/wiki/resources", "/images/train/logs-and-locomotive.jpg"],
-  ["medallion", "Relics", "Dungeon finds with temporary buffs", "/wiki/relics", "/images/wiki/relic-activation.jpg"],
-  ["clothing", "Clothing", "Warmth and cold-mitigation equipment", "/wiki/clothing", "/images/guides/frozen-expedition.jpg"],
+  ["items", "Items", "Hammer, wrench, torch, crowbar, and supplies", "/wiki/items", "/images/train/onboard-workstation.jpg"],
+  ["resources", "Resources", "9 named materials and a verified screenshot recipe", "/wiki/resources", "/images/official/steam-current/screenshot-05.jpg"],
+  ["medallion", "Relics", "Dungeon finds with temporary buffs", "/wiki/relics", "/images/locations/underground-dungeon.jpg"],
+  ["clothing", "World & lore", "Penitent Gardeners, the Void, and the north", "/wiki/lore", "/images/home/frostrail-official-hero.jpg"],
   ["station", "Stations", "Crafting, refining, repair, and cooking", "/wiki/stations", "/images/train/onboard-workstation.jpg"],
 ] as const satisfies ReadonlyArray<readonly [HomeIconName, string, string, string, string]>;
 
 const trainSystems = [
   ["engine", "Eden Engine", "Heat, movement, power, and survival", "/train/eden-engine"],
   ["upgrade", "Upgrades", "Walls, hatches, doors, and facilities", "/train/upgrades"],
-  ["fuel", "Fuel & Power", "Branches, logs, charcoal, and onboard power", "/train/fuel"],
+  ["fuel", "Fuel", "Branches, logs, charcoal for the Eden Engine", "/train/fuel"],
   ["carriage", "Carriages", "Expand your moving base", "/train/carriages"],
   ["defense", "Train Defense", "Revenant attacks and mounted weapons", "/train/defense"],
-  ["storage", "Storage", "Organize recovered supplies", "/wiki/stations"],
+  ["engine", "Power", "Onboard systems, heat, and machinery", "/train/power"],
 ] as const satisfies ReadonlyArray<readonly [HomeIconName, string, string, string]>;
 
 const locations = [
   ["Tundra", "Frozen terrain beyond the rails", "/locations#tundra", "/images/locations/frozen-rail-route.jpg"],
-  ["Strongholds", "Ruined fortified locations", "/locations#strongholds", "/images/locations/frozen-stronghold.jpg"],
+  ["Mining camps", "Forage stops named in the Closed Beta press kit", "/locations#mining-camps", "/images/locations/frozen-rail-route.jpg"],
+  ["Strongholds", "Ruined fortified locations", "/locations#strongholds", "/images/locations/overgrown-ruins.jpg"],
   ["Dungeons", "Dangerous underground expeditions", "/locations#dungeons", "/images/locations/underground-dungeon.jpg"],
-  ["Ruins", "Remnants of the frozen empire", "/locations#strongholds", "/images/locations/overgrown-ruins.jpg"],
-  ["Level Routes", "Multiple exits and branching travel", "/locations#level-routes", "/images/train/carriages-in-tundra.jpg"],
+  ["Vaults", "Subterranean interiors with high-risk rewards", "/locations#vaults", "/images/locations/underground-dungeon.jpg"],
 ] as const;
 
 const enemies = [
-  ["Revenants", "Zombified melee enemies in larger groups", "/enemies#revenants", "/images/enemies/revenant-close-combat.jpg"],
-  ["Wolves", "Confirmed hostile creature", "/enemies#wolves", "/images/guides/frozen-expedition.jpg"],
+  ["Revenants", "Zombified melee enemies drawn by engine noise", "/enemies#revenants", "/images/enemies/revenant-close-combat.jpg"],
+  ["Wolves", "Confirmed hostile creature", "/enemies#wolves", "/images/locations/frozen-rail-route.jpg"],
   ["Corrupted Soldiers", "Planned ranged faction with smarter AI", "/enemies#corrupted-soldiers", "/images/enemies/ruins-encounter.jpg"],
   ["Eldritch Horrors", "Threats beyond Revenants", "/enemies#eldritch-horrors", "/images/train/defense-encounter.jpg"],
 ] as const;
 
 const popularGuides = [
   ["Weapons", "Confirmed Weapons & Gun Types", "Pipe Rifle, Bolt-Action Rifle, modular guns.", "/wiki/weapons", "/images/weapons/weapon-assembly-station.jpg"],
+  ["Lore", "World, Void & Penitent Gardeners", "What the store and interviews actually confirm.", "/wiki/lore", "/images/home/frostrail-official-hero.jpg"],
   ["Train", "Understanding the Eden Engine", "Fuel, heat, power, failure, and progression.", "/train/eden-engine", "/images/train/eden-engine-cab.jpg"],
-  ["Co-op", "Frostrail Multiplayer", "Verified player count and unknown network features.", "/frostrail-multiplayer", "/images/guides/coop-train-defense.jpg"],
-  ["PC", "Official System Requirements", "What is confirmed—and what remains TBA.", "/frostrail-system-requirements", "/images/locations/frozen-rail-route.jpg"],
-  ["Release", "Frostrail Release Date", "Q4 2026 window, price, and Early Access plan.", "/frostrail-release-date", "/images/home/frostrail-official-hero.jpg"],
+  ["FAQ", "Official FAQ Answers", "Players, price, mods, Linux, and controllers.", "/frostrail-faq", "/images/official/store/steam-header.jpg"],
+  ["Release", "Frostrail Release Date", "Q4 2026 window, ~500K wishlists, and EA plan.", "/frostrail-release-date", "/images/home/frostrail-official-hero.jpg"],
 ] as const;
 
 function SectionTitle({ id, title, href, link }: { id: string; title: string; href: string; link: string }) {
@@ -100,10 +98,7 @@ function SectionTitle({ id, title, href, link }: { id: string; title: string; hr
 
 export default function HomePage() {
   return (
-    <>
-      <a className="skip-link" href="#main-content">Skip to content</a>
-      <AppHeader />
-      <main id="main-content">
+    <main id="main-content">
         <section className={styles.hero} aria-labelledby="hero-title">
           <Image
             className={styles.heroImage}
@@ -116,7 +111,8 @@ export default function HomePage() {
           />
           <div className={`container ${styles.heroContent}`}>
             <div className={styles.heroCopy}>
-              <h1 id="hero-title">FROSTRAIL WIKI</h1>
+              <p className={styles.kicker}>Independent verified wiki</p>
+            <h1 id="hero-title">FROSTRAIL WIKI</h1>
               <p>Weapons, train upgrades, relics, crafting,<br className={styles.desktopBreak} /> enemies, locations, and survival guides.</p>
               <div className={styles.heroActions}>
                 <Link className={styles.goldButton} href="/wiki">Explore Wiki <span>›</span></Link>
@@ -135,6 +131,23 @@ export default function HomePage() {
         </section>
 
         <div className={styles.content}>
+          <section className={`container ${styles.feature}`} aria-labelledby="featured-guide">
+            <div className={styles.featureMedia}>
+              <Image src="/images/guides/frozen-expedition.jpg" alt="Frostrail crew exploring a frozen level together" fill sizes="(max-width: 900px) 100vw, 52vw" />
+            </div>
+            <div className={styles.featureCopy}>
+              <p>Featured guide</p>
+              <h2 id="featured-guide">Frostrail Beginner Guide</h2>
+              <p>Prepare aboard the Eden Engine, leave with a clear objective, and return before warmth and Revenants catch the crew. This is the practical start page for the closed beta and Early Access window.</p>
+              <dl>
+                <div><dt>Players</dt><dd>1–4</dd></div>
+                <div><dt>Core loop</dt><dd>Train · scavenge · craft</dd></div>
+                <div><dt>Next test</dt><dd>Closed Beta Aug 31</dd></div>
+              </dl>
+              <Link className={styles.goldButton} href="/guides/beginner-guide">Read the guide <span>›</span></Link>
+            </div>
+          </section>
+
           <section className={`container ${styles.section}`} aria-labelledby="latest-updates">
             <SectionTitle id="latest-updates" title="Latest Updates" href="/updates" link="View all updates" />
             <div className={styles.updatesGrid}>
@@ -157,9 +170,12 @@ export default function HomePage() {
           <section className={`container ${styles.section}`} aria-labelledby="start-here">
             <SectionTitle id="start-here" title="Start Here" href="/guides" link="View all guides" />
             <div className={styles.startGrid}>
-              {guideStarts.map(([icon, title, description, href]) => (
+              {guideStarts.map(([icon, title, description, href, image]) => (
                 <Link className={styles.startCard} href={href} key={title}>
-                  <span className={styles.startIcon}><HomeIcon name={icon} /></span><strong>{title}</strong><small>{description}</small>
+                  <span className={styles.startMedia}><Image src={image} alt="" fill sizes="180px" /></span>
+                  <span className={styles.startIcon}><HomeIcon name={icon} /></span>
+                  <strong>{title}</strong>
+                  <small>{description}</small>
                 </Link>
               ))}
             </div>
@@ -233,8 +249,6 @@ export default function HomePage() {
             </div>
           </section>
         </div>
-      </main>
-      <AppFooter />
-    </>
+    </main>
   );
 }

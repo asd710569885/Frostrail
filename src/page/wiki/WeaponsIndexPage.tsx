@@ -1,28 +1,26 @@
 import Image from "next/image";
 import Link from "next/link";
-import { AppFooter } from "@/components/layout/AppFooter";
-import { AppHeader } from "@/components/layout/AppHeader";
 import styles from "@/style/page/wiki/weapons-index.module.css";
 import type { ArticleData, ArticleRecord } from "@/types/content";
 
 const categoryCards = [
   ["Rifles", "2 named weapons", "Precision, modular parts, and early-game firearms", "/images/weapons/weapon-assembly-station.jpg"],
-  ["Shotguns", "Confirmed family", "Close-range firearms; individual models remain TBA", "/images/official/steam-current/screenshot-08.jpg"],
-  ["Pistols", "Confirmed family", "WWI-influenced sidearms; names and stats remain TBA", "/images/official/steam-current/screenshot-05.jpg"],
+  ["Shotguns", "Confirmed family", "Close-range firearms; individual models remain TBA", "/images/official/steam-current/screenshot-04.jpg"],
+  ["Pistols", "Confirmed family", "WWI-influenced sidearms; names and stats remain TBA", "/images/official/steam-current/screenshot-07.jpg"],
 ] as const;
 
 const databaseCards = [
-  ["Pipe Rifle", "Named firearm", "Rifle", "TBA", "/wiki/weapons/pipe-rifle", "/images/official/steam-current/screenshot-04.jpg"],
+  ["Pipe Rifle", "Named firearm", "Rifle", "TBA", "/wiki/weapons/pipe-rifle", "/images/enemies/graveyard-revenants.jpg"],
   ["Bolt-Action Rifle", "Screenshot stat set", "Rifle", "27.0 damage / 5 clip", "/wiki/weapons/bolt-action-rifle", "/images/weapons/weapon-assembly-station.jpg"],
-  ["Pistols", "Confirmed family", "Firearm", "TBA", "/wiki/weapons#how-weapons-work", "/images/official/steam-current/screenshot-04.jpg"],
-  ["Shotguns", "Confirmed family", "Firearm", "TBA", "/wiki/weapons#how-weapons-work", "/images/official/steam-current/screenshot-08.jpg"],
+  ["Pistols", "Confirmed family", "Firearm", "TBA", "/wiki/weapons#how-weapons-work", "/images/official/steam-current/screenshot-07.jpg"],
+  ["Shotguns", "Confirmed family", "Firearm", "TBA", "/wiki/weapons#how-weapons-work", "/images/official/steam-current/screenshot-04.jpg"],
   ["Machine Guns", "Confirmed family", "Firearm", "TBA", "/wiki/weapons#how-weapons-work", "/images/train/defense-encounter.jpg"],
   ["Basic Melee", "Confirmed family", "Melee", "TBA", "/wiki/weapons#how-weapons-work", "/images/official/steam-current/screenshot-03.jpg"],
 ] as const;
 
 const relatedSections = [
-  ["Items", "Equipment, ammunition, supplies", "/wiki/items", "/images/items/fuel-and-train.jpg"],
-  ["Resources", "Metal, cloth, plastic, and fuel", "/wiki/resources", "/images/train/logs-and-locomotive.jpg"],
+  ["Items", "Equipment, ammunition, supplies", "/wiki/items", "/images/train/onboard-workstation.jpg"],
+  ["Resources", "Metal, cloth, plastic, and fuel", "/wiki/resources", "/images/official/steam-current/screenshot-05.jpg"],
   ["Crafting", "Stations, repair, and modular parts", "/wiki/crafting", "/images/wiki/weapons-crafting.jpg"],
   ["Train Defense", "Protect the Eden Engine", "/train/defense", "/images/train/defense-encounter.jpg"],
   ["Enemies", "Confirmed threats on the rails", "/enemies", "/images/enemies/revenant-close-combat.jpg"],
@@ -36,10 +34,7 @@ export function WeaponsIndexPage({ data }: { data: ArticleData }) {
   const namedRecords = [getRecord(data, "Pipe Rifle"), getRecord(data, "Bolt-Action Rifle")].filter(Boolean) as ArticleRecord[];
 
   return (
-    <>
-      <a className="skip-link" href="#weapon-database">Skip to weapon database</a>
-      <AppHeader />
-      <main className={styles.main}>
+      <main id="main-content" className={styles.main}>
         <section className={styles.hero} aria-labelledby="weapon-page-title">
           <Image className={styles.heroImage} src={data.image ?? "/images/weapons/weapon-assembly-station.jpg"} alt={data.imageAlt ?? "Frostrail weapons"} fill priority sizes="100vw" />
           <div className={`container ${styles.heroInner}`}>
@@ -156,7 +151,5 @@ export function WeaponsIndexPage({ data }: { data: ArticleData }) {
           <div>{relatedSections.map(([title, description, href, image]) => <Link href={href} key={title}><span className={styles.relatedImage}><Image src={image} alt="" fill sizes="20vw" /></span><span><strong>{title}</strong><small>{description}</small></span></Link>)}</div>
         </section>
       </main>
-      <AppFooter />
-    </>
   );
 }

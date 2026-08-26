@@ -13,6 +13,16 @@ const navigation = [
   ["Updates", "/updates"],
 ] as const;
 
+const database = [
+  ["Weapons", "/wiki/weapons"],
+  ["Items", "/wiki/items"],
+  ["Train", "/train"],
+  ["Enemies", "/enemies"],
+  ["Locations", "/locations"],
+  ["Lore", "/wiki/lore"],
+  ["FAQ", "/frostrail-faq"],
+] as const;
+
 function Brand() {
   return (
     <Link className={styles.brand} href="/" aria-label="Frostrail Wiki home">
@@ -42,10 +52,21 @@ export function AppHeader() {
             {navigation.map(([label, href]) => (
               <Link key={href} href={href}>{label}</Link>
             ))}
+            {database.map(([label, href]) => (
+              <Link key={`m-${href}`} href={href}>{label}</Link>
+            ))}
             <Link href="/guides/beginner-guide">Beginner Guide</Link>
           </nav>
         </details>
       </div>
+      <nav className={styles.database} aria-label="Game database">
+        <div className={`container ${styles.databaseInner}`}>
+          <span>Database</span>
+          {database.map(([label, href]) => (
+            <Link key={href} href={href}>{label}</Link>
+          ))}
+        </div>
+      </nav>
     </header>
   );
 }

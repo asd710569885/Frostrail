@@ -20,7 +20,7 @@
 }
 
 .heroImage { object-fit: cover; object-position: center 36%; filter: contrast(1.08) saturate(.72); }
-.heroInner { position: relative; z-index: 2; height: 100%; padding-top: 102px; }
+.heroInner { position: relative; z-index: 2; height: 100%; padding-top: 24px; }
 .breadcrumb { display: flex; gap: 10px; margin: 0 0 30px; color: #91a3ac; font-size: 14px; }
 .breadcrumb a:hover { color: var(--gold-light); }
 .heroCopy { max-width: 970px; }
@@ -162,7 +162,7 @@
 
 @media (max-width: 620px) {
   .hero { height: 650px; }
-  .heroInner { padding-top: 88px; }
+  .heroInner { padding-top: 18px; }
   .hero h1 { font-size: 54px; white-space: normal; }
   .heroCopy > p:last-child { font-size: 16px; }
   .statRail { bottom: 14px; min-height: 230px; padding: 8px; }

@@ -1,7 +1,7 @@
 .main {
   display: grid;
   min-height: 75vh;
-  padding: 130px 24px 70px;
+  padding: 48px 24px 70px;
   place-items: center;
   background: linear-gradient(rgba(5,16,23,.77), rgba(5,16,23,.98)), url("/images/home/frostrail-official-hero.jpg") center/cover;
 }

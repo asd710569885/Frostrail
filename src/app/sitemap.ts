@@ -18,6 +18,7 @@ const staticRoutes = [
   "/frostrail-multiplayer",
   "/frostrail-console",
   "/about-frostrail",
+  "/frostrail-faq",
 ];
 
 const routes = [
@@ -30,7 +31,7 @@ const routes = [
 export default function sitemap(): MetadataRoute.Sitemap {
   return routes.map((route, index) => ({
     url: `${siteConfig.url}${route}`,
-    lastModified: new Date("2026-08-22"),
+    lastModified: new Date("2026-08-26"),
     changeFrequency: index === 0 ? "weekly" : "monthly",
     priority: index === 0 ? 1 : route.split("/").length === 2 ? 0.85 : 0.72,
   }));

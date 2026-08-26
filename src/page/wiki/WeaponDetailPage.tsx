@@ -1,15 +1,13 @@
 import Image from "next/image";
 import Link from "next/link";
-import { AppFooter } from "@/components/layout/AppFooter";
-import { AppHeader } from "@/components/layout/AppHeader";
 import styles from "@/style/page/wiki/weapon-detail.module.css";
 import type { ArticleData, ArticleSection } from "@/types/content";
 
 const relatedWeapons = [
-  ["Pipe Rifle", "Named", "/wiki/weapons/pipe-rifle"],
-  ["Bolt-Action Rifle", "Named", "/wiki/weapons/bolt-action-rifle"],
-  ["Pistols", "Confirmed family", "/wiki/weapons#all-weapons"],
-  ["Shotguns", "Confirmed family", "/wiki/weapons#all-weapons"],
+  ["Pipe Rifle", "Named", "/wiki/weapons/pipe-rifle", "/images/train/defense-encounter.jpg"],
+  ["Bolt-Action Rifle", "Named", "/wiki/weapons/bolt-action-rifle", "/images/weapons/weapon-assembly-station.jpg"],
+  ["Pistols", "Confirmed family", "/wiki/weapons#all-weapons", "/images/official/steam-current/screenshot-07.jpg"],
+  ["Shotguns", "Confirmed family", "/wiki/weapons#all-weapons", "/images/official/steam-current/screenshot-04.jpg"],
 ] as const;
 
 function section(data: ArticleData, id: string): ArticleSection | undefined {
@@ -33,10 +31,7 @@ export function WeaponDetailPage({ data }: { data: ArticleData }) {
   const dataStatus = data.summary.find(([term]) => term === "Data status")?.[1] ?? "Pre-release";
 
   return (
-    <>
-      <a className="skip-link" href="#weapon-overview">Skip to weapon details</a>
-      <AppHeader />
-      <main className={styles.main}>
+      <main id="main-content" className={styles.main}>
         <header className={styles.hero}>
           <Image className={styles.heroImage} src={data.image ?? "/images/weapons/weapon-assembly-station.jpg"} alt={data.imageAlt ?? data.title} fill priority sizes="100vw" />
           <div className={`container ${styles.heroInner}`}>
@@ -63,7 +58,7 @@ export function WeaponDetailPage({ data }: { data: ArticleData }) {
           <article className={styles.article}>
             <section id="weapon-overview" className={styles.overview}>
               <div><h2>Overview</h2>{overview?.paragraphs.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}</div>
-              <div className={styles.overviewImage}><Image src="/images/guides/coop-train-defense.jpg" alt="Frostrail survivor carrying a firearm in the frozen world" fill sizes="45vw" /></div>
+              <div className={styles.overviewImage}><Image src={data.image ?? "/images/weapons/weapon-assembly-station.jpg"} alt={data.imageAlt ?? data.title} fill sizes="45vw" /></div>
             </section>
 
             <section id="detailed-stats">
@@ -114,17 +109,15 @@ export function WeaponDetailPage({ data }: { data: ArticleData }) {
               <dl>{data.summary.map(([term, value]) => <div key={term}><dt>{term}</dt><dd>{value}</dd></div>)}</dl>
               <blockquote>Screenshot values are labeled as pre-release evidence and may change before Early Access.</blockquote>
             </section>
-            <section className={styles.sidePanel}><h2>Related Weapons</h2>{relatedWeapons.map(([title, status, href]) => <Link href={href} key={title}><span className={styles.weaponThumb}><Image src="/images/weapons/weapon-assembly-station.jpg" alt="" fill sizes="90px" /></span><span><strong>{title}</strong><small>{status}</small></span></Link>)}<Link className={styles.viewAll} href="/wiki/weapons">View all weapons <span>›</span></Link></section>
+            <section className={styles.sidePanel}><h2>Related Weapons</h2>{relatedWeapons.map(([title, status, href, image]) => <Link href={href} key={title}><span className={styles.weaponThumb}><Image src={image} alt="" fill sizes="90px" /></span><span><strong>{title}</strong><small>{status}</small></span></Link>)}<Link className={styles.viewAll} href="/wiki/weapons">View all weapons <span>›</span></Link></section>
             <section className={styles.sidePanel}><h2>Related Guides</h2><Link href="/wiki/crafting"><b>⚙</b><span><strong>Crafting database</strong><small>Stations, parts, and repair</small></span></Link><Link href="/train/defense"><b>◎</b><span><strong>Train defense</strong><small>Threats and mounted weapons</small></span></Link><Link href="/guides/beginner-guide"><b>▤</b><span><strong>Beginner guide</strong><small>Start surviving the rails</small></span></Link></section>
           </aside>
         </div>
 
         <section className={`container ${styles.moreWeapons}`} aria-labelledby="more-weapons">
           <h2 id="more-weapons">More Frostrail Weapons</h2>
-          <div>{relatedWeapons.map(([title, status, href]) => <Link href={href} key={title}><span><Image src="/images/weapons/weapon-assembly-station.jpg" alt="" fill sizes="24vw" /></span><strong>{title}</strong><small>{status} · Stats TBA</small></Link>)}</div>
+          <div>{relatedWeapons.map(([title, status, href, image]) => <Link href={href} key={title}><span><Image src={image} alt="" fill sizes="24vw" /></span><strong>{title}</strong><small>{status} · Stats TBA</small></Link>)}</div>
         </section>
       </main>
-      <AppFooter />
-    </>
   );
 }

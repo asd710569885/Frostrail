@@ -50,6 +50,17 @@
   color: #aebbc2;
 }
 
+.socials a {
+  display: grid;
+  place-items: center;
+  color: inherit;
+}
+
+.socials a:hover,
+.socials a:focus-visible {
+  color: var(--gold-light);
+}
+
 .socials svg {
   width: 27px;
   height: 27px;

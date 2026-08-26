@@ -11,6 +11,8 @@ export type HubTopic = {
   description: string;
   details: readonly string[];
   href?: string;
+  image?: string;
+  imageAlt?: string;
   source?: ContentSource;
 };
 
@@ -32,6 +34,9 @@ export type ArticleSection = {
   paragraphs: readonly string[];
   bullets?: readonly string[];
   facts?: readonly (readonly [string, string])[];
+  image?: string;
+  imageAlt?: string;
+  caption?: string;
 };
 
 export type ArticleRecord = {
@@ -39,6 +44,8 @@ export type ArticleRecord = {
   label: string;
   description: string;
   href?: string;
+  image?: string;
+  imageAlt?: string;
   facts: readonly (readonly [string, string])[];
 };
 
@@ -63,6 +70,6 @@ export type ArticleData = {
   sections: readonly ArticleSection[];
   gallery?: readonly ArticleImage[];
   sources: readonly ContentSource[];
-  related?: readonly { label: string; href: string }[];
+  related?: readonly { label: string; href: string; image?: string }[];
   seo?: { title: string; description: string };
 };

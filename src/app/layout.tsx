@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { Oswald, Roboto_Condensed } from "next/font/google";
+import { AppFooter } from "@/components/layout/AppFooter";
+import { AppHeader } from "@/components/layout/AppHeader";
 import { siteConfig } from "@/config/site";
 import { JsonLd } from "@/seo/JsonLd";
 import "@/style/globals.css";
@@ -44,7 +46,10 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
     <html lang="en" className={`${bodyFont.variable} ${displayFont.variable}`}>
       <body>
         <JsonLd />
+        <a className="skip-link" href="#main-content">Skip to content</a>
+        <AppHeader />
         {children}
+        <AppFooter />
       </body>
     </html>
   );

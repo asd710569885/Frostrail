@@ -19,7 +19,10 @@ const structuredData = {
       url: siteConfig.steamUrl,
       gamePlatform: "PC",
       playMode: ["SinglePlayer", "MultiPlayer"],
-      genre: ["Survival", "Adventure", "Co-operative"],
+      genre: ["Action", "Adventure", "Survival", "Simulation"],
+      numberOfPlayers: { minValue: 1, maxValue: 4 },
+      author: { "@type": "Organization", name: "FakeFish" },
+      publisher: { "@type": "Organization", name: "Shiro Unlimited" },
     },
   ],
 };

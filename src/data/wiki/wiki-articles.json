@@ -24,7 +24,7 @@
         { "id": "crafting-and-mods", "title": "Crafting & modifications", "paragraphs": ["The developers say firearms are craftable and modular. In the official Assembly Station screenshot, the Bolt-Action Rifle uses interchangeable stocks and displays a concrete assembly requirement: slag metal ×5, wood ×3, and cloth ×2.", "That screen lists Wooden, Padded, and Bare Bolt-Action Rifle Stock options. The selected Padded stock weighs 0.3 kg and shows +0.0% recoil and +0.0% stability in that captured build."], "facts": [["Weapon crafting", "Confirmed design feature"], ["Named UI", "Assembly Station"], ["Visible stock options", "Wooden / Padded / Bare"], ["Exact public recipe", "Bolt-Action Rifle screenshot only"]] },
         { "id": "faq", "title": "Weapon data FAQ", "paragraphs": ["The screenshot values are official visual evidence, but they belong to an in-development build and are not presented as final Early Access balance. Damage rankings remain inappropriate because no comparable public stat panel exists for the Pipe Rifle, pistols, shotguns, machine guns, or melee weapons."], "bullets": ["Reference-design mockup names remain excluded", "Official screenshot values are labeled pre-release", "Future beta or Early Access values should retain build and verification context"] }
       ],
-      "gallery": [{ "src": "/images/official/steam-current/screenshot-05.jpg", "alt": "Official Frostrail Assembly Station screen for a Bolt-Action Rifle", "caption": "Official Steam screenshot: Assembly Station stats, stock choices, and material requirements for a pre-release Bolt-Action Rifle." }, { "src": "/images/official/steam-current/screenshot-04.jpg", "alt": "Frostrail player firing at a Revenant", "caption": "Official Steam screenshot documenting close-range firearm combat against a Revenant." }],
+      "gallery": [{ "src": "/images/official/steam-current/screenshot-05.jpg", "alt": "Official Frostrail Assembly Station screen for a Bolt-Action Rifle", "caption": "Official Steam screenshot: Assembly Station stats, stock choices, and material requirements for a pre-release Bolt-Action Rifle." }, { "src": "/images/official/steam-current/screenshot-04.jpg", "alt": "Player firing a double-barreled shotgun at a Revenant", "caption": "Official Steam screenshot of shotgun combat against a humanoid Revenant." }],
       "sources": [
         { "label": "GamingBolt interview with lead designer Ez Jämsen", "href": "https://gamingbolt.com/frostrail-interview-the-train-enemy-factions-horror-vibes-and-more", "tier": "Developer interview" },
         { "label": "IndieGames interview with FakeFish founder Aku Jauhiainen", "href": "https://www.indie-games.eu/frostrail-in-depth-overview-with-fakefish-founder/", "tier": "Developer interview" },
@@ -39,8 +39,8 @@
       "eyebrow": "Inventory database",
       "title": "Frostrail Items & Equipment",
       "lede": "The announced inventory spans weapons, equipment, ammunition, food, clothing, materials, train fuel, Relics, and repair or crafting components. A complete item-by-item catalog is not yet public.",
-      "image": "/images/items/fuel-and-train.jpg",
-      "imageAlt": "Official Frostrail screenshot showing fuel logs beside the locomotive",
+      "image": "/images/train/onboard-workstation.jpg",
+      "imageAlt": "Metal Hammer equipped inside a Frostrail train carriage",
       "date": "Verified August 25, 2026",
       "status": "4 named tools + category data",
       "summary": [["Named tools", "4"], ["Inventory management", "Confirmed"], ["Resource management", "Confirmed"], ["Most weights / stacks", "TBA"]],
@@ -67,8 +67,8 @@
       "eyebrow": "Materials database",
       "title": "Frostrail Resources",
       "lede": "Public sources name branches, logs, charcoal, wood, metal, cloth, and plastic, while also documenting fuel, material refining, and one official screenshot recipe. Exact yields and most recipes remain TBA.",
-      "image": "/images/train/logs-and-locomotive.jpg",
-      "imageAlt": "Logs gathered beside the Frostrail locomotive",
+      "image": "/images/official/steam-current/screenshot-03.jpg",
+      "imageAlt": "Logs, fuel canisters, and metal scraps in the Eden Engine cab hotbar",
       "date": "Verified August 25, 2026",
       "status": "9 named resources + refining",
       "summary": [["Named resources", "9"], ["Metal chain", "Scraps → slag → pure"], ["Screenshot recipe", "Rifle assembly"], ["Most drop rates", "TBA"]],
@@ -88,7 +88,7 @@
         { "id": "documented-recipe", "title": "Documented material requirement", "paragraphs": ["One official Steam screenshot provides exact pre-release material quantities for assembling the pictured Bolt-Action Rifle: five slag metal, three wood, and two cloth. This is valid screenshot evidence, but it should not be generalized to other guns or assumed final for Q4 2026 Early Access."], "facts": [["Slag metal", "×5"], ["Wood", "×3"], ["Cloth", "×2"], ["Build status", "Official pre-release screenshot"]] },
         { "id": "missing-fields", "title": "Fields awaiting verification", "paragraphs": ["The development team has not published stack sizes, weights, node locations, processing ratios, yields, rarity, or complete recipe relationships for these resources."], "facts": [["Stack size", "TBA"], ["Weight", "TBA"], ["Where to find", "General scavenging confirmed; exact locations TBA"], ["Metal processing chain", "Confirmed"], ["Refining ratios / time", "TBA"], ["Other recipe quantities", "TBA"]] }
       ],
-      "gallery": [{ "src": "/images/official/steam-current/screenshot-05.jpg", "alt": "Bolt-Action Rifle Assembly Station material requirements", "caption": "Official screenshot showing slag metal ×5, wood ×3, and cloth ×2 for the displayed pre-release rifle assembly." }, { "src": "/images/official/steam-current/screenshot-01.jpg", "alt": "Logs carried beside the Frostrail locomotive", "caption": "Official screenshot showing logs being brought to the train; developers identify branches, logs, and charcoal as fuel inputs." }],
+      "gallery": [{ "src": "/images/official/steam-current/screenshot-05.jpg", "alt": "Bolt-Action Rifle Assembly Station material requirements", "caption": "Official screenshot showing slag metal ×5, wood ×3, and cloth ×2 for the displayed pre-release rifle assembly." }, { "src": "/images/official/steam-current/screenshot-03.jpg", "alt": "Logs, fuel canisters, and metal scraps in the Eden Engine cab hotbar", "caption": "Official cab screenshot: logs ×24, fuel canisters ×3, and metal scraps ×24 in the hotbar." }],
       "sources": [{ "label": "Official Steam store and screenshot gallery", "href": "https://store.steampowered.com/app/3517740/Frostrail/?l=english", "tier": "Official" }, { "label": "PC Gamer interview with FakeFish", "href": "https://www.pcgamer.com/games/survival-crafting/barotrauma-developer-unveils-its-next-co-op-survival-game-a-dieselpunk-fps-where-your-mobile-fortress-is-a-train/", "tier": "Developer interview" }, { "label": "IndieGames interview with FakeFish founder", "href": "https://www.indie-games.eu/frostrail-in-depth-overview-with-fakefish-founder/", "tier": "Developer interview" }],
       "related": [{ "label": "Crafting", "href": "/wiki/crafting" }, { "label": "Train fuel", "href": "/train/fuel" }, { "label": "Train upgrades", "href": "/train/upgrades" }],
       "seo": { "title": "Frostrail Resources: Metal, Cloth, Plastic, Logs & Fuel", "description": "Verified Frostrail resource list covering branches, logs, charcoal, metal, cloth, plastic, fuel uses, crafting links, and unconfirmed values." }
@@ -127,8 +127,8 @@
       "eyebrow": "Dungeon artifacts",
       "title": "Frostrail Relics",
       "lede": "Relics are dungeon finds that can be activated aboard the train for temporary buffs. No individual Relic name or effect value has yet been officially published.",
-      "image": "/images/wiki/relic-activation.jpg",
-      "imageAlt": "A powered Relic device aboard the Frostrail train",
+      "image": "/images/wiki/relic-discovery.jpg",
+      "imageAlt": "Relic glowing in a dungeon shrine",
       "date": "Verified August 25, 2026",
       "status": "Mechanic confirmed / entries TBA",
       "summary": [["Found in", "Dungeons"], ["Activated at", "The train"], ["Effect", "Temporary buffs"], ["Named Relics", "TBA"]],
@@ -138,7 +138,7 @@
         { "id": "development-context", "title": "Development context", "paragraphs": ["Relics were reported as a newest addition in the May 13, 2026 Spring Development Update, after the April closed playtest. The update connects them to the overhauled modular dungeons and to cross-level pilgrimage progression, but does not say whether Relics themselves persist when a crew exits a level."], "facts": [["Announcement", "Spring Development Update"], ["Date", "May 13, 2026"], ["Dungeon overhaul", "New modular assets and improved lighting"], ["Progression between levels", "Added broadly; Relic persistence not specified"]] },
         { "id": "unknowns", "title": "Unconfirmed fields", "paragraphs": ["The public update does not disclose Relic names, rarity tiers, activation station, duration, stacking rules, exact effects, drop rates, or whether a Relic persists between levels."], "facts": [["Names", "TBA"], ["Rarity", "TBA"], ["Buff values", "TBA"], ["Duration", "TBA"], ["Persistence", "TBA"]] }
       ],
-      "gallery": [{ "src": "/images/official/steam-current/screenshot-10.jpg", "alt": "Powered device inside the Frostrail train", "caption": "Official Steam screenshot used to document onboard activation machinery; the public source does not name the pictured device as a specific Relic." }, { "src": "/images/official/steam-current/screenshot-08.jpg", "alt": "Frostrail expedition in a shrine-like dungeon", "caption": "Official Steam screenshot of an underground expedition space associated with dungeon exploration." }],
+      "gallery": [{ "src": "/images/wiki/relic-discovery.jpg", "alt": "Relic glowing in a dungeon shrine", "caption": "Official playtest trailer still of a Relic discovered in a subterranean shrine." }, { "src": "/images/official/steam-current/screenshot-07.jpg", "alt": "Dungeon objective The Trial Below", "caption": "Official screenshot of dungeon exploration where Relics are recovered." }],
       "sources": [{ "label": "Official Spring Development Update", "href": "https://store.steampowered.com/news/app/3517740/view/664987745725186081", "tier": "Official" }],
       "related": [{ "label": "Locations", "href": "/locations#dungeons" }, { "label": "Train systems", "href": "/train" }],
       "seo": { "title": "Frostrail Relics: Dungeons, Activation & Buffs", "description": "What is officially known about Frostrail Relics, including dungeon acquisition, train activation, temporary buffs, and all currently unconfirmed fields." }
@@ -160,7 +160,7 @@
         { "id": "cold-meter", "title": "Warmth & exposure", "paragraphs": ["Developer demonstrations describe a warmth bar that depletes during outdoor exploration. When it reaches zero, health begins to fall. Visual cues intensify as the character freezes, while the train remains the crew's reliable heat source."], "facts": [["Primary meter", "Warmth"], ["At zero warmth", "Health loss begins"], ["Reliable heat source", "The train"], ["Exact drain and insulation values", "TBA"]] },
         { "id": "spring-update", "title": "Development status", "paragraphs": ["The Spring 2026 update reported multiple new clothing sets. It did not list their names, visuals, recipes, stat blocks, slots, or set bonuses."], "facts": [["New sets", "Multiple"], ["Canonical names", "TBA"], ["Recipes", "TBA"], ["Set bonuses", "Not confirmed"]] }
       ],
-      "gallery": [{ "src": "/images/official/steam-current/screenshot-06.jpg", "alt": "Frostrail crew wearing winter clothing during an expedition", "caption": "Official screenshot showing three crew members outside the train in the frozen environment; visible clothing is not assigned unconfirmed item names." }, { "src": "/images/official/steam-current/screenshot-03.jpg", "alt": "Frostrail cab showing minus 28.3 degrees Celsius", "caption": "Official screenshot documenting a −28.3 °C exterior reading in a pre-release build; this is scene evidence, not a universal biome temperature." }],
+      "gallery": [{ "src": "/images/official/steam-current/screenshot-06.jpg", "alt": "Frostrail crew wearing winter clothing during an expedition", "caption": "Official screenshot of winter clothing on an outdoor expedition." }, { "src": "/images/official/steam-current/screenshot-03.jpg", "alt": "Frostrail cab showing minus 28.3 degrees Celsius", "caption": "Official cab screenshot documenting a −28.3 °C reading during a blizzard." }],
       "sources": [{ "label": "GamingBolt lead-designer interview", "href": "https://gamingbolt.com/frostrail-interview-the-train-enemy-factions-horror-vibes-and-more", "tier": "Developer interview" }, { "label": "Official Spring Development Update", "href": "https://store.steampowered.com/news/app/3517740/view/664987745725186081", "tier": "Official" }],
       "related": [{ "label": "Food", "href": "/wiki/food" }, { "label": "Beginner guide", "href": "/guides/beginner-guide" }],
       "seo": { "title": "Frostrail Clothing, Warmth & Cold Protection", "description": "Verified Frostrail clothing information covering cold mitigation, announced clothing sets, survival links, and currently unconfirmed stats and recipes." }
@@ -172,7 +172,7 @@
       "title": "Frostrail Food & Cooking",
       "lede": "Food is cooked aboard the train and grants meaningful buffs rather than satisfying a mandatory hunger meter. Some food effects can help players withstand the cold.",
       "image": "/images/train/onboard-workstation.jpg",
-      "imageAlt": "Interior workstation aboard the Frostrail train",
+      "imageAlt": "Cooking station aboard the train",
       "date": "Verified August 25, 2026",
       "status": "Mechanic confirmed / recipes TBA",
       "summary": [["Hunger meter", "Not planned as mandatory"], ["Station", "Cooking station"], ["Effects", "Health / stats / cold mitigation"], ["Recipes", "TBA"]],
@@ -182,7 +182,7 @@
         { "id": "acquisition", "title": "Food acquisition", "paragraphs": ["Coverage of the April 2026 playtest, based on the released test brief, reports that wildlife can be hunted for food. The developers have not published species-specific drops, but the Steam mature-content description independently confirms hostile creatures including wolves and humanoids."], "facts": [["Hunting", "Reported for playtest"], ["Named wildlife", "Wolves mentioned in Steam content disclosure"], ["Butchering / cooking flow", "TBA"], ["Drop quantities", "TBA"]] },
         { "id": "unknowns", "title": "Unconfirmed recipe data", "paragraphs": ["No canonical recipe names, ingredients, cooking times, station power costs, buff values, durations, stacking rules, spoilage system, or inventory sizes have been published."], "facts": [["Food names", "TBA"], ["Ingredients", "TBA"], ["Buff values", "TBA"], ["Spoilage", "Not confirmed"]] }
       ],
-      "gallery": [{ "src": "/images/official/steam-current/screenshot-09.jpg", "alt": "Interior work area aboard the Frostrail train", "caption": "Official screenshot of the train interior where onboard facilities are built and operated." }],
+      "gallery": [{ "src": "/images/official/steam-current/screenshot-09.jpg", "alt": "Cooking station aboard the Frostrail train", "caption": "Official screenshot of the onboard cooking station." }],
       "sources": [{ "label": "IndieGames interview with FakeFish founder", "href": "https://www.indie-games.eu/frostrail-in-depth-overview-with-fakefish-founder/", "tier": "Developer interview" }, { "label": "GamingBolt lead-designer interview", "href": "https://gamingbolt.com/frostrail-interview-the-train-enemy-factions-horror-vibes-and-more", "tier": "Developer interview" }, { "label": "4Gamer April 2026 playtest report", "href": "https://www.4gamer.net/games/900/G090034/20260417063/", "tier": "Press report" }],
       "related": [{ "label": "Clothing", "href": "/wiki/clothing" }, { "label": "Crafting", "href": "/wiki/crafting" }],
       "seo": { "title": "Frostrail Food, Cooking & Survival Buffs", "description": "Verified Frostrail food and cooking information: cooking stations, health and cold buffs, no mandatory hunger meter, and TBA recipe data." }
@@ -215,6 +215,36 @@
       "sources": [{ "label": "Official Steam store and Assembly Station screenshot", "href": "https://store.steampowered.com/app/3517740/Frostrail/?l=english", "tier": "Official" }, { "label": "PC Gamer developer interview", "href": "https://www.pcgamer.com/games/survival-crafting/barotrauma-developer-unveils-its-next-co-op-survival-game-a-dieselpunk-fps-where-your-mobile-fortress-is-a-train/", "tier": "Developer interview" }, { "label": "Official Spring Development Update", "href": "https://store.steampowered.com/news/app/3517740/view/664987745725186081", "tier": "Official" }, { "label": "IndieGames founder interview", "href": "https://www.indie-games.eu/frostrail-in-depth-overview-with-fakefish-founder/", "tier": "Developer interview" }],
       "related": [{ "label": "Crafting", "href": "/wiki/crafting" }, { "label": "Train carriages", "href": "/train/carriages" }, { "label": "Train power", "href": "/train/power" }],
       "seo": { "title": "Frostrail Train Stations, Benches, Repair & Storage", "description": "Verified Frostrail onboard facilities covering crafting benches, refineries, weapon modification, repair, cooking, and storage." }
+    },
+    "lore": {
+      "slug": "lore",
+      "parent": { "label": "Wiki", "href": "/wiki" },
+      "eyebrow": "Setting database",
+      "title": "Frostrail World & Lore",
+      "lede": "Frostrail is set in a former empire entombed in frost after its Emperor made a pact with the Void. Players are Penitent Gardeners traveling north aboard the Eden Engine. Background lore exists, but FakeFish says survival systems—not story beats—are the gameplay driver.",
+      "image": "/images/home/frostrail-official-hero.jpg",
+      "imageAlt": "Official Frostrail key art of Penitent Gardeners beside the armored train",
+      "date": "Verified August 26, 2026",
+      "status": "Premise confirmed / named NPCs TBA",
+      "summary": [["Player group", "Penitent Gardeners"], ["Cataclysm", "Emperor’s pact with the Void"], ["Direction", "North"], ["Story as driver", "No — survival first"]],
+      "records": [
+        { "title": "Penitent Gardeners", "label": "Player faction", "description": "Official store copy: they purge the land of the cursed, grant mercy to the lost, and strike down the wicked while seeking salvation in the frozen desolation.", "facts": [["Role", "Player characters"], ["Vehicle", "Eden Engine"], ["Named members", "TBA"]] },
+        { "title": "The Void", "label": "Cataclysmic force", "description": "The empire was twisted by the Emperor’s pact with the Void. Official copy does not define the Void as a faction, god, or location beyond that pact.", "facts": [["Linked event", "Freezing of the empire"], ["Canonical cosmology", "TBA"], ["Named Void entities", "TBA"]] },
+        { "title": "The Emperor", "label": "Historical figure", "description": "Named only as the ruler who made the pact that froze the empire. No biography, appearance, or in-game encounter is published.", "facts": [["Confirmed act", "Pact with the Void"], ["Status in-game", "TBA"], ["Is this a boss", "Not confirmed"]] }
+      ],
+      "sections": [
+        { "id": "premise", "title": "Official premise", "paragraphs": ["Steam’s about text is the primary lore source: a mighty empire now lies barren under unrelenting cold; ruins are haunted by revenants and eldritch horrors; an armored steam train carries Penitent Gardeners seeking salvation.", "Lead designer Ez Jämsen says there is a broader background narrative and lore, but story is not the gameplay driver. The tone is tension and action with light creepy aesthetics, closer to Barotrauma than a dedicated horror game."], "bullets": ["Former empire frozen after a Void pact", "Penitent Gardeners travel north", "Revenants and eldritch horrors inhabit the ruins", "Survival systems push the player, not a stated quest log"] },
+        { "id": "tone", "title": "Tone & references", "paragraphs": ["Jämsen would not call Frostrail a horror game. Horror elements stay light because the game is an action-based multiplayer title; the intended feeling is tension—something leaping from a dark corner or looming on the horizon. Founder Aku Jauhiainen has cited Wolfenstein as a visual reference while stressing that Frostrail is more systems-heavy, in line with FakeFish’s Barotrauma DNA. Press and coverage often compare the moving-base fantasy to Snowpiercer or Metro Exodus; those are reviewer analogies, not developer-stated inspirations except where interviews name them."], "facts": [["Horror label", "Rejected by lead designer"], ["Intended feel", "Tension + action"], ["Named visual reference", "Wolfenstein"], ["Studio DNA", "System-heavy design from Barotrauma"]] },
+        { "id": "journey", "title": "The northward journey", "paragraphs": ["The world is a sequence of levels. At the end of a level, the crew uses a tunnel to select the next route. Farther north, the world gets colder and harder. Everything happens in real time. Thorough exploration of points of interest can take two hours or more per level according to the founder interview; that is a development-time estimate, not a mission timer."], "facts": [["Travel direction", "North"], ["Level transition", "Tunnel / next-level selection"], ["Time model", "Real time"], ["Full-clear duration", "Two hours or more — interview estimate"]] }
+      ],
+      "gallery": [{ "src": "/images/home/frostrail-official-hero.jpg", "alt": "Official Frostrail key art with Penitent Gardeners and the armored train", "caption": "Official key art of the Penitent Gardeners and Eden Engine." }, { "src": "/images/official/steam-current/screenshot-07.jpg", "alt": "Frostrail dungeon objective The Trial Below", "caption": "Official screenshot of the dungeon objective “The Trial Below — Search the unknown for a hidden shrine.”" }],
+      "sources": [
+        { "label": "Official Frostrail Steam page", "href": "https://store.steampowered.com/app/3517740/Frostrail/?l=english", "tier": "Official" },
+        { "label": "GamingBolt interview with lead designer Ez Jämsen", "href": "https://gamingbolt.com/frostrail-interview-the-train-enemy-factions-horror-vibes-and-more", "tier": "Developer interview" },
+        { "label": "IndieGames interview with FakeFish founder", "href": "https://www.indie-games.eu/frostrail-in-depth-overview-with-fakefish-founder/", "tier": "Developer interview" }
+      ],
+      "related": [{ "label": "Locations", "href": "/locations" }, { "label": "Enemies", "href": "/enemies" }, { "label": "About Frostrail", "href": "/about-frostrail" }],
+      "seo": { "title": "Frostrail Lore: Penitent Gardeners, the Void & the Empire", "description": "Verified Frostrail world lore covering Penitent Gardeners, the Emperor’s pact with the Void, the northward journey, and the game’s tension-not-horror tone." }
     }
   },
   "weapons": {
@@ -224,8 +254,8 @@
       "eyebrow": "Verified weapon entry",
       "title": "Pipe Rifle",
       "lede": "The Pipe Rifle is a publicly named early-game Frostrail weapon. Its exact damage, ammunition, magazine, rarity, range, durability, weight, recipe, and modification set are not yet published.",
-      "image": "/images/weapons/weapon-assembly-station.jpg",
-      "imageAlt": "Official Frostrail weapon assembly interface with a modular rifle",
+      "image": "/images/enemies/graveyard-revenants.jpg",
+      "imageAlt": "Pipe Rifle on a frozen graveyard expedition",
       "date": "Verified August 25, 2026",
       "status": "Developer-confirmed / stats TBA",
       "summary": [["Type", "Rifle"], ["Progression", "Early game"], ["Craftable", "Yes — planned"], ["Data status", "Interview only"]],
@@ -237,7 +267,7 @@
         { "id": "mods", "title": "Modification status", "paragraphs": ["Frostrail firearms are modular broadly, but the official Assembly Station screenshot documents the Bolt-Action Rifle rather than the Pipe Rifle. No compatible Pipe Rifle barrel, stock, optic, receiver, slot, or modifier is confirmed."], "facts": [["General modular system", "Confirmed"], ["Pipe Rifle-specific parts", "TBA"], ["Slot count", "TBA"]] },
         { "id": "tips", "title": "Tips & best uses", "paragraphs": ["No performance recommendation is offered before recoil, accuracy, ammunition economy, damage, and durability can be tested in a documented build. Treat its early-game label as progression context, not proof that it is weak or disposable."], "bullets": ["Do not reuse the Bolt-Action Rifle screenshot stats", "Do not infer caliber or damage from its name", "Add tactical recommendations only with build-specific evidence"] }
       ],
-      "gallery": [{ "src": "/images/official/steam-current/screenshot-05.jpg", "alt": "Official Frostrail Assembly Station screenshot", "caption": "This official image documents the broader modular weapon system, but the pictured weapon is a Bolt-Action Rifle, not the Pipe Rifle." }],
+      "gallery": [{ "src": "/images/enemies/graveyard-revenants.jpg", "alt": "Pipe Rifle on a frozen graveyard expedition", "caption": "Official gameplay trailer still of the Pipe Rifle during a graveyard expedition." }, { "src": "/images/train/defense-encounter.jpg", "alt": "Pipe Rifle combat during train defense", "caption": "Official screenshot of Pipe Rifle combat during a train-defense encounter." }],
       "sources": [{ "label": "IndieGames interview with FakeFish founder Aku Jauhiainen", "href": "https://www.indie-games.eu/frostrail-in-depth-overview-with-fakefish-founder/", "tier": "Developer interview" }, { "label": "GamingBolt lead-designer interview", "href": "https://gamingbolt.com/frostrail-interview-the-train-enemy-factions-horror-vibes-and-more", "tier": "Developer interview" }],
       "related": [{ "label": "Bolt-Action Rifle", "href": "/wiki/weapons/bolt-action-rifle" }, { "label": "All weapons", "href": "/wiki/weapons" }, { "label": "Crafting", "href": "/wiki/crafting" }],
       "seo": { "title": "Frostrail Pipe Rifle: Confirmed Info, Stats & Crafting", "description": "Verified Frostrail Pipe Rifle entry covering its early-game role, craftable weapon context, and every stat or recipe field still TBA." }
@@ -261,7 +291,7 @@
         { "id": "mods", "title": "Stock options & modifiers", "paragraphs": ["The visible stock slot offers Wooden Bolt-Action Rifle Stock, Padded Bolt-Action Rifle Stock, and Bare Bolt-Action Rifle Stock. The selected Padded stock has the description “Gaudy and offering small false comforts to the Pilgrim judgment is rightly delivered.”"], "facts": [["Wooden stock", "Visible option"], ["Padded stock", "Visible option / selected"], ["Bare stock", "Visible option"], ["Selected stock weight", "0.3 kg"], ["Selected stock recoil", "+0.0%"], ["Selected stock stability", "+0.0%"], ["Other part slots", "Visible on model; names not readable"]] },
         { "id": "tips", "title": "Interpretation & data limits", "paragraphs": ["A single screenshot is enough to document the displayed stats and recipe, but not enough to rank the rifle against other guns or prescribe an optimal build. Ammo type, reload duration in seconds, rarity, range, durability loss per shot, headshot multiplier, critical behavior, and stock comparison values remain unverified."], "bullets": ["Treat 27.0 as screenshot projectile damage, not a final launch value", "Treat 5 as clip size; the ammo type is not shown", "Do not convert modifier percentages into timing or recoil behavior without a playable build", "Retain this page's pre-release label after future balance changes"] }
       ],
-      "gallery": [{ "src": "/images/official/steam-current/screenshot-05.jpg", "alt": "Official Frostrail Bolt-Action Rifle Assembly Station screen", "caption": "Primary evidence: official Steam screenshot showing the complete visible stat panel, stock slot, stock options, and material requirements." }, { "src": "/images/official/steam-current/screenshot-02.jpg", "alt": "Frostrail crew defending a carriage with rifles", "caption": "Official Steam screenshot showing rifle combat during a train-defense encounter; it does not identify the exact equipped model." }],
+      "gallery": [{ "src": "/images/official/steam-current/screenshot-05.jpg", "alt": "Official Frostrail Bolt-Action Rifle Assembly Station screen", "caption": "Official Steam screenshot showing the complete visible stat panel, stock slot, stock options, and material requirements." }, { "src": "/images/official/steam-current/screenshot-02.jpg", "alt": "Bolt-Action Rifle combat during train defense", "caption": "Official Steam screenshot of Bolt-Action Rifle combat during a train-defense encounter." }],
       "sources": [{ "label": "Official Steam store and Assembly Station screenshot", "href": "https://store.steampowered.com/app/3517740/Frostrail/?l=english", "tier": "Official" }, { "label": "IndieGames interview with FakeFish founder Aku Jauhiainen", "href": "https://www.indie-games.eu/frostrail-in-depth-overview-with-fakefish-founder/", "tier": "Developer interview" }, { "label": "GamingBolt lead-designer interview", "href": "https://gamingbolt.com/frostrail-interview-the-train-enemy-factions-horror-vibes-and-more", "tier": "Developer interview" }],
       "related": [{ "label": "Pipe Rifle", "href": "/wiki/weapons/pipe-rifle" }, { "label": "All weapons", "href": "/wiki/weapons" }, { "label": "Train stations", "href": "/wiki/stations" }],
       "seo": { "title": "Frostrail Bolt-Action Rifle: Stats, Recipe & Stocks", "description": "Official screenshot data for the Frostrail Bolt-Action Rifle: 27 projectile damage, 5-round clip, 200 durability, recipe materials, and visible stock options." }

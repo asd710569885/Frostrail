@@ -23,7 +23,10 @@ Primary sources:
 | `updates/gameplay-trailer.jpg` | Steam official gameplay-trailer thumbnail | Updates and platform articles |
 | `weapons/weapon-assembly-station.jpg` | Steam screenshot 05 | Weapon list and weapon detail pages |
 | `wiki/weapons-crafting.jpg` | Steam screenshot 05 | Wiki and crafting presentation |
-| `wiki/relic-activation.jpg` | Steam screenshot 10 | Relics page |
+| `wiki/relic-activation.jpg` | Steam screenshot 10 | Legacy furnace still; Relics now use `wiki/relic-discovery.jpg` |
+| `wiki/relic-discovery.jpg` | Official playtest trailer still (`Pq80rrLiEv4`) | Relic shrine / dungeon Relic pages |
+| `enemies/graveyard-revenants.jpg` | Official gameplay trailer still (`puxIrsBxYV0`) | Pipe Rifle, Revenants, clothing, co-op combat |
+| `train/locomotive-blizzard.jpg` | IGN Fan Fest trailer thumbnail (`UNAMZo4LCQE`) | Locomotive exterior |
 | `items/fuel-and-train.jpg` | Steam screenshot 01 | Items and resources presentation |
 | `train/eden-engine-cab.jpg` | Steam screenshot 03 | Eden Engine and train operation |
 | `train/onboard-workstation.jpg` | Steam screenshot 09 | Workstations, upgrades, food, and storage |
@@ -63,6 +66,9 @@ Primary sources:
 - `official/steam-current/screenshot-09.jpg` visibly names the equipped **Metal Hammer**.
 - `official/steam-current/screenshot-10.jpg` visibly names the equipped **Metal Wrench**.
 - `official/steam-current/screenshot-07.jpg` visibly names the equipped **Torch** and shows the objective **The Trial Below — Search the unknown for a hidden shrine**.
+- `official/steam-current/screenshot-03.jpg` shows the cab hotbar with **Metal Hammer**, **Crowbar**, **fuel canisters ×3**, **logs ×24**, and **metal scraps ×24**, plus a **−28.3 °C** reading.
+- `wiki/relic-discovery.jpg` is a still from the official playtest trailer showing a glowing Relic in a subterranean shrine.
+- `enemies/graveyard-revenants.jpg` is a still from the official gameplay trailer showing rifle combat against Revenants in a frozen graveyard.
 
 These are official pre-release screenshot values, not guaranteed Q4 2026 Early Access balance. Pages must retain their build-status caveat when using them.
 
