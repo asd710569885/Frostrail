@@ -20,7 +20,7 @@ const structuredData = {
       gamePlatform: "PC",
       playMode: ["SinglePlayer", "MultiPlayer"],
       genre: ["Action", "Adventure", "Survival", "Simulation"],
-      numberOfPlayers: { minValue: 1, maxValue: 4 },
+      numberOfPlayers: { "@type": "QuantitativeValue", minValue: 1, maxValue: 4 },
       author: { "@type": "Organization", name: "FakeFish" },
       publisher: { "@type": "Organization", name: "Shiro Unlimited" },
     },

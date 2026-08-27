@@ -1,26 +1,38 @@
 import Image from "next/image";
 import Link from "next/link";
+import { playerFacingCopy } from "@/lib/content-copy";
+import { PageJsonLd } from "@/seo/PageJsonLd";
 import styles from "@/style/page/article/article.module.css";
 import { articleCover, recordMedia, relatedMedia, sectionMedia } from "@/lib/media";
 import type { ArticleData } from "@/types/content";
 
-export function ArticlePage({ data }: { data: ArticleData }) {
+export function ArticlePage({ data, canonical, pageType = "Article" }: { data: ArticleData; canonical: string; pageType?: "WebPage" | "Article" | "AboutPage" | "ContactPage" }) {
   const cover = articleCover(data);
+  const updatedLabel = data.date.replace(/^Verified /, "Updated ");
+  const seoTitle = data.seo?.title ?? data.title;
+  const seoDescription = data.seo?.description ?? data.lede;
 
   return (
     <main id="main-content" className={styles.main}>
+      <PageJsonLd
+        title={seoTitle}
+        description={seoDescription}
+        path={canonical}
+        pageType={pageType}
+        breadcrumbs={[{ name: "Home", path: "/" }, { name: data.parent.label, path: data.parent.href }, { name: data.title, path: canonical }]}
+      />
       <header className={styles.pageHead}>
         <div className="container">
           <p className={styles.breadcrumb}>
             <Link href="/">Home</Link><span>/</span>
-            <Link href={data.parent.href}>{data.parent.label}</Link><span>/</span>{data.title}
+            <Link href={data.parent.href}>{playerFacingCopy(data.parent.label)}</Link><span>/</span>{playerFacingCopy(data.title)}
           </p>
-          <p className={styles.eyebrow}>{data.eyebrow}</p>
-          <h1>{data.title}</h1>
-          <p className={styles.lede}>{data.lede}</p>
+          <p className={styles.eyebrow}>{playerFacingCopy(data.eyebrow)}</p>
+          <h1>{playerFacingCopy(data.title)}</h1>
+          <p className={styles.lede}>{playerFacingCopy(data.lede)}</p>
           <div className={styles.meta}>
-            <time>{data.date}</time>
-            <span>{data.status}</span>
+            <time>{updatedLabel}</time>
+            <span>{playerFacingCopy(data.status)}</span>
           </div>
         </div>
       </header>
@@ -29,7 +41,7 @@ export function ArticlePage({ data }: { data: ArticleData }) {
         <article className={styles.article}>
           {data.records?.length ? (
             <section id="records" className={styles.block}>
-              <h2>Verified records</h2>
+              <h2>Known entries</h2>
               <div className={styles.recordGrid}>
                 {data.records.map((record) => {
                   const media = recordMedia(record);
@@ -41,11 +53,11 @@ export function ArticlePage({ data }: { data: ArticleData }) {
                         </div>
                       ) : null}
                       <div className={styles.recordBody}>
-                        <p className={styles.recordLabel}>{record.label}</p>
-                        <h3>{record.href ? <Link href={record.href}>{record.title}</Link> : record.title}</h3>
-                        <p>{record.description}</p>
+                        <p className={styles.recordLabel}>{playerFacingCopy(record.label)}</p>
+                        <h3>{record.href ? <Link href={record.href}>{playerFacingCopy(record.title)}</Link> : playerFacingCopy(record.title)}</h3>
+                        <p>{playerFacingCopy(record.description)}</p>
                         <dl>
-                          {record.facts.map(([term, value]) => <div key={term}><dt>{term}</dt><dd>{value}</dd></div>)}
+                          {record.facts.map(([term, value]) => <div key={term}><dt>{playerFacingCopy(term)}</dt><dd>{playerFacingCopy(value)}</dd></div>)}
                         </dl>
                         {record.href ? <Link className={styles.recordLink} href={record.href}>View entry <span>›</span></Link> : null}
                       </div>
@@ -60,14 +72,14 @@ export function ArticlePage({ data }: { data: ArticleData }) {
             const media = sectionMedia(data, section, index);
             return (
               <section id={section.id} className={styles.block} key={section.id}>
-                <h2>{section.title}</h2>
+                <h2>{playerFacingCopy(section.title)}</h2>
                 <div className={media ? (index % 2 === 1 ? styles.splitReverse : styles.split) : undefined}>
                   <div className={styles.prose}>
-                    {section.paragraphs.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
-                    {section.bullets ? <ul>{section.bullets.map((bullet) => <li key={bullet}>{bullet}</li>)}</ul> : null}
+                    {section.paragraphs.map((paragraph) => <p key={paragraph}>{playerFacingCopy(paragraph)}</p>)}
+                    {section.bullets ? <ul>{section.bullets.map((bullet) => <li key={bullet}>{playerFacingCopy(bullet)}</li>)}</ul> : null}
                     {section.facts ? (
                       <dl className={styles.factTable}>
-                        {section.facts.map(([term, value]) => <div key={term}><dt>{term}</dt><dd>{value}</dd></div>)}
+                        {section.facts.map(([term, value]) => <div key={term}><dt>{playerFacingCopy(term)}</dt><dd>{playerFacingCopy(value)}</dd></div>)}
                       </dl>
                     ) : null}
                   </div>
@@ -76,7 +88,7 @@ export function ArticlePage({ data }: { data: ArticleData }) {
                       <div>
                         <Image src={media.src} alt={media.alt} fill sizes="(max-width: 900px) 100vw, 380px" />
                       </div>
-                      {media.caption ? <figcaption>{media.caption}</figcaption> : null}
+                      {media.caption ? <figcaption>{playerFacingCopy(media.caption)}</figcaption> : null}
                     </figure>
                   ) : null}
                 </div>
@@ -86,21 +98,21 @@ export function ArticlePage({ data }: { data: ArticleData }) {
 
           {data.gallery?.length ? (
             <section id="official-gallery" className={styles.block}>
-              <h2>Official media evidence</h2>
-              <p className={styles.galleryNote}>These images come from the official Steam gallery or developer announcements. They document a pre-release build and may change before Early Access.</p>
+              <h2>In-game screenshots</h2>
+              <p className={styles.galleryNote}>These screenshots show a pre-release build, so interfaces, item values, and visual details may change before Early Access.</p>
               <div className={styles.gallery}>
                 {data.gallery.map((item) => (
                   <figure key={item.src}>
                     <div><Image src={item.src} alt={item.alt} fill sizes="(max-width: 767px) 100vw, 40vw" /></div>
-                    <figcaption>{item.caption}</figcaption>
+                    <figcaption>{playerFacingCopy(item.caption)}</figcaption>
                   </figure>
                 ))}
               </div>
             </section>
           ) : null}
 
-          <div className={styles.sourceBox}>
-            <span>Sources used</span>
+          {data.sources.length ? <div className={styles.sourceBox}>
+            <span>Announcements &amp; interviews</span>
             <div>
               {data.sources.map((source) => (
                 <a href={source.href} target="_blank" rel="noreferrer" key={source.href}>
@@ -108,7 +120,7 @@ export function ArticlePage({ data }: { data: ArticleData }) {
                 </a>
               ))}
             </div>
-          </div>
+          </div> : null}
         </article>
 
         <aside className={styles.infobox}>
@@ -120,15 +132,15 @@ export function ArticlePage({ data }: { data: ArticleData }) {
           </figure>
           <p className={styles.boxLabel}>Quick facts</p>
           <dl>
-            {data.summary.map(([term, value]) => (
-              <div key={term}><dt>{term}</dt><dd>{value}</dd></div>
+              {data.summary.map(([term, value]) => (
+              <div key={term}><dt>{playerFacingCopy(term)}</dt><dd>{playerFacingCopy(value)}</dd></div>
             ))}
           </dl>
           <nav aria-label="On this page">
             <strong>On this page</strong>
-            {data.records?.length ? <a href="#records">Verified records</a> : null}
-            {data.sections.map((section) => <a href={`#${section.id}`} key={section.id}>{section.title}</a>)}
-            {data.gallery?.length ? <a href="#official-gallery">Official media</a> : null}
+            {data.records?.length ? <a href="#records">Known entries</a> : null}
+            {data.sections.map((section) => <a href={`#${section.id}`} key={section.id}>{playerFacingCopy(section.title)}</a>)}
+            {data.gallery?.length ? <a href="#official-gallery">Screenshots</a> : null}
           </nav>
         </aside>
       </div>
@@ -144,7 +156,7 @@ export function ArticlePage({ data }: { data: ArticleData }) {
                   <span className={styles.relatedImage}>
                     <Image src={media.src} alt="" fill sizes="220px" />
                   </span>
-                  <strong>{item.label}</strong>
+                    <strong>{playerFacingCopy(item.label)}</strong>
                 </Link>
               );
             })}

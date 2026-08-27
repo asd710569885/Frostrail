@@ -1,16 +1,11 @@
-import type { Metadata } from "next";
 import { ArticlePage } from "@/components/content/ArticlePage";
-
-export const metadata: Metadata = {
-  title: "Beginner Guide",
-  description: "Start preparing for Frostrail with a source-aware beginner guide to the train, expeditions, resources, and co-op survival.",
-};
+import { articleMetadata } from "@/seo/article-metadata";
 
 const data = {
   parent: { label: "Guides", href: "/guides" },
   eyebrow: "Start here",
   title: "Frostrail Beginner Guide",
-  lede: "A practical orientation to Frostrail’s confirmed pillars—your train, expeditions, survival, crafting, and co-op—without pretending the unreleased game is already fully mapped.",
+  lede: "Learn the rhythm of a Frostrail run: prepare aboard the Eden Engine, leave with a clear objective, watch warmth and ammunition, then return with enough supplies to keep the crew moving north.",
   image: "/images/guides/frozen-expedition.jpg",
   imageAlt: "Frostrail crew exploring a frozen level together",
   date: "Updated August 26, 2026",
@@ -19,14 +14,14 @@ const data = {
     ["Players", "1–4"],
     ["Format", "Survival / crafting FPS"],
     ["Release", "Early Access planned Q4 2026"],
-    ["Data policy", "Verified facts only"],
+    ["Guide status", "Pre-release basics"],
   ] as const,
   sections: [
     {
       id: "understand-the-loop",
       title: "Understand the journey",
       paragraphs: [
-        "Frostrail is built around a train that acts as the crew’s mobile base while the surrounding frozen world supplies danger, resources, and places to explore. Official gameplay-trailer press copy describes the loop as scavenging, brutal combat, and upgrading the train. The safest mental model is a cycle: prepare aboard the train, leave with a clear purpose, return with what the crew needs, and improve the base before the next expedition.",
+        "Frostrail is built around a train that acts as the crew’s mobile base while the frozen world supplies danger, resources, and places to explore. Think in cycles: prepare aboard the train, leave with a purpose, return with what the crew needs, and improve the base before the next expedition.",
         "The world is a sequence of levels heading north. At the end of a level, the crew uses a tunnel to pick the next route; farther north, the world gets colder and harder. Founder Aku Jauhiainen said a thorough visit to every point of interest can take two hours or more—that is a development-time estimate, not a published mission timer.",
       ],
       bullets: ["Treat the train as the center of planning", "Stop at points of interest to scavenge, then return", "Bring recovered resources back into the next preparation cycle"],
@@ -38,8 +33,8 @@ const data = {
       id: "prepare",
       title: "Prepare before departure",
       paragraphs: [
-        "A preparation routine is more useful than an early tier list. Check the expedition objective, available supplies, crew plan, and a realistic point at which the group should turn back. This remains sound guidance even as individual item values change.",
-        "You have a warmth bar that depletes outdoors. If it hits zero, health loss begins. Warmer clothing and certain foods mitigate cold; the train remains the reliable heat source. Do not invent insulation values from screenshots of coats.",
+        "A preparation routine matters more than an early tier list. Check the objective, available supplies, crew plan, and the point where the group will turn back. Those habits remain useful even when individual item values change.",
+        "Warmth falls while you are outside. Once it reaches zero, health starts to drain. Warmer clothing and certain foods can extend an expedition, but the train remains the crew’s reliable heat source.",
       ],
       bullets: ["Agree on the objective and stopping condition", "Watch warmth as well as ammunition", "Leave room for useful finds", "Know how the group will regroup if separated"],
       image: "/images/official/steam-current/screenshot-03.jpg",
@@ -50,8 +45,8 @@ const data = {
       id: "expeditions",
       title: "What to do at a stop",
       paragraphs: [
-        "Points of interest hold abandoned places, junk, and salvageable objects. A crowbar is used on salvageable objects to recover better materials. The Closed Beta press kit also names old mining camps and villages as forage stops for food and materials, and subterranean vaults as interiors that hide powerful weapons and rewards—location types, not a loot table.",
-        "April playtest coverage based on the official test brief reported that wildlife can be hunted for food. Steam’s mature-content note independently confirms hostile creatures including wolves. Exact drops remain TBA.",
+        "Points of interest hold abandoned buildings, junk, and objects that can be broken down for better materials with a crowbar. Old mining camps and villages offer food and supplies, while underground vaults promise greater danger and stronger rewards.",
+        "Wildlife can provide food, but wolves are also hostile. Exact drops and spawn patterns have not been published, so treat every stop as a risk rather than a guaranteed shopping list.",
       ],
       bullets: ["Scavenge settlements, wreckage, camps, and dungeons", "Use a crowbar on salvageable objects", "Do not linger: cold and Revenants both punish delay", "Engine noise is described as drawing Revenants—keep the train in the plan"],
       image: "/images/official/steam-current/screenshot-07.jpg",
@@ -62,7 +57,7 @@ const data = {
       id: "co-op",
       title: "Coordinate the crew",
       paragraphs: [
-        "Official store information confirms solo play and online co-op for up to four players. The founder interview says co-op is designed so crews can divide scavenging and train-defense tasks. The wiki does not assign invented character classes. Use lightweight responsibilities that can change with the situation: navigation, observation, carrying priorities, and train tasks.",
+        "Frostrail supports solo play and online co-op for up to four. A crew can divide scavenging and train-defense work without locking anyone into a fixed class. Use flexible responsibilities that change with the situation: navigation, observation, carrying priorities, and train tasks.",
       ],
       bullets: ["Call out important finds before taking them", "Keep the return route understandable to everyone", "Reassign tasks when conditions change"],
       image: "/images/official/steam-current/screenshot-02.jpg",
@@ -71,11 +66,11 @@ const data = {
     },
     {
       id: "verify",
-      title: "Use changing information carefully",
+      title: "Check the build before following a stat",
       paragraphs: [
-        "The first closed beta begins August 31, 2026, and development continues toward an Early Access window in Q4 2026. Lead designer Ez Jämsen described the project as entering its final development stages in the July press kit. Any strategy written around a beta build can become outdated. Check dates and build context before treating a number as current.",
+        "The Closed Beta begins August 31, 2026, ahead of the planned Q4 2026 Early Access launch. Balance can move quickly between these builds, so check the page date before spending resources or planning around an exact number.",
       ],
-      bullets: ["Prefer official announcements for dates and scope", "Prefer repeatable in-game tests for mechanics", "Treat mockup content and speculation as unverified"],
+      bullets: ["Check the latest announcement for dates and test scope", "Use repeatable in-game behavior when comparing mechanics", "Ignore values shown only in mockups"],
       image: "/images/official/news/closed-beta-august-31.jpg",
       imageAlt: "Official Closed Beta announcement artwork",
       caption: "The Closed Beta beginning August 31, 2026 is the next dated public test.",
@@ -98,8 +93,14 @@ const data = {
     { label: "World & lore", href: "/wiki/lore" },
     { label: "Closed Beta", href: "/frostrail-closed-beta" },
   ],
+  seo: {
+    title: "Frostrail Beginner Guide - First Run, Train & Co-op",
+    description: "Prepare for your first Frostrail run with practical tips on warmth, the Eden Engine, scavenging, weapons, crafting, expeditions, and four-player co-op roles.",
+  },
 };
 
+export const metadata = articleMetadata(data, "/guides/beginner-guide");
+
 export default function BeginnerGuidePage() {
-  return <ArticlePage data={data} />;
+  return <ArticlePage data={data} canonical="/guides/beginner-guide" />;
 }

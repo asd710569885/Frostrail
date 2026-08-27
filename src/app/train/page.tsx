@@ -1,12 +1,10 @@
 import type { Metadata } from "next";
 import { ContentHub } from "@/components/content/ContentHub";
 import { trainData } from "@/lib/data/hubs";
+import { staticPageMetadata } from "@/seo/article-metadata";
 
-export const metadata: Metadata = {
-  title: "Train Systems",
-  description: "Learn about Frostrail train systems, upgrades, fuel, power, carriages, defense, and storage.",
-};
+export const metadata: Metadata = staticPageMetadata("/train");
 
 export default function TrainPage() {
-  return <ContentHub data={trainData} />;
+  return <ContentHub data={trainData} canonical="/train" />;
 }

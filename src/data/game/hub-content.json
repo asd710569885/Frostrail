@@ -1,12 +1,12 @@
 {
   "guides": {
     "breadcrumb": "Guides",
-    "eyebrow": "Field manuals",
-    "title": "Frostrail Guides",
-    "introduction": "Practical guides built around the systems FakeFish has publicly confirmed: cold and heat, food and clothing, firearms, modular crafting, train operation, expeditions, and online co-op for crews of one to four.",
+    "eyebrow": "Survival & crew guides",
+    "title": "Frostrail Guides – Survive the Cold and Master Your Train",
+    "introduction": "Start with warmth, food, clothing, and the Eden Engine, then learn how to prepare an expedition, handle scarce ammunition, craft what the crew needs, and keep a one-to-four-player run moving north.",
     "heroImage": "/images/guides/frozen-expedition.jpg",
     "heroImageAlt": "Frostrail players on an expedition across a frozen level",
-    "status": "Official facts + developer interviews",
+    "status": "Survival, train and co-op guides",
     "verifiedAt": "August 26, 2026",
     "topics": [
       {
@@ -67,12 +67,12 @@
   },
   "wiki": {
     "breadcrumb": "Wiki",
-    "eyebrow": "Verified game database",
-    "title": "Explore the Wiki",
-    "introduction": "This database separates announced features from unreleased numbers. Every record below links to its evidence; fields such as damage, recipe cost, rarity, drop rate, capacity, and map coordinates remain TBA until FakeFish publishes them or a reproducible build can verify them.",
+    "eyebrow": "Weapons, items & systems",
+    "title": "Frostrail Wiki – Weapons, Items, Relics and Game Systems",
+    "introduction": "Look up the weapons, tools, resources, crafting stations, Relics, clothing, food, and world details known so far. Each section starts with what matters during a run, while build-specific values are clearly dated when they may still change.",
     "heroImage": "/images/wiki/weapons-crafting.jpg",
     "heroImageAlt": "Frostrail weapon assembly and modular parts interface",
-    "status": "Source-linked records online",
+    "status": "Pre-release entries",
     "verifiedAt": "August 26, 2026",
     "topics": [
       {
@@ -158,21 +158,21 @@
       },
       {
         "id": "verification",
-        "title": "Verification policy",
+        "title": "How we check information",
         "label": "Editorial standard",
-        "description": "Official store pages and development posts are first-party sources. Named developer interviews are used for design details, while unreleased numerical values are never inferred from concept art or mockups.",
-        "details": ["Official: currently published or announced by FakeFish / Shiro", "Developer interview: direct statement, subject to development change", "Official press: publisher/developer press kits", "TBA: not officially confirmed", "Reference artwork: visual direction only, not gameplay evidence"]
+        "description": "Game builds and current Steam pages come first. Development posts and named interviews help explain systems that are still changing, but mockups and placeholder dates are never treated as final gameplay data.",
+        "details": ["Build-specific numbers include a date or test context", "Developer plans are kept separate from playable features", "Screenshots can support visible UI values, not unseen mechanics", "Missing values are left unpublished instead of guessed"]
       }
     ]
   },
   "train": {
     "breadcrumb": "Train",
-    "eyebrow": "The Eden Engine",
-    "title": "Frostrail Train Systems",
-    "introduction": "The armored steam train is the party's transport, warmth, power network, workshop, storage space, and shared fail state. The pages below distinguish shipped-development facts from longer-term plans.",
+    "eyebrow": "Operate your mobile base",
+    "title": "Frostrail Train Guide – Build, Power and Defend the Eden Engine",
+    "introduction": "The Eden Engine is your transport, shelter, workshop, storage, and main source of heat. Learn how fuel, power, carriages, upgrades, and defenses work together—and why losing the train can end the crew's journey.",
     "heroImage": "/images/train/eden-engine-cab.jpg",
     "heroImageAlt": "Inside the Eden Engine locomotive cab in Frostrail",
-    "status": "6 train-system pages indexed",
+    "status": "Six train systems",
     "verifiedAt": "August 26, 2026",
     "topics": [
       { "id": "eden-engine", "title": "Eden Engine", "label": "Core locomotive", "description": "The Eden Engine is the crew's mobile fortress and the heart of the run. It must be fueled, powered, driven, maintained, and defended.", "details": ["Provides travel, heat, power, crafting space, and storage", "Engine upgrades affect speed and pulling weight", "Its destruction is a developer-stated game-over condition; exact stats remain TBA"], "href": "/train/eden-engine", "source": { "label": "Official Steam description", "href": "https://store.steampowered.com/app/3517740/Frostrail/?l=english", "tier": "Official" } },
@@ -185,12 +185,12 @@
   },
   "locations": {
     "breadcrumb": "Locations",
-    "eyebrow": "Frozen world index",
-    "title": "Frostrail Locations",
-    "introduction": "Frostrail is structured around large frozen levels connected by the train. Official descriptions confirm tundra, abandoned settlements, wreckage, mining camps, villages, frozen ruins, derelict bunkers, ruined strongholds, modular dungeons, subterranean vaults, and multiple exits—but not a final named world map.",
+    "eyebrow": "The frozen north",
+    "title": "Frostrail Locations – Explore the Frozen North",
+    "introduction": "Plan stops across tundra routes, abandoned settlements, mining camps, bunkers, ruined strongholds, underground vaults, and modular dungeons. Each location can trade warmth and time for supplies, weapons, Relics, or a safer route onward.",
     "heroImage": "/images/locations/frozen-rail-route.jpg",
     "heroImageAlt": "Frostrail train travelling through a frozen rail route",
-    "status": "Confirmed location types",
+    "status": "Nine location types",
     "verifiedAt": "August 26, 2026",
     "topics": [
       { "id": "tundra", "title": "Tundra", "label": "Expanded biome", "description": "The tundra is the game's principal open frozen biome. The May 2026 update reported that it had been expanded for further exploration.", "details": ["Blizzards reduce visibility and movement", "New points of interest are being artist-built rather than purely procedural", "Named regions and map coordinates: TBA"], "source": { "label": "Official Spring Development Update", "href": "https://store.steampowered.com/news/app/3517740/view/664987745725186081", "tier": "Official" } },
@@ -206,12 +206,12 @@
   },
   "enemies": {
     "breadcrumb": "Enemies",
-    "eyebrow": "Threat index",
-    "title": "Frostrail Enemies",
-    "introduction": "The former empire is populated by Revenants, planned Corrupted Soldier squads, wolves, and other eldritch horrors. Public sources describe broad combat roles, while health, damage, variants, drops, and final encounter balance remain TBA.",
+    "eyebrow": "Threats beyond the train",
+    "title": "Frostrail Enemies – Know What Hunts Beyond the Train",
+    "introduction": "Prepare for Revenant groups, wolves, ranged Corrupted Soldiers, and stranger horrors tied to the Void. These entries focus on how each threat pressures an expedition or train defense without inventing health, damage, or loot values that have not been shown.",
     "heroImage": "/images/enemies/revenant-close-combat.jpg",
     "heroImageAlt": "Close combat against a hostile Revenant in Frostrail",
-    "status": "Confirmed categories, stats TBA",
+    "status": "Five threat groups",
     "verifiedAt": "August 26, 2026",
     "topics": [
       { "id": "revenants", "title": "Revenants", "label": "Zombified melee faction", "description": "Lead designer Ez Jämsen describes Revenants as zombified enemies that mostly fight in melee and tend to attack in larger groups. Official gameplay-trailer press copy adds that the roar of the steam engine draws Revenants from the frozen wilds.", "details": ["Encountered during exploration and discussed for planned train-defense waves", "Engine noise is described as an attractor; no aggro radius value is published", "New enemy variations were reported in May 2026", "Health, damage, named variants, resistances, and drops: TBA"], "source": { "label": "GamingBolt interview + official trailer press kit", "href": "https://gamingbolt.com/frostrail-interview-the-train-enemy-factions-horror-vibes-and-more", "tier": "Developer interview" } },
@@ -223,12 +223,12 @@
   },
   "updates": {
     "breadcrumb": "Updates",
-    "eyebrow": "Official development archive",
-    "title": "Frostrail Updates",
-    "introduction": "A chronological record of first-party milestones, test windows, and development disclosures. Dates refer to public announcements; planned features are labeled as plans rather than completed release content.",
+    "eyebrow": "Beta & Early Access news",
+    "title": "Frostrail Updates – Closed Beta, Development News and Release Plans",
+    "introduction": "Follow Closed Beta dates, playtest changes, gameplay milestones, and the road to Steam Early Access without digging through old announcement feeds. Each update keeps the event date and the affected game systems easy to scan.",
     "heroImage": "/images/official/trailers/gameplay-trailer.jpg",
     "heroImageAlt": "Official Frostrail gameplay trailer frame",
-    "status": "Updated August 26, 2026",
+    "status": "Latest: August 31 Closed Beta",
     "verifiedAt": "August 26, 2026",
     "topics": [
       { "id": "closed-beta", "title": "Closed Beta begins August 31", "label": "July 20, 2026", "description": "FakeFish announced that the first Frostrail closed beta will begin on August 31, 2026. Registration is open and previously registered players do not need to register again. The accompanying press kit placed the announcement during Steam Train Fest and quoted lead designer Ez Jämsen saying the game had almost 500,000 Steam wishlists.", "details": ["Start: August 31, 2026", "Previous registrations remain valid", "Wishlists cited in the press kit: almost 500,000", "Selection and invitation timing are not guaranteed"], "href": "/frostrail-closed-beta", "source": { "label": "Official Closed Beta announcement", "href": "https://store.steampowered.com/news/app/3517740/view/671748851902711378?l=english", "tier": "Official" } },

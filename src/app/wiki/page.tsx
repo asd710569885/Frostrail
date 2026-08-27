@@ -1,12 +1,10 @@
 import type { Metadata } from "next";
 import { ContentHub } from "@/components/content/ContentHub";
 import { wikiData } from "@/lib/data/hubs";
+import { staticPageMetadata } from "@/seo/article-metadata";
 
-export const metadata: Metadata = {
-  title: "Game Database",
-  description: "Explore the verified Frostrail wiki database for weapons, items, resources, relics, clothing, and game systems.",
-};
+export const metadata: Metadata = staticPageMetadata("/wiki");
 
 export default function WikiPage() {
-  return <ContentHub data={wikiData} />;
+  return <ContentHub data={wikiData} canonical="/wiki" />;
 }

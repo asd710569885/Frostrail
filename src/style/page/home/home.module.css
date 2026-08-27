@@ -44,10 +44,19 @@
   font-size: clamp(78px, 7.2vw, 112px);
   font-weight: 600;
   line-height: .94;
-  white-space: nowrap;
   letter-spacing: -.025em;
   text-transform: uppercase;
   text-shadow: 0 3px 0 rgba(0,0,0,.42), 0 10px 28px rgba(0,0,0,.38);
+}
+
+.hero h1 span {
+  display: block;
+  margin-top: 9px;
+  color: #d8b06c;
+  font-size: clamp(18px, 1.75vw, 28px);
+  font-weight: 500;
+  line-height: 1.08;
+  letter-spacing: .065em;
 }
 
 .heroCopy > p {
@@ -780,7 +789,118 @@
   line-height: 1.2;
 }
 
-@media (max-width: 1023px) {
+.aboutPanel {
+  display: grid;
+  min-height: 380px;
+  grid-template-columns: .9fr 1.1fr;
+  margin-top: 26px;
+  overflow: hidden;
+  border: 1px solid rgba(151, 177, 188, .34);
+  background: linear-gradient(145deg, rgba(17, 35, 45, .97), rgba(7, 18, 25, .98));
+  box-shadow: 0 16px 34px rgba(0, 0, 0, .3);
+}
+
+.aboutMedia {
+  position: relative;
+  min-height: 330px;
+  border-right: 1px solid rgba(201, 146, 69, .3);
+}
+
+.aboutMedia::after {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, transparent 58%, rgba(8, 20, 28, .84));
+  content: "";
+}
+
+.aboutMedia img {
+  object-fit: cover;
+}
+
+.aboutCopy {
+  align-self: center;
+  padding: 38px 44px;
+}
+
+.aboutCopy > p:first-child {
+  margin: 0 0 7px;
+  color: var(--gold-light);
+  font-family: var(--font-display);
+  font-size: 12px;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+}
+
+.aboutCopy h2 {
+  margin: 0 0 16px;
+  color: #eef2f3;
+  font-family: var(--font-display);
+  font-size: clamp(30px, 3vw, 48px);
+  font-weight: 500;
+  line-height: 1.05;
+  text-transform: uppercase;
+}
+
+.aboutCopy p {
+  margin: 0 0 13px;
+  color: #b4c1c7;
+  font-size: 16px;
+  line-height: 1.55;
+}
+
+.aboutLinks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 22px;
+  margin-top: 20px;
+}
+
+.aboutLinks a,
+.faqCard a {
+  color: var(--gold-light);
+  font-family: var(--font-display);
+  font-size: 13px;
+  letter-spacing: .055em;
+  text-transform: uppercase;
+}
+
+.faqIntro {
+  max-width: 720px;
+  margin: -2px 0 16px;
+  color: #aebcc3;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.faqGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.faqCard {
+  padding: 19px 21px;
+  border: 1px solid rgba(151, 177, 188, .3);
+  background: linear-gradient(145deg, rgba(17, 34, 44, .94), rgba(8, 20, 27, .97));
+}
+
+.faqCard h3 {
+  margin: 0 0 8px;
+  color: #edf1f2;
+  font-family: var(--font-display);
+  font-size: 19px;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.faqCard p {
+  margin: 0 0 12px;
+  color: #9eafb7;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+@media (max-width: 1024px) {
   .hero {
     height: 620px;
   }
@@ -814,9 +934,23 @@
   .feature {
     grid-template-columns: 1fr;
   }
+
+  .aboutPanel {
+    grid-template-columns: 1fr;
+  }
+
+  .aboutMedia {
+    min-height: 280px;
+    border-right: 0;
+    border-bottom: 1px solid rgba(201, 146, 69, .3);
+  }
+
+  .aboutMedia::after {
+    background: linear-gradient(0deg, rgba(8, 20, 28, .86), transparent 55%);
+  }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .hero {
     height: 690px;
   }
@@ -916,9 +1050,17 @@
   .guidesGrid {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .aboutCopy {
+    padding: 26px 22px 30px;
+  }
+
+  .faqGrid {
+    grid-template-columns: 1fr;
+  }
 }
 
-@media (max-width: 540px) {
+@media (max-width: 768px) {
   .heroActions {
     gap: 8px;
   }

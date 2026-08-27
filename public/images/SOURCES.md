@@ -1,6 +1,6 @@
 # Frostrail image sources
 
-Last verified: 2026-08-25
+Last verified: 2026-08-27
 
 All game screenshots, key art, trailer thumbnails, and the Frostrail logo in this directory are official promotional assets owned by FakeFish and/or Shiro Unlimited. They are used by this independent wiki for identification, reporting, and commentary. They must not be presented as original wiki artwork.
 
@@ -12,6 +12,8 @@ Primary sources:
 - Official Steam announcement archive: https://steamcommunity.com/app/3517740/announcements/
 - Official Closed Beta announcement: https://store.steampowered.com/news/app/3517740/view/671748851902711378?l=english
 - Official Spring Development Update: https://store.steampowered.com/news/app/3517740/view/664987745725186081?l=english
+- Official 2025 reveal trailer: https://www.youtube.com/watch?v=x_59w8EP9Qs
+- 4Gamers archive of the official reveal: https://www.4gamers.com.tw/news/detail/71195/-fakefish-new-coop-survival-fps-frostrail-released-on-steam
 
 ## Local semantic mapping
 
@@ -58,6 +60,9 @@ Primary sources:
 | `official/news/winter-update-02.png` | `https://clan.akamai.steamstatic.com/images/45577624/84773984c9753544086fea8fde51f3831a4c3ddc.png` | Winter 2025 pre-alpha screenshot: blizzard and industrial location |
 | `official/trailers/playtest-trailer.jpg` | `https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/257316267/e6c7097567bcf20d5ce11973ac0bec3c032af8fa/movie_600x337.jpg?t=1775750226` | Current official Steam playtest-trailer thumbnail |
 | `official/trailers/gameplay-trailer.jpg` | `https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/257294906/2d71eb4438c5bc6695330962fc67b6d038f78316/movie_600x337.jpg?t=1772116835` | Current official Steam gameplay-trailer thumbnail |
+| `official/archive/inventory-pre-alpha.png` | Official reveal trailer frame archived by 4Gamers | 2025 pre-alpha inventory, personal storage, carry load, and Metal Container layout |
+| `official/archive/assembly-station-build-pre-alpha.png` | Official reveal trailer frame archived by 4Gamers | 2025 pre-alpha Assembly Station placement cost |
+| `official/archive/modular-weapon-ui-pre-alpha.png` | Official reveal trailer frame archived by 4Gamers | 2025 unnamed prototype firearm stat panel |
 
 ## Verifiable UI data in official screenshots
 
@@ -69,6 +74,11 @@ Primary sources:
 - `official/steam-current/screenshot-03.jpg` shows the cab hotbar with **Metal Hammer**, **Crowbar**, **fuel canisters ×3**, **logs ×24**, and **metal scraps ×24**, plus a **−28.3 °C** reading.
 - `wiki/relic-discovery.jpg` is a still from the official playtest trailer showing a glowing Relic in a subterranean shrine.
 - `enemies/graveyard-revenants.jpg` is a still from the official gameplay trailer showing rifle combat against Revenants in a frozen graveyard.
+- `official/archive/inventory-pre-alpha.png` shows five quick-access slots, 25 personal storage slots, a displayed 3.2 / 100 kg load, and 20 Metal Container slots.
+- `official/archive/assembly-station-build-pre-alpha.png` shows a 2025 Assembly Station placement requirement of Wood scraps ×10 and Textile scraps ×10, with 50 of each in the bag.
+- `official/archive/modular-weapon-ui-pre-alpha.png` shows an unnamed prototype firearm with damage 10, fire rate 5, clip size 38, melee and projectile stagger 20, barrel spread 0.1, one projectile, recoil −0.2, and stability 0.18.
+
+The three `official/archive` images are visibly labeled pre-alpha and must never replace current stats. Their unlabeled inventory icons, unnamed weapon, internal part names, and placeholder copy are not canonical item or weapon names.
 
 These are official pre-release screenshot values, not guaranteed Q4 2026 Early Access balance. Pages must retain their build-status caveat when using them.
 

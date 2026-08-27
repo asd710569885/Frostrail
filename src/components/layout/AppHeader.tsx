@@ -1,5 +1,8 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { HomeIcon } from "@/components/icon/HomeIcon";
 import styles from "@/style/layout/app-header.module.css";
 
@@ -13,7 +16,7 @@ const navigation = [
   ["Updates", "/updates"],
 ] as const;
 
-const database = [
+const wikiLinks = [
   ["Weapons", "/wiki/weapons"],
   ["Items", "/wiki/items"],
   ["Train", "/train"],
@@ -34,6 +37,7 @@ function Brand() {
 }
 
 export function AppHeader() {
+  const pathname = usePathname();
   return (
     <header className={styles.header}>
       <div className={`container ${styles.inner}`}>
@@ -46,23 +50,23 @@ export function AppHeader() {
         <Link className={styles.cta} href="/guides/beginner-guide">
           Beginner Guide <span aria-hidden="true">›</span>
         </Link>
-        <details className={styles.mobileMenu}>
+        <details className={styles.mobileMenu} key={pathname}>
           <summary aria-label="Open navigation"><span /><span /><span /></summary>
           <nav aria-label="Mobile navigation">
             {navigation.map(([label, href]) => (
               <Link key={href} href={href}>{label}</Link>
             ))}
-            {database.map(([label, href]) => (
+            {wikiLinks.map(([label, href]) => (
               <Link key={`m-${href}`} href={href}>{label}</Link>
             ))}
             <Link href="/guides/beginner-guide">Beginner Guide</Link>
           </nav>
         </details>
       </div>
-      <nav className={styles.database} aria-label="Game database">
+      <nav className={styles.database} aria-label="Wiki sections">
         <div className={`container ${styles.databaseInner}`}>
-          <span>Database</span>
-          {database.map(([label, href]) => (
+          <span>Wiki</span>
+          {wikiLinks.map(([label, href]) => (
             <Link key={href} href={href}>{label}</Link>
           ))}
         </div>

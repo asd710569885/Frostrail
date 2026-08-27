@@ -141,7 +141,7 @@
   display: none;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 1024px) {
   .inner {
     grid-template-columns: auto 1fr auto;
   }
@@ -197,7 +197,7 @@
   }
 }
 
-@media (max-width: 540px) {
+@media (max-width: 768px) {
   .inner {
     min-height: 66px;
   }

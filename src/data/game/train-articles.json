@@ -3,36 +3,36 @@
     "slug": "eden-engine",
     "parent": { "label": "Train", "href": "/train" },
     "eyebrow": "Core train system",
-    "title": "The Eden Engine",
+    "title": "Eden Engine",
     "lede": "The Eden Engine is Frostrail's armored steam locomotive: transport, heat source, power plant, workshop, storage base, and the shared objective the Penitent Gardeners must keep alive.",
     "image": "/images/train/eden-engine-cab.jpg",
     "imageAlt": "Operating the Eden Engine from the locomotive cab",
     "date": "Verified August 25, 2026",
-    "status": "Officially confirmed core system",
-    "summary": [["Role", "Mobile fortress"], ["Crew", "1–4"], ["Failure", "Destroyed engine = game over"], ["Exact stats", "TBA"]],
+    "status": "The crew's mobile base and shared lifeline",
+    "summary": [["Role", "Mobile fortress"], ["Crew", "1–4"], ["Failure", "Destroyed engine = game over"], ["Exact stats", "Not published"]],
     "sections": [
       { "id": "overview", "title": "Overview", "paragraphs": ["Frostrail is built around operating an armored train through the frozen remains of an empire. The crew fuels, powers, drives, maintains, expands, and defends the locomotive while using it as the base between expeditions.", "The Steam description names the locomotive the Eden Engine. Developer interviews describe its destruction or breakdown as the run's central fail state."], "bullets": ["Travel between frozen levels", "Provide heat and power", "Host crafting, refining, repair, cooking, weapon, and storage facilities", "Carry the party's upgrades and progression"] },
       { "id": "operation", "title": "Operation", "paragraphs": ["Operating the Eden Engine connects resource gathering to survival. Fuel sustains movement and heat, power supports onboard systems, and repairs or reinforcement keep the train functional under environmental and enemy pressure.", "A PC Gamer developer interview says engine upgrades affect train speed and pulling weight. Adding more carriages therefore creates a power tradeoff rather than free capacity."], "facts": [["Fuel inputs", "Branches, logs, charcoal discussed"], ["Engine upgrades", "Affect speed and pulling weight"], ["More carriages", "Require more power"], ["Heat", "Core survival function"], ["Driving controls", "Confirmed; exact mechanics TBA"], ["Maintenance values", "TBA"]] },
       { "id": "cab-interface", "title": "Cab controls shown publicly", "paragraphs": ["Official Steam screenshots show the train cab with labeled pressure, speed, heat, and consumption instruments, along with control levers. A captured exterior reading shows −28.3 °C in one scene, while a train-interior screenshot shows the character at +5.1 °C beside powered machinery."], "facts": [["Visible gauges", "Pressure / speed / heat / consumption"], ["Visible controls", "Multiple operating levers"], ["Exterior scene reading", "−28.3 °C — screenshot scene only"], ["Interior scene reading", "+5.1 °C — screenshot scene only"], ["Universal operating ranges", "TBA"]] },
       { "id": "lore", "title": "Place in the story", "paragraphs": ["Players are Penitent Gardeners traveling north through an empire frozen after its Emperor made a pact with the Void. The train is both their shelter and their means of continuing that pilgrimage."], "bullets": ["Former empire frozen by a Void-linked pact", "Revenants and eldritch horrors inhabit the wasteland", "The crew seeks salvation in the north"] },
-      { "id": "unknowns", "title": "Unconfirmed data", "paragraphs": ["No final engine health, speed, acceleration, fuel capacity, power output, heat radius, crew-control layout, repair cost, or upgrade tree has been published."], "facts": [["Health", "TBA"], ["Speed", "TBA"], ["Fuel capacity", "TBA"], ["Power output", "TBA"], ["Repair cost", "TBA"]] }
+      { "id": "unknowns", "title": "What has not been shown yet", "paragraphs": ["Final engine health, speed, acceleration, fuel capacity, power output, heat radius, crew controls, repair costs, and the upgrade tree have not been published."], "facts": [["Health", "Not published"], ["Speed", "Not published"], ["Fuel capacity", "Not published"], ["Power output", "Not published"], ["Repair cost", "Not published"]] }
     ],
     "gallery": [{ "src": "/images/official/steam-current/screenshot-03.jpg", "alt": "Frostrail train cab with pressure speed heat and consumption gauges", "caption": "Official screenshot of the Eden Engine cab and its visible operating instruments." }, { "src": "/images/official/steam-current/screenshot-10.jpg", "alt": "Powered machinery inside the Frostrail train", "caption": "Official screenshot showing warm onboard machinery, a +5.1 °C HUD reading, and the equipped Metal Wrench." }, { "src": "/images/official/steam-current/screenshot-01.jpg", "alt": "Frostrail locomotive in a blizzard", "caption": "Official screenshot of the armored locomotive on the rails. The player is gripping a metal handle at the front of the engine." }],
     "sources": [{ "label": "Official Steam store and screenshot gallery", "href": "https://store.steampowered.com/app/3517740/Frostrail/?l=english", "tier": "Official" }, { "label": "IndieGames interview with FakeFish founder", "href": "https://www.indie-games.eu/frostrail-in-depth-overview-with-fakefish-founder/", "tier": "Developer interview" }, { "label": "PC Gamer developer interview", "href": "https://www.pcgamer.com/games/survival-crafting/barotrauma-developer-unveils-its-next-co-op-survival-game-a-dieselpunk-fps-where-your-mobile-fortress-is-a-train/", "tier": "Developer interview" }],
     "related": [{ "label": "Fuel", "href": "/train/fuel" }, { "label": "Power", "href": "/train/power" }, { "label": "Train defense", "href": "/train/defense" }],
-    "seo": { "title": "Frostrail Eden Engine: Train Operation, Heat & Survival", "description": "Verified guide to Frostrail's Eden Engine, mobile-base role, train operation, heat, power, fuel, failure condition, upgrades, and current TBA stats." }
+    "seo": { "title": "Frostrail Eden Engine: Train, Heat, Fuel & Survival", "description": "Learn how Frostrail's Eden Engine handles travel, heat, power, fuel, crafting, storage, upgrades, and the failure condition that can end a run." }
   },
   "upgrades": {
     "slug": "upgrades",
     "parent": { "label": "Train", "href": "/train" },
     "eyebrow": "Train progression",
-    "title": "Frostrail Train Upgrades",
+    "title": "Train Upgrades",
     "lede": "The Eden Engine can be reinforced and expanded with structural protection, engine improvements, carriages, workstations, storage, and planned defensive weapons.",
     "image": "/images/train/onboard-workstation.jpg",
     "imageAlt": "Upgraded onboard workstation inside the Frostrail train",
     "date": "Verified August 25, 2026",
-    "status": "Upgrade families confirmed",
-    "summary": [["Structural", "Walls, hatches, doors"], ["Facilities", "Crafting and storage"], ["Expansion", "Carriages"], ["Costs / tiers", "TBA"]],
+    "status": "Structures, facilities, carriages and engine upgrades",
+    "summary": [["Structural", "Walls, hatches, doors"], ["Facilities", "Crafting and storage"], ["Expansion", "Carriages"], ["Costs / tiers", "Not published"]],
     "records": [
       { "title": "Walls, hatches & doors", "label": "Structural reinforcement", "description": "Developer-confirmed ways to build and reinforce the train.", "facts": [["Materials", "TBA"], ["Durability", "TBA"], ["Unlocks", "TBA"]] },
       { "title": "Engine upgrades", "label": "Performance", "description": "Engine improvements affect speed and pulling weight; exact names, costs, and values remain unpublished.", "facts": [["Confirmed effects", "Speed / pulling weight"], ["More carriages", "Require more power"], ["Upgrade names / tiers", "TBA"]] },
@@ -43,45 +43,45 @@
       { "id": "progression", "title": "Upgrade progression", "paragraphs": ["Recovered materials are reinvested in the train, turning exploration into persistent capability. Public materials confirm the direction of this loop but do not publish a final tech tree or optimal order.", "Engine upgrades can improve speed and the weight the locomotive can pull. Because extra carriages demand more power, expansion is presented as an operating tradeoff rather than a purely cosmetic upgrade."], "bullets": ["Protect the locomotive", "Expand production and storage", "Balance extra carriages against power demand", "Improve speed and pulling capacity", "Prepare for train-defense encounters"] },
       { "id": "early-access", "title": "Early Access scope", "paragraphs": ["The Steam Early Access statement says the core loop is available in the initial scope and the full version is planned to add more train upgrades, alongside more locations, dungeons, loot, weapons, and co-op situations."], "facts": [["Initial Early Access", "Core gameplay"], ["Full-release plan", "More train upgrades"], ["Planned EA duration", "Approximately one year"], ["Exact roadmap order", "TBA"]] },
       { "id": "documented-station", "title": "Documented weapon-station upgrade", "paragraphs": ["The official Steam gallery now shows a named Assembly Station interface. It supports a modular Bolt-Action Rifle, exposes a stock slot, and shows slag metal, wood, and cloth as the displayed assembly requirements. The store description also confirms that weapon stations can be crafted aboard the train."], "facts": [["Station name", "Assembly Station"], ["Shown weapon", "Bolt-Action Rifle"], ["Shown part category", "Stock"], ["Train weapon stations", "Officially confirmed"]] },
-      { "id": "unknowns", "title": "Data awaiting verification", "paragraphs": ["Upgrade names beyond the Assembly Station, prerequisites, material costs, build times, placement limits, durability, power consumption, unlock conditions, and final balance values remain TBA."] }
+      { "id": "unknowns", "title": "What has not been shown yet", "paragraphs": ["Upgrade names beyond the Assembly Station, prerequisites, costs, build times, placement limits, durability, power use, unlock conditions, and final balance values have not been published."] }
     ],
     "gallery": [{ "src": "/images/official/steam-current/screenshot-05.jpg", "alt": "Frostrail Assembly Station interface", "caption": "Official screenshot of the named Assembly Station and modular weapon workflow." }, { "src": "/images/official/steam-current/screenshot-09.jpg", "alt": "Expanded Frostrail carriage interior", "caption": "Official screenshot showing usable interior space aboard an expanded train." }, { "src": "/images/official/steam-current/screenshot-02.jpg", "alt": "Frostrail crew defending an open carriage", "caption": "Official screenshot showing a carriage configured for combat and co-op defense." }],
     "sources": [{ "label": "Official Steam page and Early Access statement", "href": "https://store.steampowered.com/app/3517740/Frostrail/?l=english", "tier": "Official" }, { "label": "IndieGames founder interview", "href": "https://www.indie-games.eu/frostrail-in-depth-overview-with-fakefish-founder/", "tier": "Developer interview" }, { "label": "PC Gamer developer interview", "href": "https://www.pcgamer.com/games/survival-crafting/barotrauma-developer-unveils-its-next-co-op-survival-game-a-dieselpunk-fps-where-your-mobile-fortress-is-a-train/", "tier": "Developer interview" }],
     "related": [{ "label": "Carriages", "href": "/train/carriages" }, { "label": "Train stations", "href": "/wiki/stations" }, { "label": "Train defense", "href": "/train/defense" }],
-    "seo": { "title": "Frostrail Train Upgrades, Walls, Carriages & Stations", "description": "Verified Frostrail train-upgrade guide covering walls, hatches, doors, engine improvements, carriages, workstations, storage, defenses, and TBA values." }
+    "seo": { "title": "Frostrail Train Upgrades, Walls, Carriages & Stations", "description": "Learn how Frostrail train upgrades expand the Eden Engine with walls, hatches, doors, engine improvements, carriages, workstations, storage, and defenses." }
   },
   "carriages": {
     "slug": "carriages",
     "parent": { "label": "Train", "href": "/train" },
     "eyebrow": "Mobile-base expansion",
-    "title": "Frostrail Carriages",
+    "title": "Carriages",
     "lede": "Additional carriages expand the Eden Engine into a larger mobile base with room for crafting facilities, storage, reinforcement, and crew functions.",
     "image": "/images/train/carriages-in-tundra.jpg",
     "imageAlt": "Frostrail train carriages moving through the frozen tundra",
     "date": "Verified August 25, 2026",
-    "status": "Expansion confirmed / types TBA",
-    "summary": [["Function", "Expand mobile base"], ["Supports", "Stations and storage"], ["Named types", "TBA"], ["Capacity", "TBA"]],
+    "status": "Expand the mobile base",
+    "summary": [["Function", "Expand mobile base"], ["Supports", "Stations and storage"], ["Named types", "Not published"], ["Capacity", "Not published"]],
     "sections": [
       { "id": "overview", "title": "Carriage expansion", "paragraphs": ["The official store description says players can add carriages, crafting stations, and storage to build the train into a mobile base. This is a progression system, not merely visual customization.", "Developer interviews add two constraints: walls use grid-snapped construction, and more carriages require more engine power because upgrades govern speed and pulling weight. The team does not expect extreme multi-storey structures."], "bullets": ["Increase usable train space", "Host production facilities", "Add storage", "Build walls on a snapped grid", "Balance train length against power and pulling capacity"] },
       { "id": "facilities", "title": "Carriage facilities", "paragraphs": ["Confirmed facility categories include crafting benches, refineries, weapon modification, repair, cooking, and storage. Public sources do not yet map these facilities to named carriage classes."], "facts": [["Crafting carriage", "Not officially named"], ["Storage carriage", "Function confirmed; name TBA"], ["Defense carriage", "Not officially named"], ["Facility placement rules", "TBA"]] },
-      { "id": "unknowns", "title": "Unconfirmed fields", "paragraphs": ["Carriage names, dimensions, attachment points, build costs, power draw, mass, durability, maximum train length, placement restrictions, and unlock progression remain TBA."] }
+      { "id": "unknowns", "title": "What has not been shown yet", "paragraphs": ["Carriage names, dimensions, attachment points, build costs, power draw, mass, durability, maximum train length, placement restrictions, and unlock progression have not been published."] }
     ],
     "gallery": [{ "src": "/images/official/steam-current/screenshot-11.jpg", "alt": "Frostrail locomotive pulling multiple carriages through the tundra", "caption": "Official screenshot documenting the moving-base train and its connected carriages." }, { "src": "/images/official/steam-current/screenshot-02.jpg", "alt": "Players inside an open Frostrail carriage", "caption": "Official screenshot showing a carriage interior used during co-op combat." }, { "src": "/images/official/steam-current/screenshot-09.jpg", "alt": "Frostrail carriage interior with furniture and machinery", "caption": "Official screenshot showing onboard space for facilities and storage." }],
     "sources": [{ "label": "Official Steam store and screenshot gallery", "href": "https://store.steampowered.com/app/3517740/Frostrail/?l=english", "tier": "Official" }, { "label": "PC Gamer developer interview", "href": "https://www.pcgamer.com/games/survival-crafting/barotrauma-developer-unveils-its-next-co-op-survival-game-a-dieselpunk-fps-where-your-mobile-fortress-is-a-train/", "tier": "Developer interview" }, { "label": "GamingBolt lead-designer interview", "href": "https://gamingbolt.com/frostrail-interview-the-train-enemy-factions-horror-vibes-and-more", "tier": "Developer interview" }],
     "related": [{ "label": "Train upgrades", "href": "/train/upgrades" }, { "label": "Train stations", "href": "/wiki/stations" }, { "label": "Power", "href": "/train/power" }],
-    "seo": { "title": "Frostrail Carriages, Train Expansion & Mobile Base", "description": "Verified Frostrail carriage information covering train expansion, crafting facilities, storage, mobile-base functions, and all currently TBA fields." }
+    "seo": { "title": "Frostrail Carriages, Train Expansion & Mobile Base", "description": "See how Frostrail carriages expand the Eden Engine with crafting facilities, storage, reinforcement, crew space, structural protection, and added power demands." }
   },
   "fuel": {
     "slug": "fuel",
     "parent": { "label": "Train", "href": "/train" },
     "eyebrow": "Train operations",
-    "title": "Frostrail Fuel",
-    "lede": "Fuel keeps the Eden Engine moving and warm. Branches, logs, and charcoal are the three fuel inputs publicly named by FakeFish founder Aku Jauhiainen.",
+    "title": "Fuel",
+    "lede": "Fuel keeps the Eden Engine moving and warm. Branches, logs, and charcoal are the three fuel inputs named so far, but their burn times and relative efficiency have not been published.",
     "image": "/images/official/steam-current/screenshot-03.jpg",
     "imageAlt": "Fuel canisters and logs in the Eden Engine cab hotbar",
     "date": "Verified August 25, 2026",
     "status": "3 named fuel resources",
-    "summary": [["Branches", "Confirmed"], ["Logs", "Confirmed"], ["Charcoal", "Confirmed"], ["Efficiency / burn time", "TBA"]],
+    "summary": [["Branches", "Fuel"], ["Logs", "Fuel"], ["Charcoal", "Fuel"], ["Efficiency / burn time", "Not published"]],
     "records": [
       { "title": "Branches", "label": "Fuel resource", "description": "Named Eden Engine fuel input.", "facts": [["Source", "TBA"], ["Burn time", "TBA"], ["Stack / weight", "TBA"]] },
       { "title": "Logs", "label": "Fuel resource", "description": "Named Eden Engine fuel input.", "facts": [["Source", "TBA"], ["Burn time", "TBA"], ["Stack / weight", "TBA"]] },
@@ -90,46 +90,46 @@
     "sections": [
       { "id": "fuel-loop", "title": "Fuel loop", "paragraphs": ["Scavenging decisions feed directly into the train's ability to move and protect the crew from the cold. Fuel and power are related operating systems, but the public information does not yet expose a complete simulation model."], "bullets": ["Recover or produce fuel", "Load it into the Eden Engine", "Maintain movement and heat", "Plan reserves before entering a new level"] },
       { "id": "public-evidence", "title": "What the official media shows", "paragraphs": ["An official Steam screenshot shows the armored locomotive in a blizzard, and another shows an onboard furnace labeled POWER and HEAT. The April 2026 playtest brief tells players to fuel and conduct the train. None of those images label a carried log, branch, or charcoal unit."], "facts": [["Visible in screenshots", "Locomotive exterior / POWER-HEAT furnace"], ["Named fuel in interviews", "Branches / logs / charcoal"], ["Playtest task", "Fuel up and conduct your train"], ["Efficiency ranking", "TBA"]] },
-      { "id": "data-limits", "title": "Unconfirmed fuel data", "paragraphs": ["The developers have not published node locations, gathering tools, processing recipes, fuel-slot capacity, burn duration, heat output, travel distance per unit, quality tiers, or relative efficiency."], "facts": [["Fuel tank capacity", "TBA"], ["Branch burn time", "TBA"], ["Log burn time", "TBA"], ["Charcoal recipe", "TBA"], ["Efficiency comparison", "TBA"]] }
+      { "id": "data-limits", "title": "What has not been shown yet", "paragraphs": ["Gathering locations, tools, processing recipes, fuel capacity, burn duration, heat output, travel distance per unit, quality tiers, and relative efficiency have not been published."], "facts": [["Fuel tank capacity", "Not published"], ["Branch burn time", "Not published"], ["Log burn time", "Not published"], ["Charcoal recipe", "Not published"], ["Efficiency comparison", "Not published"]] }
     ],
     "gallery": [{ "src": "/images/official/steam-current/screenshot-10.jpg", "alt": "Onboard furnace labeled POWER and HEAT", "caption": "Official screenshot of the furnace that burns fuel for POWER and HEAT." }, { "src": "/images/official/steam-current/screenshot-03.jpg", "alt": "Fuel canisters and logs in the Eden Engine cab hotbar", "caption": "Official cab screenshot showing fuel canisters ×3 and logs ×24 in the hotbar." }, { "src": "/images/official/news/april-playtest-content.webp", "alt": "Official Frostrail April playtest content graphic", "caption": "Official test brief covering train fueling, scavenging, recycling, crafting, Revenants, and early-game dungeons." }],
     "sources": [{ "label": "IndieGames interview with FakeFish founder", "href": "https://www.indie-games.eu/frostrail-in-depth-overview-with-fakefish-founder/", "tier": "Developer interview" }, { "label": "Official Steam page", "href": "https://store.steampowered.com/app/3517740/Frostrail/?l=english", "tier": "Official" }],
     "related": [{ "label": "Resources", "href": "/wiki/resources" }, { "label": "Power", "href": "/train/power" }, { "label": "Eden Engine", "href": "/train/eden-engine" }],
-    "seo": { "title": "Frostrail Fuel: Branches, Logs, Charcoal & Eden Engine", "description": "Verified Frostrail fuel data covering branches, logs, charcoal, the Eden Engine, heat and movement, plus every efficiency value still TBA." }
+    "seo": { "title": "Frostrail Fuel: Branches, Logs, Charcoal & Eden Engine", "description": "Learn how fuel supports the Eden Engine's movement and heat, which fuel resources are known, and which burn-time and efficiency values are still unpublished." }
   },
   "power": {
     "slug": "power",
     "parent": { "label": "Train", "href": "/train" },
     "eyebrow": "Onboard network",
-    "title": "Frostrail Power",
+    "title": "Power",
     "lede": "The crew must power the Eden Engine and its onboard systems while managing the resources that keep the mobile base functional and warm.",
     "image": "/images/train/power-system.jpg",
     "imageAlt": "Powered machinery aboard the Frostrail train",
     "date": "Verified August 25, 2026",
-    "status": "System confirmed / values TBA",
-    "summary": [["Generator", "Eden Engine"], ["Consumers", "Train systems"], ["Heat link", "Confirmed broadly"], ["Output / draw", "TBA"]],
+    "status": "Power for the Eden Engine and onboard systems",
+    "summary": [["Generator", "Eden Engine"], ["Consumers", "Train systems"], ["Heat link", "Part of train operation"], ["Output / draw", "Not published"]],
     "sections": [
       { "id": "overview", "title": "Power system", "paragraphs": ["Official copy explicitly tells players to fuel, power, and operate the Eden Engine. Power supports the train's function as a base, but the developers have not yet shown a complete electrical network or consumer list."], "bullets": ["Keep the locomotive operational", "Support onboard stations and train functions", "Balance power with fuel, heat, repair, and defense"] },
       { "id": "confirmed-links", "title": "Confirmed system links", "paragraphs": ["The train hosts crafting facilities, refineries, storage, repair, cooking, and weapon systems. It is reasonable to identify these as onboard systems, but their individual power draw is not yet public and is therefore not asserted."], "facts": [["Eden Engine power role", "Confirmed"], ["Power management", "Confirmed"], ["Exact consumers", "TBA"], ["Generation output", "TBA"], ["Battery / storage", "Not confirmed"]] },
       { "id": "visible-machinery", "title": "Visible onboard machinery", "paragraphs": ["An official screenshot shows a powered machine inside the train with visible “PUMP” and “HEAT” labels and surrounding connection lines. This confirms a physical, readable onboard-system presentation, but the source does not supply a canonical machine name, generation value, or power draw."], "facts": [["Visible labels", "Pump / heat"], ["Installation", "Inside train carriage"], ["Exact machine name", "TBA"], ["Power output / draw", "TBA"]] },
-      { "id": "unknowns", "title": "Unconfirmed fields", "paragraphs": ["Generation rate, grid capacity, power priorities, outages, battery storage, facility consumption, cable or connection mechanics, upgrade effects, and failure thresholds remain TBA."] }
+      { "id": "unknowns", "title": "What has not been shown yet", "paragraphs": ["Generation rate, grid capacity, power priorities, outages, battery storage, facility consumption, cable mechanics, upgrade effects, and failure thresholds have not been published."] }
     ],
     "gallery": [{ "src": "/images/official/steam-current/screenshot-10.jpg", "alt": "Powered pump and heat machinery inside the Frostrail train", "caption": "Official screenshot showing onboard machinery with pump and heat labels." }, { "src": "/images/official/steam-current/screenshot-03.jpg", "alt": "Eden Engine cab pressure speed heat and consumption gauges", "caption": "Official screenshot of the cab instruments used while conducting the train." }],
     "sources": [{ "label": "Official Steam page", "href": "https://store.steampowered.com/app/3517740/Frostrail/?l=english", "tier": "Official" }, { "label": "IndieGames founder interview", "href": "https://www.indie-games.eu/frostrail-in-depth-overview-with-fakefish-founder/", "tier": "Developer interview" }],
     "related": [{ "label": "Fuel", "href": "/train/fuel" }, { "label": "Train stations", "href": "/wiki/stations" }, { "label": "Eden Engine", "href": "/train/eden-engine" }],
-    "seo": { "title": "Frostrail Train Power & Eden Engine Systems", "description": "Verified Frostrail power-system guide covering the Eden Engine, onboard facilities, heat and fuel links, and all current TBA power values." }
+    "seo": { "title": "Frostrail Train Power & Eden Engine Systems", "description": "Learn how power connects the Eden Engine to onboard facilities, heat, fuel, machinery, upgrades, and the systems that keep the train operating." }
   },
   "defense": {
     "slug": "defense",
     "parent": { "label": "Train", "href": "/train" },
     "eyebrow": "Protect the mobile base",
-    "title": "Frostrail Train Defense",
+    "title": "Train Defense",
     "lede": "Train-defense encounters are part of the current development plan, combining attacks on the Eden Engine with obstacle-clearing and, according to developer interviews, potential mounted machine guns and cannons.",
     "image": "/images/train/defense-encounter.jpg",
     "imageAlt": "Frostrail crew defending a train carriage from attacking enemies",
     "date": "Verified August 25, 2026",
-    "status": "Confirmed development feature",
-    "summary": [["Attackers", "Revenants discussed"], ["Mounted weapons", "Machine guns / cannons discussed"], ["Failure", "Engine destroyed = game over"], ["Damage values", "TBA"]],
+    "status": "Protect the Eden Engine from attacks",
+    "summary": [["Attackers", "Revenants discussed"], ["Mounted weapons", "Machine guns / cannons discussed"], ["Failure", "Engine destroyed = game over"], ["Damage values", "Not published"]],
     "sections": [
       { "id": "encounters", "title": "Defense encounters", "paragraphs": ["The May 2026 update says train-defense encounters are being integrated with gameplay around clearing obstacles from the route. A founder interview also describes planned waves of Revenants and mounting machine guns or cannons to protect the locomotive. Official gameplay-trailer press copy adds that the roar of the engine draws deadly Revenants from the frozen wilds—an attractor described in qualitative terms, not as a published noise radius."], "bullets": ["Protect the Eden Engine", "Respond to attacks around the train", "Clear route obstacles", "Treat engine noise as a confirmed attractor, not a numeric aggro stat", "Use structural reinforcement and planned weapon systems"] },
       { "id": "failure", "title": "Failure condition", "paragraphs": ["The Eden Engine is the crew's shared lifeline. Developer interviews state that if it breaks or is destroyed, the game ends. Exact repair windows, recoverable states, health values, and co-op revive interactions are not public."], "facts": [["Engine loss", "Game over — developer stated"], ["Repair during attack", "TBA"], ["Armor / wall durability", "TBA"], ["Enemy damage", "TBA"]] },
@@ -139,6 +139,6 @@
     "gallery": [{ "src": "/images/official/steam-current/screenshot-02.jpg", "alt": "Two Frostrail players defending an open train carriage", "caption": "Official screenshot showing co-op train defense against a large ice-armored creature on the tracks." }, { "src": "/images/official/steam-current/screenshot-04.jpg", "alt": "Player firing a shotgun at a Revenant", "caption": "Official screenshot of close-range shotgun combat against a humanoid Revenant." }, { "src": "/images/official/news/spring-update-03.webp", "alt": "Official Spring Development Update rail landscape", "caption": "Official development image accompanying the update that confirmed defense encounters integrated with obstacle clearing." }],
     "sources": [{ "label": "Official Steam store and screenshot gallery", "href": "https://store.steampowered.com/app/3517740/Frostrail/?l=english", "tier": "Official" }, { "label": "Official Spring Development Update", "href": "https://store.steampowered.com/news/app/3517740/view/664987745725186081", "tier": "Official" }, { "label": "IndieGames interview with FakeFish founder", "href": "https://www.indie-games.eu/frostrail-in-depth-overview-with-fakefish-founder/", "tier": "Developer interview" }, { "label": "Official gameplay-trailer press kit", "href": "https://www.gamespress.com/Frostrails-Train-to-The-End-of-the-World-Shines-In-New-Gameplay-Traile", "tier": "Official press" }],
     "related": [{ "label": "Enemy index", "href": "/enemies" }, { "label": "Train upgrades", "href": "/train/upgrades" }, { "label": "Weapons", "href": "/wiki/weapons" }],
-    "seo": { "title": "Frostrail Train Defense, Revenant Waves & Mounted Guns", "description": "Verified Frostrail train-defense information covering Eden Engine attacks, Revenant waves, obstacles, mounted machine guns and cannons, and TBA values." }
+    "seo": { "title": "Frostrail Train Defense, Revenants & Mounted Guns", "description": "Prepare for Frostrail train-defense encounters, Revenant attacks, route obstacles, structural upgrades, and planned mounted machine guns and cannons." }
   }
 }
