@@ -1,6 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import { HomeIcon, type HomeIconName } from "@/components/icon/HomeIcon";
+import { PageJsonLd } from "@/seo/PageJsonLd";
+import { getTdk } from "@/seo/tdk";
 import styles from "@/style/page/home/home.module.css";
 
 const facts = [
@@ -47,9 +49,9 @@ const guideStarts = [
 ] as const satisfies ReadonlyArray<readonly [HomeIconName, string, string, string, string]>;
 
 const wikiCards = [
-  ["weapons", "Weapons", "2 named guns and 1 official stat set", "/wiki/weapons", "/images/weapons/weapon-assembly-station.jpg"],
+  ["weapons", "Weapons", "Named rifles, gun types, stats, and crafting", "/wiki/weapons", "/images/weapons/weapon-assembly-station.jpg"],
   ["items", "Items", "Hammer, wrench, torch, crowbar, and supplies", "/wiki/items", "/images/train/onboard-workstation.jpg"],
-  ["resources", "Resources", "9 named materials and a verified screenshot recipe", "/wiki/resources", "/images/official/steam-current/screenshot-05.jpg"],
+  ["resources", "Resources", "Fuel, metal, cloth, plastic, and refining", "/wiki/resources", "/images/official/steam-current/screenshot-05.jpg"],
   ["medallion", "Relics", "Dungeon finds with temporary buffs", "/wiki/relics", "/images/locations/underground-dungeon.jpg"],
   ["clothing", "World & lore", "Penitent Gardeners, the Void, and the north", "/wiki/lore", "/images/home/frostrail-official-hero.jpg"],
   ["station", "Stations", "Crafting, refining, repair, and cooking", "/wiki/stations", "/images/train/onboard-workstation.jpg"],
@@ -80,11 +82,50 @@ const enemies = [
 ] as const;
 
 const popularGuides = [
-  ["Weapons", "Confirmed Weapons & Gun Types", "Pipe Rifle, Bolt-Action Rifle, modular guns.", "/wiki/weapons", "/images/weapons/weapon-assembly-station.jpg"],
-  ["Lore", "World, Void & Penitent Gardeners", "What the store and interviews actually confirm.", "/wiki/lore", "/images/home/frostrail-official-hero.jpg"],
+  ["Weapons", "Frostrail Weapons & Gun Types", "Pipe Rifle, Bolt-Action Rifle, and modular guns.", "/wiki/weapons", "/images/weapons/weapon-assembly-station.jpg"],
+  ["Lore", "World, Void & Penitent Gardeners", "The frozen empire and the journey north.", "/wiki/lore", "/images/home/frostrail-official-hero.jpg"],
   ["Train", "Understanding the Eden Engine", "Fuel, heat, power, failure, and progression.", "/train/eden-engine", "/images/train/eden-engine-cab.jpg"],
-  ["FAQ", "Official FAQ Answers", "Players, price, mods, Linux, and controllers.", "/frostrail-faq", "/images/official/store/steam-header.jpg"],
-  ["Release", "Frostrail Release Date", "Q4 2026 window, ~500K wishlists, and EA plan.", "/frostrail-release-date", "/images/home/frostrail-official-hero.jpg"],
+  ["FAQ", "Questions Players Are Asking", "Players, price, mods, platforms, and controllers.", "/frostrail-faq", "/images/official/store/steam-header.jpg"],
+  ["Release", "Frostrail Release Date", "Q4 2026, price status, and beta timing.", "/frostrail-release-date", "/images/home/frostrail-official-hero.jpg"],
+] as const;
+
+const homeFaq = [
+  {
+    question: "When is Frostrail coming out?",
+    answer: "Frostrail is scheduled to enter Steam Early Access in Q4 2026. An exact day and launch price have not been announced.",
+    href: "/frostrail-release-date",
+    link: "Release date details",
+  },
+  {
+    question: "Is Frostrail multiplayer or can you play solo?",
+    answer: "Both. Frostrail is designed for one player or an online co-op crew of up to four, with everyone sharing the work of exploring and keeping the Eden Engine alive.",
+    href: "/frostrail-multiplayer",
+    link: "How co-op works",
+  },
+  {
+    question: "Is Frostrail coming to PS5 or Xbox?",
+    answer: "No console version is announced. PC and Steam are the Early Access priority, while console ports may be evaluated for version 1.0 and beyond.",
+    href: "/frostrail-console",
+    link: "Platform status",
+  },
+  {
+    question: "How do I join the Frostrail Closed Beta?",
+    answer: "The next Closed Beta begins August 31, 2026. Registration is handled through the Steam page, but signing up does not guarantee an invitation.",
+    href: "/frostrail-closed-beta",
+    link: "Closed Beta guide",
+  },
+  {
+    question: "What are the Frostrail PC requirements?",
+    answer: "Steam currently requires a 64-bit processor and operating system. The CPU, GPU, RAM, storage, and recommended specification have not been published yet.",
+    href: "/frostrail-system-requirements",
+    link: "System requirements",
+  },
+  {
+    question: "Is Frostrail free to play?",
+    answer: "The price has not been announced, and the developers have not described Frostrail as free to play. The final Early Access price will be shared closer to launch.",
+    href: "/frostrail-faq#price",
+    link: "Price and FAQ",
+  },
 ] as const;
 
 function SectionTitle({ id, title, href, link }: { id: string; title: string; href: string; link: string }) {
@@ -97,8 +138,24 @@ function SectionTitle({ id, title, href, link }: { id: string; title: string; hr
 }
 
 export default function HomePage() {
+  const seo = getTdk("/");
+  const faqJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: homeFaq.map((item) => ({
+      "@type": "Question",
+      name: item.question,
+      acceptedAnswer: { "@type": "Answer", text: item.answer },
+    })),
+  };
+
   return (
     <main id="main-content">
+        <PageJsonLd title={seo.title} description={seo.description} path="/" />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd).replaceAll("<", "\\u003c") }}
+        />
         <section className={styles.hero} aria-labelledby="hero-title">
           <Image
             className={styles.heroImage}
@@ -111,9 +168,9 @@ export default function HomePage() {
           />
           <div className={`container ${styles.heroContent}`}>
             <div className={styles.heroCopy}>
-              <p className={styles.kicker}>Independent verified wiki</p>
-            <h1 id="hero-title">FROSTRAIL WIKI</h1>
-              <p>Weapons, train upgrades, relics, crafting,<br className={styles.desktopBreak} /> enemies, locations, and survival guides.</p>
+              <p className={styles.kicker}>Built for the journey north</p>
+              <h1 id="hero-title">FROSTRAIL WIKI <span>Guides, Weapons &amp; Train Systems</span></h1>
+              <p>Prepare for your first run, learn how the Eden Engine works,<br className={styles.desktopBreak} /> and find clear answers on combat, crafting, co-op, and Early Access.</p>
               <div className={styles.heroActions}>
                 <Link className={styles.goldButton} href="/wiki">Explore Wiki <span>›</span></Link>
                 <Link className={styles.darkButton} href="/guides/beginner-guide">Start Here <span>›</span></Link>
@@ -244,6 +301,36 @@ export default function HomePage() {
                 <article className={styles.guideCard} key={title}>
                   <div className={styles.guideImage}><Image src={image} alt="" fill sizes="(max-width: 767px) 100vw, 20vw" /></div>
                   <div><span>{tag}</span><h3><Link href={href}>{title}</Link></h3><p>{description}</p></div>
+                </article>
+              ))}
+            </div>
+          </section>
+
+          <section className={`container ${styles.aboutPanel}`} aria-labelledby="about-frostrail-home">
+            <div className={styles.aboutMedia}>
+              <Image src="/images/official/steam-current/screenshot-11.jpg" alt="The Eden Engine crossing Frostrail's frozen wasteland" fill sizes="(max-width: 767px) 100vw, 43vw" />
+            </div>
+            <div className={styles.aboutCopy}>
+              <p>About the game</p>
+              <h2 id="about-frostrail-home">What is Frostrail?</h2>
+              <p>Frostrail is a survival-crafting FPS from FakeFish, the studio behind Barotrauma. You travel north through a frozen former empire aboard the Eden Engine—part locomotive, part shelter, and the one source of heat your crew cannot afford to lose.</p>
+              <p>This wiki is organized around the decisions players actually face: when to leave the train, what to bring back, how to spend scarce ammunition, and how fuel, power, crafting, and defense keep a run moving. Pre-release details are dated so you can tell current information from systems that may still change.</p>
+              <div className={styles.aboutLinks}>
+                <Link href="/about-frostrail">About Frostrail <span>›</span></Link>
+                <Link href="/train/eden-engine">Meet the Eden Engine <span>›</span></Link>
+              </div>
+            </div>
+          </section>
+
+          <section className={`container ${styles.section}`} aria-labelledby="frostrail-faq-home">
+            <SectionTitle id="frostrail-faq-home" title="Frostrail FAQ" href="/frostrail-faq" link="Read the full FAQ" />
+            <p className={styles.faqIntro}>Quick answers to the questions players ask before wishlisting, joining a test, or planning a crew.</p>
+            <div className={styles.faqGrid}>
+              {homeFaq.map((item) => (
+                <article className={styles.faqCard} key={item.question}>
+                  <h3>{item.question}</h3>
+                  <p>{item.answer}</p>
+                  <Link href={item.href}>{item.link} <span aria-hidden="true">›</span></Link>
                 </article>
               ))}
             </div>

@@ -1,12 +1,10 @@
 import type { Metadata } from "next";
 import { ContentHub } from "@/components/content/ContentHub";
 import { updatesData } from "@/lib/data/hubs";
+import { staticPageMetadata } from "@/seo/article-metadata";
 
-export const metadata: Metadata = {
-  title: "Development Updates",
-  description: "A dated archive of verified Frostrail announcements, development updates, beta news, and release information.",
-};
+export const metadata: Metadata = staticPageMetadata("/updates");
 
 export default function UpdatesPage() {
-  return <ContentHub data={updatesData} />;
+  return <ContentHub data={updatesData} canonical="/updates" />;
 }

@@ -21,5 +21,5 @@ export default async function WeaponEntryPage({ params }: PageProps<"/wiki/weapo
   const { slug } = await params;
   const data = weaponEntries[slug];
   if (!data) notFound();
-  return <WeaponDetailPage data={data} />;
+  return <WeaponDetailPage data={data} canonical={`/wiki/weapons/${slug}`} />;
 }

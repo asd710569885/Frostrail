@@ -1,21 +1,23 @@
 import Image from "next/image";
 import Link from "next/link";
+import { playerFacingCopy } from "@/lib/content-copy";
+import { PageJsonLd } from "@/seo/PageJsonLd";
 import styles from "@/style/page/wiki/weapons-index.module.css";
 import type { ArticleData, ArticleRecord } from "@/types/content";
 
 const categoryCards = [
   ["Rifles", "2 named weapons", "Precision, modular parts, and early-game firearms", "/images/weapons/weapon-assembly-station.jpg"],
-  ["Shotguns", "Confirmed family", "Close-range firearms; individual models remain TBA", "/images/official/steam-current/screenshot-04.jpg"],
-  ["Pistols", "Confirmed family", "WWI-influenced sidearms; names and stats remain TBA", "/images/official/steam-current/screenshot-07.jpg"],
+  ["Shotguns", "Weapon family", "Close-range firearms; individual models are not published", "/images/official/steam-current/screenshot-04.jpg"],
+  ["Pistols", "Weapon family", "WWI-influenced sidearms; names and stats are not published", "/images/official/steam-current/screenshot-07.jpg"],
 ] as const;
 
-const databaseCards = [
-  ["Pipe Rifle", "Named firearm", "Rifle", "TBA", "/wiki/weapons/pipe-rifle", "/images/enemies/graveyard-revenants.jpg"],
+const weaponCards = [
+  ["Pipe Rifle", "Named firearm", "Rifle", "Not published", "/wiki/weapons/pipe-rifle", "/images/enemies/graveyard-revenants.jpg"],
   ["Bolt-Action Rifle", "Screenshot stat set", "Rifle", "27.0 damage / 5 clip", "/wiki/weapons/bolt-action-rifle", "/images/weapons/weapon-assembly-station.jpg"],
-  ["Pistols", "Confirmed family", "Firearm", "TBA", "/wiki/weapons#how-weapons-work", "/images/official/steam-current/screenshot-07.jpg"],
-  ["Shotguns", "Confirmed family", "Firearm", "TBA", "/wiki/weapons#how-weapons-work", "/images/official/steam-current/screenshot-04.jpg"],
-  ["Machine Guns", "Confirmed family", "Firearm", "TBA", "/wiki/weapons#how-weapons-work", "/images/train/defense-encounter.jpg"],
-  ["Basic Melee", "Confirmed family", "Melee", "TBA", "/wiki/weapons#how-weapons-work", "/images/official/steam-current/screenshot-03.jpg"],
+  ["Pistols", "Weapon family", "Firearm", "Not published", "/wiki/weapons#how-weapons-work", "/images/official/steam-current/screenshot-07.jpg"],
+  ["Shotguns", "Weapon family", "Firearm", "Not published", "/wiki/weapons#how-weapons-work", "/images/official/steam-current/screenshot-04.jpg"],
+  ["Machine Guns", "Weapon family", "Firearm", "Not published", "/wiki/weapons#how-weapons-work", "/images/train/defense-encounter.jpg"],
+  ["Basic Melee", "Weapon family", "Melee", "Not published", "/wiki/weapons#how-weapons-work", "/images/official/steam-current/screenshot-03.jpg"],
 ] as const;
 
 const relatedSections = [
@@ -23,33 +25,34 @@ const relatedSections = [
   ["Resources", "Metal, cloth, plastic, and fuel", "/wiki/resources", "/images/official/steam-current/screenshot-05.jpg"],
   ["Crafting", "Stations, repair, and modular parts", "/wiki/crafting", "/images/wiki/weapons-crafting.jpg"],
   ["Train Defense", "Protect the Eden Engine", "/train/defense", "/images/train/defense-encounter.jpg"],
-  ["Enemies", "Confirmed threats on the rails", "/enemies", "/images/enemies/revenant-close-combat.jpg"],
+  ["Enemies", "Threats on and beyond the rails", "/enemies", "/images/enemies/revenant-close-combat.jpg"],
 ] as const;
 
 function getRecord(data: ArticleData, title: string): ArticleRecord | undefined {
   return data.records?.find((record) => record.title === title);
 }
 
-export function WeaponsIndexPage({ data }: { data: ArticleData }) {
+export function WeaponsIndexPage({ data, canonical }: { data: ArticleData; canonical: string }) {
   const namedRecords = [getRecord(data, "Pipe Rifle"), getRecord(data, "Bolt-Action Rifle")].filter(Boolean) as ArticleRecord[];
 
   return (
       <main id="main-content" className={styles.main}>
+        <PageJsonLd title={data.seo?.title ?? data.title} description={data.seo?.description ?? data.lede} path={canonical} pageType="Article" />
         <section className={styles.hero} aria-labelledby="weapon-page-title">
           <Image className={styles.heroImage} src={data.image ?? "/images/weapons/weapon-assembly-station.jpg"} alt={data.imageAlt ?? "Frostrail weapons"} fill priority sizes="100vw" />
           <div className={`container ${styles.heroInner}`}>
             <p className={styles.breadcrumb}><Link href="/">Home</Link><span>/</span><Link href="/wiki">Wiki</Link><span>/</span>Weapons</p>
             <div className={styles.heroCopy}>
-              <p className={styles.eyebrow}>{data.eyebrow}</p>
-              <h1 id="weapon-page-title">Frostrail Weapons</h1>
-              <p>{data.lede}</p>
+              <p className={styles.eyebrow}>{playerFacingCopy(data.eyebrow)}</p>
+              <h1 id="weapon-page-title">Frostrail Weapons <span>Guns, Stats &amp; Crafting</span></h1>
+              <p>{playerFacingCopy(data.lede)}</p>
             </div>
           </div>
           <div className={`container ${styles.statRail}`}>
             <div><span aria-hidden="true">⚔</span><strong>2</strong><p>Named weapons<small>Publicly identified</small></p></div>
             <div><span aria-hidden="true">▥</span><strong>5</strong><p>Weapon families<small>Ranged and melee</small></p></div>
             <div><span aria-hidden="true">⚙</span><strong>Yes</strong><p>Modular crafting<small>Parts and stations</small></p></div>
-            <div><span aria-hidden="true">◎</span><strong>1 Set</strong><p>Combat data<small>Official screenshot values</small></p></div>
+            <div><span aria-hidden="true">◎</span><strong>1 Set</strong><p>Combat data<small>Pre-release screenshot values</small></p></div>
           </div>
         </section>
 
@@ -66,22 +69,22 @@ export function WeaponsIndexPage({ data }: { data: ArticleData }) {
               ))}
             </fieldset>
             <fieldset>
-              <legend>Data Status</legend>
-              <label><input type="checkbox" defaultChecked /> <span>All records</span></label>
+              <legend>Entry Type</legend>
+              <label><input type="checkbox" defaultChecked /> <span>All entries</span></label>
               <label><input type="checkbox" /> <span>Named weapons</span></label>
-              <label><input type="checkbox" /> <span>Confirmed families</span></label>
+              <label><input type="checkbox" /> <span>Weapon families</span></label>
             </fieldset>
             <fieldset>
-              <legend>Release Data</legend>
-              <label><input type="checkbox" defaultChecked /> <span>Verified information</span></label>
-              <label><input type="checkbox" /> <span>TBA values</span></label>
+              <legend>Stat Availability</legend>
+              <label><input type="checkbox" defaultChecked /> <span>Shown values</span></label>
+              <label><input type="checkbox" /> <span>Not published</span></label>
             </fieldset>
-            <label className={styles.rangeLabel}>Public numeric data
-              <span><b>TBA</b><b>Beta / EA</b></span>
+            <label className={styles.rangeLabel}>Available stat detail
+              <span><b>Not shown</b><b>Beta / EA</b></span>
               <input type="range" min="0" max="100" defaultValue="0" />
             </label>
             <label className={styles.sortLabel}>Sort By
-              <select defaultValue="status"><option value="status">Verification status</option><option value="name">Name A–Z</option><option value="type">Weapon type</option></select>
+              <select defaultValue="status"><option value="status">Entry type</option><option value="name">Name A–Z</option><option value="type">Weapon family</option></select>
             </label>
             <button type="reset">↻ Reset filters</button>
           </aside>
@@ -100,13 +103,13 @@ export function WeaponsIndexPage({ data }: { data: ArticleData }) {
             </section>
 
             <section id="all-weapons" aria-labelledby="all-weapons-title">
-              <div className={styles.sectionHeading}><h2 id="all-weapons-title">Confirmed Weapon Database</h2><span>Showing 6 confirmed records</span></div>
+              <div className={styles.sectionHeading}><h2 id="all-weapons-title">Known Weapons &amp; Types</h2><span>Showing 6 entries</span></div>
               <div className={styles.weaponGrid}>
-                {databaseCards.map(([title, status, type, stats, href, image], index) => (
+                {weaponCards.map(([title, status, type, stats, href, image], index) => (
                   <article className={styles.weaponCard} key={title}>
                     <div className={styles.weaponImage}>
                       <Image src={image} alt="" fill sizes="(max-width: 767px) 50vw, 16vw" />
-                      <span className={index < 2 ? styles.named : styles.confirmed}>{index < 2 ? "Named" : "Verified"}</span>
+                      <span className={index < 2 ? styles.named : styles.confirmed}>{index < 2 ? "Named" : "Type"}</span>
                     </div>
                     <div className={styles.weaponBody}>
                       <h3>{title}</h3><p>{type}</p>
@@ -119,21 +122,21 @@ export function WeaponsIndexPage({ data }: { data: ArticleData }) {
             </section>
 
             <section className={styles.comparison} aria-labelledby="comparison-title">
-              <h2 id="comparison-title">Named Weapon Comparison <span>(verified public data)</span></h2>
+              <h2 id="comparison-title">Named Weapon Comparison <span>(current pre-release details)</span></h2>
               <div className={styles.tableWrap}><table><thead><tr><th>Weapon</th><th>Type</th><th>Progression</th><th>Crafting / mods</th><th>Numeric stats</th></tr></thead>
-                <tbody>{namedRecords.map((record) => <tr key={record.title}><th>{record.title}</th><td>Rifle</td><td>{record.title === "Pipe Rifle" ? "Early game" : "Later than Pipe Rifle"}</td><td>{record.title === "Bolt-Action Rifle" ? "Recipe + stock options shown" : "Craftable — planned"}</td><td>{record.title === "Bolt-Action Rifle" ? "27.0 projectile damage / 5 clip / 200 durability" : "TBA"}</td></tr>)}</tbody>
+                <tbody>{namedRecords.map((record) => <tr key={record.title}><th>{record.title}</th><td>Rifle</td><td>{record.title === "Pipe Rifle" ? "Early game" : "Later than Pipe Rifle"}</td><td>{record.title === "Bolt-Action Rifle" ? "Recipe + stock options shown" : "Craftable — planned"}</td><td>{record.title === "Bolt-Action Rifle" ? "27.0 projectile damage / 5 clip / 200 durability" : "Not published"}</td></tr>)}</tbody>
               </table></div>
             </section>
 
             <section className={styles.research} aria-labelledby="weapon-research-title">
-              <div className={styles.sectionHeading}><h2 id="weapon-research-title">Verified Weapon Research</h2><span>{data.date}</span></div>
+              <div className={styles.sectionHeading}><h2 id="weapon-research-title">How Frostrail Weapons Work</h2><span>{data.date.replace(/^Verified /, "Updated ")}</span></div>
               <div className={styles.researchGrid}>
                 {data.sections.map((item) => (
                   <article id={item.id} key={item.id}>
-                    <h3>{item.title}</h3>
-                    {item.paragraphs.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
-                    {item.bullets && <ul>{item.bullets.map((bullet) => <li key={bullet}>{bullet}</li>)}</ul>}
-                    {item.facts && <dl>{item.facts.map(([term, value]) => <div key={term}><dt>{term}</dt><dd>{value}</dd></div>)}</dl>}
+                    <h3>{playerFacingCopy(item.title)}</h3>
+                    {item.paragraphs.map((paragraph) => <p key={paragraph}>{playerFacingCopy(paragraph)}</p>)}
+                    {item.bullets && <ul>{item.bullets.map((bullet) => <li key={bullet}>{playerFacingCopy(bullet)}</li>)}</ul>}
+                    {item.facts && <dl>{item.facts.map(([term, value]) => <div key={term}><dt>{playerFacingCopy(term)}</dt><dd>{playerFacingCopy(value)}</dd></div>)}</dl>}
                   </article>
                 ))}
               </div>
@@ -142,7 +145,7 @@ export function WeaponsIndexPage({ data }: { data: ArticleData }) {
               </div>
             </section>
 
-            <div className={styles.notice}><strong>Pre-release data policy</strong><p>Official screenshot values are published with a pre-release label. Unshown damage, ammo types, rarity, recipes, and drop rates remain TBA instead of being inferred from the reference design or unrelated weapons.</p></div>
+            <div className={styles.notice}><strong>Before comparing weapons</strong><p>The Bolt-Action Rifle values belong to a pre-release screen. Damage, ammunition, rarity, recipes, and drop rates that have not been shown are left unpublished instead of being copied from mockups or unrelated guns.</p></div>
           </div>
         </div>
 

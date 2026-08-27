@@ -36,11 +36,16 @@
 .inner nav {
   display: flex;
   justify-content: center;
-  gap: clamp(24px, 4vw, 68px);
+  gap: clamp(14px, 2.1vw, 34px);
   color: #c6d0d5;
   font-size: 14px;
   text-transform: uppercase;
   letter-spacing: .06em;
+}
+
+.inner nav span {
+  color: var(--gold-light);
+  font-family: var(--font-display);
 }
 
 .socials {
@@ -80,7 +85,18 @@
   text-align: center;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 1024px) {
+  .inner {
+    grid-template-columns: 64px 1fr auto;
+    gap: 16px 24px;
+  }
+
+  .inner nav {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 768px) {
   .inner {
     grid-template-columns: 1fr;
     justify-items: center;

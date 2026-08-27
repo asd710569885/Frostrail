@@ -1,8 +1,8 @@
 export const siteConfig = {
   name: "Frostrail Wiki",
   description:
-    "An independent Frostrail wiki covering verified train systems, survival mechanics, locations, enemies, guides, and development updates.",
-  url: process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000",
+    "Plan your Frostrail journey with guides to the Eden Engine, weapons, crafting, co-op, locations, enemies, Closed Beta, and Q4 2026 Early Access.",
+  url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://frostrail.org",
   steamUrl: "https://store.steampowered.com/app/3517740/Frostrail/",
-  supportEmail: "support@shirogames.com",
+  contactEmail: "wanghuan@frostrail.org",
 } as const;

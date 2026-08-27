@@ -21,5 +21,5 @@ export default async function TrainTopicPage({ params }: PageProps<"/train/[topi
   const { topic } = await params;
   const data = trainArticles[topic];
   if (!data) notFound();
-  return <ArticlePage data={data} />;
+  return <ArticlePage data={data} canonical={`/train/${topic}`} />;
 }

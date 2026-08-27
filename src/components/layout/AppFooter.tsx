@@ -4,6 +4,7 @@ import { siteConfig } from "@/config/site";
 import styles from "@/style/layout/app-footer.module.css";
 
 export function AppFooter() {
+  const currentYear = new Date().getFullYear();
   return (
     <footer className={styles.footer}>
       <div className={`container ${styles.inner}`}>
@@ -11,12 +12,13 @@ export function AppFooter() {
           <HomeIcon name="brand" />
           <span className={styles.srOnly}>Frostrail Wiki</span>
         </div>
-        <nav aria-label="Footer navigation">
-          <Link href="/about-frostrail">About</Link>
-          <Link href="/frostrail-faq">FAQ</Link>
-          <Link href="/about-frostrail#contact">Contact</Link>
-          <Link href="/about-frostrail#privacy">Privacy Policy</Link>
-          <Link href="/about-frostrail#terms">Terms</Link>
+        <nav aria-label="Legal navigation">
+          <span>Legal</span>
+          <Link href="/legal/privacy-policy" rel="noopener noreferrer nofollow">Privacy Policy</Link>
+          <Link href="/legal/terms-of-service" rel="noopener noreferrer nofollow">Terms of Service</Link>
+          <Link href="/legal/copyright" rel="noopener noreferrer nofollow">Copyright</Link>
+          <Link href="/legal/about-us" rel="noopener noreferrer nofollow">About Us</Link>
+          <Link href="/legal/contact-us" rel="noopener noreferrer nofollow">Contact Us</Link>
         </nav>
         <div className={styles.socials}>
           <a href={siteConfig.steamUrl} target="_blank" rel="noreferrer" aria-label="Frostrail on Steam">
@@ -27,7 +29,8 @@ export function AppFooter() {
           </a>
         </div>
         <p>
-          © 2026 Frostrail Wiki. Independent community wiki; not affiliated with FakeFish or Shiro Unlimited.
+          Copyright © {currentYear} {siteConfig.name}. All rights reserved.<br />
+          Frostrail Wiki is an independent fan site and is not affiliated with, endorsed by, or connected to FakeFish or Shiro Unlimited.
         </p>
       </div>
     </footer>

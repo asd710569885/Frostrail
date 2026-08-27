@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { ArticlePage } from "@/components/content/ArticlePage";
 import { wikiSections, wikiSectionSlugs } from "@/lib/data/wiki";
+import { WikiSectionDetailPage } from "@/page/wiki/WikiSectionDetailPage";
 import { articleMetadata } from "@/seo/article-metadata";
 
 export const dynamicParams = false;
@@ -21,5 +21,5 @@ export default async function WikiSectionPage({ params }: PageProps<"/wiki/[sect
   const { section } = await params;
   const data = wikiSections[section];
   if (!data || section === "weapons") notFound();
-  return <ArticlePage data={data} />;
+  return <WikiSectionDetailPage data={data} canonical={`/wiki/${section}`} />;
 }

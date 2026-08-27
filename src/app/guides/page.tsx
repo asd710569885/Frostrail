@@ -1,12 +1,10 @@
 import type { Metadata } from "next";
 import { ContentHub } from "@/components/content/ContentHub";
 import { guidesData } from "@/lib/data/hubs";
+import { staticPageMetadata } from "@/seo/article-metadata";
 
-export const metadata: Metadata = {
-  title: "Guides",
-  description: "Practical Frostrail survival, crafting, combat, train, and co-op guides built from verified information.",
-};
+export const metadata: Metadata = staticPageMetadata("/guides");
 
 export default function GuidesPage() {
-  return <ContentHub data={guidesData} />;
+  return <ContentHub data={guidesData} canonical="/guides" />;
 }

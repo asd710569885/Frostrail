@@ -4,7 +4,10 @@ import { AppFooter } from "@/components/layout/AppFooter";
 import { AppHeader } from "@/components/layout/AppHeader";
 import { siteConfig } from "@/config/site";
 import { JsonLd } from "@/seo/JsonLd";
+import { getTdk } from "@/seo/tdk";
 import "@/style/globals.css";
+
+const homeTdk = getTdk("/");
 
 const bodyFont = Roboto_Condensed({
   variable: "--font-body",
@@ -19,26 +22,42 @@ const displayFont = Oswald({
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   title: {
-    default: "Frostrail Wiki | Guides, Train Systems & Game Database",
-    template: "%s | Frostrail Wiki",
+    default: homeTdk.title,
+    template: "%s",
   },
-  description: siteConfig.description,
+  description: homeTdk.description,
   applicationName: siteConfig.name,
+  creator: siteConfig.name,
+  publisher: siteConfig.name,
+  category: "Games",
+  referrer: "strict-origin-when-cross-origin",
+  formatDetection: { email: false, address: false, telephone: false },
   manifest: "/manifest.webmanifest",
   openGraph: {
     type: "website",
     siteName: siteConfig.name,
-    title: "Frostrail Wiki | Guides, Train Systems & Game Database",
-    description: siteConfig.description,
-    images: [{ url: "/images/home/frostrail-official-hero.jpg", width: 1438, height: 810, alt: "Official Frostrail key art" }],
+    title: homeTdk.title,
+    description: homeTdk.description,
+    url: "/",
+    images: [{ url: "/images/og-image.png", width: 1737, height: 908, alt: "Armored steam train crossing the frozen wasteland" }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Frostrail Wiki",
-    description: siteConfig.description,
-    images: ["/images/home/frostrail-official-hero.jpg"],
+    title: homeTdk.title,
+    description: homeTdk.description,
+    images: ["/images/og-image.png"],
   },
-  robots: { index: true, follow: true },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+      "max-video-preview": -1,
+    },
+  },
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {

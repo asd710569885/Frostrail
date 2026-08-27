@@ -8,5 +8,5 @@ const data = wikiSections.weapons;
 export const metadata: Metadata = articleMetadata(data, "/wiki/weapons");
 
 export default function WeaponsPage() {
-  return <WeaponsIndexPage data={data} />;
+  return <WeaponsIndexPage data={data} canonical="/wiki/weapons" />;
 }
