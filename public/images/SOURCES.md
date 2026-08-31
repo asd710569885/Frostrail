@@ -1,6 +1,6 @@
 # Frostrail image sources
 
-Last verified: 2026-08-27
+Last verified: 2026-08-31
 
 All game screenshots, key art, trailer thumbnails, and the Frostrail logo in this directory are official promotional assets owned by FakeFish and/or Shiro Unlimited. They are used by this independent wiki for identification, reporting, and commentary. They must not be presented as original wiki artwork.
 
@@ -81,6 +81,10 @@ Primary sources:
 The three `official/archive` images are visibly labeled pre-alpha and must never replace current stats. Their unlabeled inventory icons, unnamed weapon, internal part names, and placeholder copy are not canonical item or weapon names.
 
 These are official pre-release screenshot values, not guaranteed Q4 2026 Early Access balance. Pages must retain their build-status caveat when using them.
+
+## August 31 Closed Beta availability check
+
+On August 31, 2026, the official Steam store still showed **Request Access** and stated that Frostrail was not yet available on Steam. The July 20 official announcement names August 31 as the Closed Beta date, but neither source publishes a general-access confirmation, a live build number, a patch note, or new item, weapon, recipe, drop-rate, and balance tables. Pages must describe this as an invitation-based access status until FakeFish publishes a more specific update.
 
 The `.webp` files beside the eight PNG news images are local 1600px, quality-82 derivatives used for faster page delivery. The untouched source PNGs remain in the same directory for provenance and future recrops.
 

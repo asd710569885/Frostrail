@@ -68,12 +68,12 @@ const data = {
       id: "verify",
       title: "Check the build before following a stat",
       paragraphs: [
-        "The Closed Beta begins August 31, 2026, ahead of the planned Q4 2026 Early Access launch. Balance can move quickly between these builds, so check the page date before spending resources or planning around an exact number.",
+        "FakeFish scheduled the Closed Beta for August 31, 2026, ahead of the planned Q4 2026 Early Access launch. As of that date, the Steam page still uses Request Access rather than a public release state. Balance can move quickly between test builds, so check the page date before spending resources or planning around an exact number.",
       ],
       bullets: ["Check the latest announcement for dates and test scope", "Use repeatable in-game behavior when comparing mechanics", "Ignore values shown only in mockups"],
       image: "/images/official/news/closed-beta-august-31.jpg",
       imageAlt: "Official Closed Beta announcement artwork",
-      caption: "The Closed Beta beginning August 31, 2026 is the next dated public test.",
+      caption: "The official August 31, 2026 Closed Beta date; Steam access remains invitation-based at this verification point.",
     },
   ] as const,
   gallery: [

@@ -8,15 +8,15 @@ import styles from "@/style/page/home/home.module.css";
 const facts = [
   ["gauge", "1–4", "Players", "Solo & online co-op"],
   ["relic", "~500K", "Wishlists", "July 2026 press kit"],
-  ["crew", "AUG 31", "Closed Beta", "First beta begins"],
+  ["crew", "AUG 31", "Closed Beta", "Official scheduled date"],
   ["snowflake", "Q4 2026", "Early Access", "Official Steam window"],
 ] as const satisfies ReadonlyArray<readonly [HomeIconName, string, string, string]>;
 
 const updates = [
   {
     tag: "Beta",
-    title: "Closed Beta Begins August 31",
-    text: "Registration is open, and previous test registrations remain valid.",
+    title: "Closed Beta: August 31 Access Status",
+    text: "Steam still shows Request Access; prior registrations remain valid, but access is invite-based.",
     date: "Jul 20, 2026",
     href: "/frostrail-closed-beta",
     image: "/images/official/news/closed-beta-august-31.jpg",
@@ -110,7 +110,7 @@ const homeFaq = [
   },
   {
     question: "How do I join the Frostrail Closed Beta?",
-    answer: "The next Closed Beta begins August 31, 2026. Registration is handled through the Steam page, but signing up does not guarantee an invitation.",
+    answer: "FakeFish scheduled the Closed Beta for August 31, 2026. Steam still shows Request Access, so registration is public but an invitation is not guaranteed.",
     href: "/frostrail-closed-beta",
     link: "Closed Beta guide",
   },
