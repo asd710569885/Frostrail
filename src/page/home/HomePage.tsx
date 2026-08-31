@@ -110,7 +110,7 @@ const homeFaq = [
   },
   {
     question: "How do I join the Frostrail Closed Beta?",
-    answer: "FakeFish scheduled the Closed Beta for August 31, 2026. Steam still shows Request Access, so registration is public but an invitation is not guaranteed.",
+      answer: "FakeFish scheduled the Closed Beta for August 31, 2026. Steam still shows Request Access, so registration is public but an invitation is not guaranteed.",
     href: "/frostrail-closed-beta",
     link: "Closed Beta guide",
   },

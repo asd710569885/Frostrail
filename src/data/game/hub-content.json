@@ -228,8 +228,8 @@
     "introduction": "Follow Closed Beta dates, playtest changes, gameplay milestones, and the road to Steam Early Access without digging through old announcement feeds. Each update keeps the event date and the affected game systems easy to scan.",
     "heroImage": "/images/official/trailers/gameplay-trailer.jpg",
     "heroImageAlt": "Official Frostrail gameplay trailer frame",
-    "status": "Latest: August 31 Closed Beta access status",
-    "verifiedAt": "August 31, 2026",
+      "status": "Latest: August 31 Closed Beta access status",
+      "verifiedAt": "August 31, 2026",
     "topics": [
       { "id": "closed-beta", "title": "Closed Beta: August 31 access status", "label": "Verified August 31, 2026", "description": "FakeFish scheduled the first Frostrail Closed Beta for August 31, 2026. Previous registrations remain valid, but the current Steam page still says Request Access and that the game is not yet available on Steam. That means sign-up is public while invitation and general-access status remain unconfirmed.", "details": ["Official scheduled date: August 31, 2026", "Steam store: Request Access", "Previous registrations remain valid", "No public all-player access confirmation", "Wishlists cited in the press kit: almost 500,000"], "href": "/frostrail-closed-beta", "source": { "label": "Official Steam store and Closed Beta announcement", "href": "https://store.steampowered.com/app/3517740/Frostrail/?l=english", "tier": "Official" } },
       { "id": "500k-wishlists", "title": "Almost 500,000 Steam wishlists", "label": "July 2026", "description": "In the Closed Beta press kit, lead designer Ez Jämsen said Frostrail had gained almost 500,000 Steam wishlists since reveal. This updates the earlier April 28 milestone of 400,000 and remains a wishlist count, not sales or concurrent players.", "details": ["Source: July 2026 Closed Beta press kit", "Prior official milestone: 400,000 on April 28, 2026", "Not a player-count or revenue figure"], "href": "/frostrail-closed-beta", "source": { "label": "Official Closed Beta press kit", "href": "https://www.gamespress.com/Frostrails-Closed-Beta-Arrives-August-31", "tier": "Official press" } },
