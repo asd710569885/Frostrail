@@ -19,6 +19,7 @@ export function ArticlePage({ data, canonical, pageType = "Article" }: { data: A
         description={seoDescription}
         path={canonical}
         pageType={pageType}
+        dateModified={data.date}
         breadcrumbs={[{ name: "Home", path: "/" }, { name: data.parent.label, path: data.parent.href }, { name: data.title, path: canonical }]}
       />
       <header className={styles.pageHead}>

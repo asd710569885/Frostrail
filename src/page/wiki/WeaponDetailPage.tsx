@@ -39,6 +39,7 @@ export function WeaponDetailPage({ data, canonical }: { data: ArticleData; canon
           description={data.seo?.description ?? data.lede}
           path={canonical}
           pageType="Article"
+          dateModified={data.date}
           breadcrumbs={[{ name: "Home", path: "/" }, { name: "Wiki", path: "/wiki" }, { name: "Weapons", path: "/wiki/weapons" }, { name: data.title, path: canonical }]}
         />
         <header className={styles.hero}>

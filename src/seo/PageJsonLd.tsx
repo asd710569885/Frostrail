@@ -11,11 +11,19 @@ type PageJsonLdProps = {
   path: string;
   pageType?: "WebPage" | "Article" | "CollectionPage" | "AboutPage" | "ContactPage";
   breadcrumbs?: readonly Breadcrumb[];
+  dateModified?: string;
 };
 
-export function PageJsonLd({ title, description, path, pageType = "WebPage", breadcrumbs }: PageJsonLdProps) {
+function isoDate(value?: string) {
+  if (!value) return undefined;
+  const parsed = new Date(value.replace(/^(Verified|Updated)\s+/i, ""));
+  return Number.isNaN(parsed.getTime()) ? undefined : parsed.toISOString();
+}
+
+export function PageJsonLd({ title, description, path, pageType = "WebPage", breadcrumbs, dateModified }: PageJsonLdProps) {
   const url = `${siteConfig.url}${path}`;
   const trail = breadcrumbs ?? (path === "/" ? [{ name: "Home", path: "/" }] : [{ name: "Home", path: "/" }, { name: title, path }]);
+  const modified = isoDate(dateModified);
   const data = {
     "@context": "https://schema.org",
     "@graph": [
@@ -34,6 +42,12 @@ export function PageJsonLd({ title, description, path, pageType = "WebPage", bre
           width: 1737,
           height: 908,
         },
+        ...(pageType === "Article" ? {
+          headline: title,
+          ...(modified ? { dateModified: modified } : {}),
+          author: { "@type": "Organization", name: "Frostrail Wiki Editorial Team", url: siteConfig.url },
+          publisher: { "@type": "Organization", name: siteConfig.name, url: siteConfig.url },
+        } : {}),
       },
       {
         "@type": "BreadcrumbList",

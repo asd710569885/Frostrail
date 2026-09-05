@@ -3,7 +3,6 @@
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { HomeIcon } from "@/components/icon/HomeIcon";
 import styles from "@/style/layout/app-header.module.css";
 
 const navigation = [
@@ -28,10 +27,9 @@ const wikiLinks = [
 
 function Brand() {
   return (
-    <Link className={styles.brand} href="/" aria-label="Frostrail Wiki home">
-      <span className={styles.crest}><HomeIcon name="brand" /></span>
-      <Image className={styles.logo} src="/images/brand/frostrail-logo.png" alt="" width={150} height={67} priority />
-      <span className={styles.wiki}>WIKI</span>
+    <Link className={styles.brand} href="/" aria-label="Frostrail home">
+      <Image className={styles.logo} src="/images/logo.png" alt="Frostrail logo" width={1254} height={1254} priority sizes="52px" />
+      <span className={styles.wiki}>Frostrail</span>
     </Link>
   );
 }
@@ -63,14 +61,6 @@ export function AppHeader() {
           </nav>
         </details>
       </div>
-      <nav className={styles.database} aria-label="Wiki sections">
-        <div className={`container ${styles.databaseInner}`}>
-          <span>Wiki</span>
-          {wikiLinks.map(([label, href]) => (
-            <Link key={href} href={href}>{label}</Link>
-          ))}
-        </div>
-      </nav>
     </header>
   );
 }

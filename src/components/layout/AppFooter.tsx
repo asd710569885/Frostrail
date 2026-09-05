@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { HomeIcon } from "@/components/icon/HomeIcon";
 import { siteConfig } from "@/config/site";
@@ -9,8 +10,7 @@ export function AppFooter() {
     <footer className={styles.footer}>
       <div className={`container ${styles.inner}`}>
         <div className={styles.brandBlock}>
-          <HomeIcon name="brand" />
-          <span className={styles.srOnly}>Frostrail Wiki</span>
+          <Image src="/images/logo.png" alt="Frostrail Wiki logo" width={1254} height={1254} sizes="58px" />
         </div>
         <nav aria-label="Legal navigation">
           <span>Legal</span>
@@ -22,7 +22,7 @@ export function AppFooter() {
         </nav>
         <div className={styles.socials}>
           <a href={siteConfig.steamUrl} target="_blank" rel="noreferrer" aria-label="Frostrail on Steam">
-            <HomeIcon name="brand" />
+            <Image src="/images/5ee480b1-76e2-46b2-ac5d-ac46aed15aa2.png" alt="" width={1254} height={1254} sizes="27px" />
           </a>
           <a href="https://www.youtube.com/watch?v=4IsBMv3UJQU" target="_blank" rel="noreferrer" aria-label="Official Closed Beta announcement">
             <HomeIcon name="youtube" />

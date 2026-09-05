@@ -4,31 +4,31 @@ import { articleMetadata } from "@/seo/article-metadata";
 const data = {
   parent: { label: "Updates", href: "/updates" },
   eyebrow: "Beta update",
-  title: "Frostrail Closed Beta: August 31 Access Status",
-  lede: "FakeFish scheduled Frostrail’s first Closed Beta for August 31, 2026. Steam still shows a Request Access button, so sign-up is public but access remains invitation-based until the developer confirms otherwise.",
+  title: "Frostrail Closed Beta: Live Access & September 7 End Date",
+  lede: "Frostrail's Closed Beta launched on August 31, 2026 and ends September 7. Accepted players and previous playtesters can play through Steam, invite friends, and share recordings without an NDA.",
   image: "/images/official/news/closed-beta-august-31.jpg",
   imageAlt: "Official Frostrail closed beta announcement trailer image",
-  date: "Verified August 31, 2026",
-  status: "Scheduled date reached; access remains invitation-based",
+  date: "Verified September 5, 2026",
+  status: "Live through September 7; accepted players can invite friends",
   summary: [
-    ["Official date", "August 31, 2026"],
-    ["Steam status", "Request Access"],
+    ["Beta period", "August 31–September 7, 2026"],
+    ["Access", "Accepted players / prior playtesters"],
     ["Players", "1–4"],
     ["Platform", "PC / Steam"],
   ] as const,
   sections: [
     {
       id: "confirmed",
-      title: "Official date and registration",
+      title: "Beta access and end date",
       paragraphs: [
-        "FakeFish announced August 31, 2026 as the first Frostrail Closed Beta date. Registration is handled through Steam, and people who signed up for the previous test do not need to register again.",
-        "As verified on August 31, the public Steam page still says “Request Access” and “This game is not yet available on Steam.” That confirms the public sign-up route, but it does not prove that every registrant—or any particular player—has received access. This page will call the test live only after an official status post or an updated store state confirms it.",
+        "FakeFish launched the Frostrail Closed Beta on August 31, 2026. It ends on September 7. Players accepted for this Beta, along with previous playtesters, can play through Steam.",
+        "Each accepted player can invite up to three friends from the Steam game page. Once invited players join, they can each invite up to three more people. This is Closed Beta access rather than a general public launch, even though the main store page may still display Request Access.",
         "In the accompanying press kit, lead designer Ez Jämsen said the community around Frostrail had been astounding, that the game had gained almost 500,000 Steam wishlists since reveal, and that the team was heading into the final stages of development.",
       ],
-      bullets: ["Official scheduled date: August 31, 2026", "Steam still shows Request Access", "Previous test registrations remain valid", "Registration does not guarantee selection", "The official Steam listing supports solo play and online co-op for up to four"],
+      bullets: ["Beta period: August 31–September 7, 2026", "Accepted players and previous playtesters can play", "Invite up to three friends", "No NDA: recording and streaming are permitted", "The official Steam listing supports solo play and online co-op for up to four"],
       image: "/images/official/news/closed-beta-august-31.jpg",
       imageAlt: "Official Closed Beta announcement artwork",
-      caption: "Official July announcement naming August 31, 2026 as the Closed Beta date.",
+      caption: "Official announcement media for the Closed Beta that launched August 31, 2026.",
     },
     {
       id: "press-loop",
@@ -43,15 +43,27 @@ const data = {
       caption: "Press-kit loop: stop at remnants of civilization, forage, then return to upgrade the train.",
     },
     {
+      id: "feedback-and-sharing",
+      title: "Feedback, recordings, and streaming",
+      paragraphs: [
+        "The Beta has no NDA. FakeFish says players may record and stream their sessions on Twitch, YouTube, and other community platforms. The test also includes an in-game bug-report button and feedback survey.",
+        "For discussion outside the game, accepted testers can use the Frostrail Playtest discussion area in their Steam library. The official Discord role is called “testing corps” and is obtained through the Discord button in the Playtest.",
+      ],
+      bullets: ["No NDA for recordings or streams", "In-game bug report and feedback survey", "Steam Playtest discussions for accepted testers", "Discord testing corps role through the Playtest"],
+      image: "/images/official/steam-current/screenshot-09.jpg",
+      imageAlt: "Frostrail player inside an armored train carriage during the Closed Beta",
+      caption: "The live test is intended to gather player feedback on the current build.",
+    },
+    {
       id: "not-confirmed",
       title: "What remains unconfirmed",
       paragraphs: [
-        "This article does not claim a precise test duration, server capacity, content list, invitation schedule, or general-access status. Those details should only be added after the developers publish them directly.",
+        "The announcement confirms the end date, friend-invite limits, and permission to record. It does not publish server capacity, a complete content list, invitation selection criteria, save carry-over, or final balance values. Those details remain open until FakeFish publishes them or a clearly documented build shows them.",
       ],
-      bullets: ["No public all-player access confirmation", "No guaranteed invitation date", "No assumed carry-over of progress", "No final balance values", "No promise that beta content reaches Early Access unchanged"],
+      bullets: ["No general public access confirmation", "No published selection criteria", "No assumed carry-over of progress", "No final balance values", "No promise that beta content reaches Early Access unchanged"],
       image: "/images/official/store/steam-header.jpg",
       imageAlt: "Official Frostrail Steam header",
-      caption: "Closed Beta registration details on the official Steam page.",
+      caption: "The main Steam listing may retain a Request Access control while the separate Playtest is live for accepted players.",
     },
     {
       id: "previous-playtest",
@@ -93,14 +105,15 @@ const data = {
     { src: "/images/official/news/spring-update-03.webp", alt: "Official Frostrail Spring Development Update rail landscape", caption: "Official development media released after the April test and before the August Closed Beta." },
   ] as const,
   sources: [
+    { label: "Official Closed Beta launch announcement", href: "https://steamcommunity.com/app/3517740/eventcomments/", tier: "Official" },
     { label: "Official Closed Beta registration announcement", href: "https://store.steampowered.com/news/app/3517740/view/671748851902711378?l=english", tier: "Official" },
     { label: "Official Closed Beta press kit", href: "https://www.gamespress.com/Frostrails-Closed-Beta-Arrives-August-31", tier: "Official press" },
     { label: "Official April playtest announcement archive", href: "https://steamcommunity.com/app/3517740/allnews/", tier: "Official" },
     { label: "Official Spring Development Update", href: "https://store.steampowered.com/news/app/3517740/view/664987745725186081?l=english", tier: "Official" },
   ] as const,
   seo: {
-    title: "Frostrail Closed Beta: August 31 Access & Sign-Up Status",
-    description: "Check Frostrail's August 31, 2026 Closed Beta access status, the Steam Request Access route, prior sign-up rules, invitation limits, and unconfirmed details.",
+    title: "Frostrail Closed Beta: Live Access, Invites & End Date",
+    description: "Frostrail's Closed Beta runs August 31–September 7, 2026. Check accepted-player access, three-friend invites, recording rules, feedback options, and current limits.",
   },
 };
 

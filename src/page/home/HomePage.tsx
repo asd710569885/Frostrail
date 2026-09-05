@@ -8,16 +8,16 @@ import styles from "@/style/page/home/home.module.css";
 const facts = [
   ["gauge", "1–4", "Players", "Solo & online co-op"],
   ["relic", "~500K", "Wishlists", "July 2026 press kit"],
-  ["crew", "AUG 31", "Closed Beta", "Official scheduled date"],
+  ["crew", "SEP 7", "Closed Beta", "Live test end date"],
   ["snowflake", "Q4 2026", "Early Access", "Official Steam window"],
 ] as const satisfies ReadonlyArray<readonly [HomeIconName, string, string, string]>;
 
 const updates = [
   {
     tag: "Beta",
-    title: "Closed Beta: August 31 Access Status",
-    text: "Steam still shows Request Access; prior registrations remain valid, but access is invite-based.",
-    date: "Jul 20, 2026",
+    title: "Closed Beta: Live Until September 7",
+    text: "Accepted players and previous playtesters can play now and invite friends; recording and streaming are permitted.",
+    date: "Aug 31, 2026",
     href: "/frostrail-closed-beta",
     image: "/images/official/news/closed-beta-august-31.jpg",
   },
@@ -110,7 +110,7 @@ const homeFaq = [
   },
   {
     question: "How do I join the Frostrail Closed Beta?",
-      answer: "FakeFish scheduled the Closed Beta for August 31, 2026. Steam still shows Request Access, so registration is public but an invitation is not guaranteed.",
+    answer: "The Closed Beta is live through September 7, 2026. Accepted players and previous playtesters can play through Steam and invite up to three friends; recording and streaming are allowed.",
     href: "/frostrail-closed-beta",
     link: "Closed Beta guide",
   },
@@ -199,7 +199,7 @@ export default function HomePage() {
               <dl>
                 <div><dt>Players</dt><dd>1–4</dd></div>
                 <div><dt>Core loop</dt><dd>Train · scavenge · craft</dd></div>
-                <div><dt>Next test</dt><dd>Closed Beta Aug 31</dd></div>
+                <div><dt>Current test</dt><dd>Closed Beta through Sep 7</dd></div>
               </dl>
               <Link className={styles.goldButton} href="/guides/beginner-guide">Read the guide <span>›</span></Link>
             </div>

@@ -19,18 +19,11 @@
   color: #aebbc2;
 }
 
-.brandBlock svg {
+.brandBlock img {
   width: 58px;
   height: 58px;
-}
-
-.srOnly {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  clip: rect(0,0,0,0);
-  white-space: nowrap;
+  object-fit: contain;
+  filter: drop-shadow(0 2px 5px rgba(0,0,0,.5));
 }
 
 .inner nav {
@@ -66,9 +59,11 @@
   color: var(--gold-light);
 }
 
-.socials svg {
+.socials svg,
+.socials img {
   width: 27px;
   height: 27px;
+  object-fit: contain;
 }
 
 .inner nav a:hover,

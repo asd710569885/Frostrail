@@ -34,6 +34,7 @@ export function WikiSectionDetailPage({ data, canonical }: { data: ArticleData; 
         description={data.seo?.description ?? data.lede}
         path={canonical}
         pageType="CollectionPage"
+        dateModified={data.date}
         breadcrumbs={[
           { name: "Home", path: "/" },
           { name: "Wiki", path: "/wiki" },

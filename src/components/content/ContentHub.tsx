@@ -12,11 +12,11 @@ export function ContentHub({ data, canonical }: { data: HubData; canonical: stri
   return (
     <main id="main-content" className={styles.main}>
       <PageJsonLd title={seo.title} description={seo.description} path={canonical} />
-      <header className={`container ${styles.pageHead}`}>
+      <header className={styles.pageHead}>
         <div className={styles.hero}>
-          <Image className={styles.heroImage} src={data.heroImage} alt={data.heroImageAlt} fill priority sizes="(max-width: 900px) 100vw, 46vw" />
+          <Image className={styles.heroImage} src={data.heroImage} alt={data.heroImageAlt} fill priority sizes="100vw" />
         </div>
-        <div className={styles.headCopy}>
+        <div className={`container ${styles.headCopy}`}>
           <p className={styles.breadcrumb}><Link href="/">Home</Link><span>/</span>{data.breadcrumb}</p>
           <p className={styles.eyebrow}>{playerFacingCopy(data.eyebrow)}</p>
           <h1>{playerFacingCopy(data.title)}</h1>

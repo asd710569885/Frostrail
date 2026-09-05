@@ -1,7 +1,7 @@
 export const staticTdk = {
   "/": {
-    title: "Frostrail - Guides, Weapons, Co-op & Release Info",
-    description: "Explore Frostrail guides for the Eden Engine, weapons, crafting, co-op, locations, enemies, Closed Beta access, and the Q4 2026 Early Access release.",
+    title: "Frostrail - Wiki, Guides, Co-op & Train Systems",
+    description: "Explore Frostrail Wiki guides for weapons, crafting, Eden Engine systems, co-op, locations, enemies, Closed Beta access, and Q4 2026 Early Access.",
   },
   "/guides": {
     title: "Frostrail Guides - Survive the Cold and Master Your Train",
